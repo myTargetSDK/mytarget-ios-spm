@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBannerAdView.h
-//  myTargetSDK 5.11.0
+//  myTargetSDK 5.11.1
 //
 //  Created by Anton Bulankin on 05.12.14.
 //  Copyright (c) 2014 Mail.ru Group. All rights reserved.
