@@ -1,16 +1,16 @@
 # myTarget iOS SDK
 
-![Platforms][platforms-svg]
-[![License][license-svg]][license-link]
-
-[![Podspec][podspec-svg]][podspec-link]
-
-The myTarget Advertising Network allows developers to monetize their websites  and mobile apps using myTarget ads. 
+The myTarget Advertising Network allows developers to monetize their websites  and mobile apps using myTarget ads.  
 After you integrate the myTarget SDK, thousands of myTarget customers will become the target audience for your app or website.
 
-## Integrate
+## Usage
 
-**Installation**
+Integration instructions are available on our [website](https://target.my.com/partners/help/sdk/).
+
+Demo-app with examples of integration available in [myTargetDemo folder](https://github.com/myTargetSDK/mytarget-ios/blob/master/myTargetDemo).
+
+## Installation
+ 
  - **[Swift Package Manager](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app)**
  
    To add a package dependency to your Xcode project, select File > Swift Packages > Add Package Dependency and enter its repository URL:
@@ -24,18 +24,14 @@ After you integrate the myTarget SDK, thousands of myTarget customers will becom
    ```
    Run `pod install`.
 
-Integration instructions are available on our [website](https://target.my.com/help/partners/en).
-
-Demo-app with examples of integration available in [myTargetDemo folder](https://github.com/myTargetSDK/mytarget-ios/blob/master/myTargetDemo).
-
 ## Requirements
 
 iOS 9.0
 
-[license-svg]: https://img.shields.io/badge/license-LGPL-lightgrey.svg
-[license-link]: https://github.com/myTargetSDK/mytarget-ios/blob/master/LICENSE
+## Author
 
-[podspec-svg]: https://img.shields.io/cocoapods/v/myTargetSDK.svg
-[podspec-link]: https://cocoapods.org/pods/myTargetSDK
+My.com B.V., sdk_mytarget@corp.my.com
 
-[platforms-svg]: https://img.shields.io/cocoapods/p/myTargetSDK.svg
+## License
+
+LGPL
