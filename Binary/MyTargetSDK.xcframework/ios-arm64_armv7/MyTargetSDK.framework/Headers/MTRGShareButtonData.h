@@ -1,6 +1,6 @@
 //
 //  MTRGShareButtonData.h
-//  myTargetSDK 5.11.2
+//  myTargetSDK 5.12.0
 //
 //  Created by Andrey Seredkin on 16/01/2019.
 //  Copyright © 2019 Mail.Ru Group. All rights reserved.
