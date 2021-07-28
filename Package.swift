@@ -12,10 +12,24 @@ let package = Package(
 	[
 		.library(
 			name: "MyTargetSDK",
-			targets: ["MyTargetSDK"]),
+			targets: ["MyTargetSDKLib"]),
 	],
 	targets:
 	[
+		.target(name: "MyTargetSDKLib",
+				dependencies: ["MyTargetSDK"],
+				path: "MyTargetPackageWrapper",
+				linkerSettings: [
+					.linkedFramework("SystemConfiguration"),
+					.linkedFramework("CoreTelephony"),
+					.linkedFramework("StoreKit"),
+					.linkedFramework("AdSupport"),
+					.linkedFramework("CoreGraphics"),
+					.linkedFramework("AVFoundation"),
+					.linkedFramework("CoreMedia"),
+					.linkedFramework("SafariServices")
+				]
+		),
 		.binaryTarget(name: "MyTargetSDK",
 					  path: "Binary/MyTargetSDK.xcframework"),
 	]
