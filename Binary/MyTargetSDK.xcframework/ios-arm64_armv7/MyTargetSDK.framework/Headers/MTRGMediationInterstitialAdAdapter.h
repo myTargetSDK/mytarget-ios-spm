@@ -1,6 +1,6 @@
 //
 //  MTRGMediationInterstitialAdAdapter.h
-//  myTargetSDK 5.12.1
+//  myTargetSDK 5.13.0
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -13,32 +13,91 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ @discussion Interstitial ad delegate's protocol.
+ */
 @protocol MTRGMediationInterstitialAdDelegate <NSObject>
 
+/**
+ @discussion Call on load adapter.
+ 
+ @param adapter The adapter for mediation.
+ */
 - (void)onLoadWithAdapter:(id <MTRGMediationInterstitialAdAdapter>)adapter;
 
-- (void)onNoAdWithReason:(NSString *)reason adapter:(id <MTRGMediationInterstitialAdAdapter>)adapter;
+/**
+ @discussion Call if there is no ad.
+ 
+ @param reason The reason why there is no ad.
+ @param adapter Current adapter.
+ */
+- (void)onNoAdWithReason:(NSString *)reason
+				 adapter:(id <MTRGMediationInterstitialAdAdapter>)adapter;
 
+/**
+ @discussion Calls on click.
+ 
+ @param adapter Current adapter.
+ */
 - (void)onClickWithAdapter:(id <MTRGMediationInterstitialAdAdapter>)adapter;
 
+/**
+ @discussion Calls on close the adapter.
+ 
+ @param adapter Current adapter.
+ */
 - (void)onCloseWithAdapter:(id <MTRGMediationInterstitialAdAdapter>)adapter;
 
+/**
+ @discussion Calls on video complete for the adapter.
+ 
+ @param adapter Current adapter.
+ */
 - (void)onVideoCompleteWithAdapter:(id <MTRGMediationInterstitialAdAdapter>)adapter;
 
+/**
+ @discussion Calls on display the ad by adapter.
+ 
+ @param adapter Current adapter.
+ */
 - (void)onDisplayWithAdapter:(id <MTRGMediationInterstitialAdAdapter>)adapter;
 
+/**
+ @discussion Calls on leave the application while ad is showing.
+ 
+ @param adapter Current adapter.
+ */
 - (void)onLeaveApplicationWithAdapter:(id <MTRGMediationInterstitialAdAdapter>)adapter;
 
 @end
 
+/**
+ @discussion Protocol for adapters.
+ */
 @protocol MTRGMediationInterstitialAdAdapter <MTRGMediationAdapter>
 
+/**
+ @discussion Delegate for the interstitial ad adapter. Must conforms MTRGMediationInterstitialAdDelegate.
+ */
 @property(nonatomic, weak, nullable) id <MTRGMediationInterstitialAdDelegate> delegate;
 
+/**
+ @discussion Loads adapter with ad configuration.
+ 
+ @param mediationAdConfig Configuration for the adapter.
+ */
 - (void)loadWithMediationAdConfig:(MTRGMediationAdConfig *)mediationAdConfig;
 
+/**
+ @discussion Show on the controller.
+ 
+ @param controller Controller to show.
+ */
 - (void)showWithController:(UIViewController *)controller;
 
+/**
+ @discussion Close the adapter.
+ */
 - (void)close;
 
 @end

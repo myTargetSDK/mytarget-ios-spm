@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeAdConfig.h
-//  myTargetSDK 5.12.1
+//  myTargetSDK 5.13.0
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -11,11 +11,35 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ @discussion Configuration of native ad.
+ */
 @interface MTRGMediationNativeAdConfig : MTRGMediationAdConfig
 
+/**
+ @discussion Cache policy for the native ad.
+ */
 @property(nonatomic, readonly) MTRGCachePolicy cachePolicy;
+
+/**
+ @discussion Placement for ad choices.
+ */
 @property(nonatomic, readonly) MTRGAdChoicesPlacement adChoicesPlacement;
 
+/**
+ @discussion Static constructor. Creates instance of the class.
+ 
+ @param placementId Placement identifier.
+ @param payload String with payload.
+ @param serverParams Dictionary with parameters from the server.
+ @param age User's age.
+ @param gender User's gender.
+ @param privacy Configuration of privacy for the user.
+ @param cachePolicy Cache policy for the native ad.
+ @param adChoicesPlacement Placement for ad choices.
+ 
+ @return Instance of the class.
+ */
 + (instancetype)configWithPlacementId:(NSString *)placementId
 							  payload:(nullable NSString *)payload
 						 serverParams:(NSDictionary<NSString *, NSString *> *)serverParams

@@ -1,6 +1,6 @@
 //
 //  MTRGImageData.h
-//  myTargetSDK 5.12.1
+//  myTargetSDK 5.13.0
 //
 // Created by Timur on 2/9/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -11,13 +11,35 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ @discussion Class of image data
+ */
 @interface MTRGImageData : MTRGMediaData
 
+/**
+ @discussion Instance of UIImage
+ */
 @property(nonatomic, readonly, nullable) UIImage *image;
+
+/**
+ @discussion Define use cache for image or not
+ */
 @property(nonatomic) BOOL useCache;
 
+/**
+ @discussion Sets capacity of image cache in bytes
+ 
+ @param capacityInBytes Number of bytes
+ */
 + (void)setCacheCapacity:(NSUInteger)capacityInBytes;
 
+/**
+ @discussion Static constructor
+ 
+ @param url Image url
+ 
+ @return Instance of MTRGImageData
+ */
 + (instancetype)imageDataWithUrl:(NSString *)url;
 
 @end

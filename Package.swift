@@ -14,6 +14,8 @@ let package = Package(
 			name: "MyTargetSDK",
 			targets: ["MyTargetSDKLib"]),
 	],
+	dependencies:
+	[],
 	targets:
 	[
 		.target(name: "MyTargetSDKLib",

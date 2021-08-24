@@ -1,6 +1,6 @@
 //
 //  MTRGIconAdView.h
-//  myTargetSDK 5.12.1
+//  myTargetSDK 5.13.0
 //
 //  Created by Andrey Seredkin on 18/02/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -10,10 +10,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ @discussion View for an icon.
+ */
 @interface MTRGIconAdView : UIView
 
+/**
+ @discussion Image view for the icon.
+ */
 @property(nonatomic, readonly) UIImageView *imageView;
 
+/**
+ @discussion Static constructor. Creates instance of the class.
+ 
+ @return Instance of MTRGIconAdView.
+ */
 + (instancetype)create;
 
 @end

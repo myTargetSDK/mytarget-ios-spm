@@ -1,6 +1,6 @@
 //
 //  MTRGMediationAdConfig.h
-//  myTargetSDK 5.12.1
+//  myTargetSDK 5.13.0
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -12,15 +12,58 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ @discussion Class describes configuration of mediation
+ */
 @interface MTRGMediationAdConfig : NSObject
 
+/**
+ @discussion Placement ID
+ */
 @property(nonatomic, readonly, copy) NSString *placementId;
+
+/**
+ @discussion Payload
+ */
 @property(nonatomic, readonly, copy, nullable) NSString *payload;
+
+/**
+ @discussion Server parameters
+ */
 @property(nonatomic, readonly) NSDictionary<NSString *, NSString *> *serverParams;
+
+/**
+ @discussion User's age
+ */
 @property(nonatomic, readonly, nullable) NSNumber *age;
+
+/**
+ @discussion User's gender
+ Available values:
+ MTRGGenderUnspecified
+ MTRGGenderUnknown
+ MTRGGenderMale
+ MTRGGenderFemale
+ */
 @property(nonatomic, readonly) MTRGGender gender;
+
+/**
+ @discussion Instance of object MTRGPrivacy. Describes privacy settings
+ */
 @property(nonatomic, readonly) MTRGPrivacy *privacy;
 
+/**
+ @discussion Constructor
+ 
+ @param placementId Placement ID
+ @param payload Payload
+ @param serverParams Server parameters
+ @param age User's age
+ @param gender User's gender
+ @param privacy Privacy object
+ 
+ @return Instance of MTRGMediationAdConfig
+ */
 + (instancetype)configWithPlacementId:(NSString *)placementId
 							  payload:(nullable NSString *)payload
 						 serverParams:(NSDictionary<NSString *, NSString *> *)serverParams
@@ -34,8 +77,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MTRGMediationAdConfig (MTRGDeprecated)
 
+/**
+ @discussion Defines that consent already specified
+ */
 @property(nonatomic, readonly) BOOL userConsentSpecified;
+
+/**
+ @discussion User consent
+ */
 @property(nonatomic, readonly) BOOL userConsent;
+
+/**
+ @discussion Defines user's age is restricted or not
+ */
 @property(nonatomic, readonly) BOOL userAgeRestricted;
 
 @end

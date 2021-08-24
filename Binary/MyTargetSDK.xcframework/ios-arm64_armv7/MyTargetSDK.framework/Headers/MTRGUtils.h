@@ -1,6 +1,6 @@
 //
 //  MTRGUtils.h
-//  myTargetSDK 5.12.1
+//  myTargetSDK 5.13.0
 //
 //  Created by Andrey Seredkin on 29/05/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -10,10 +10,23 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ @discussion Utils class.
+ */
 @interface MTRGUtils : NSObject
 
+/**
+ @discussion Method to get fingerprint parameters
+ 
+ @return Fingerprint parameters as NSDictionary
+ */
 + (NSDictionary<NSString *, NSString *> *)getFingerprintParams; // this method should be called on background thread
 
+/**
+ @discussion Method to set track URL
+ 
+ @param url URL as NSString
+ */
 + (void)trackUrl:(NSString *)url;
 
 @end

@@ -1,6 +1,6 @@
 //
 //  MTRGVersion.h
-//  myTargetSDK 5.12.1
+//  myTargetSDK 5.13.0
 //
 //  Created by Andrey Seredkin on 29.06.17.
 //  Copyright © 2017 Mail.ru Group. All rights reserved.
@@ -10,8 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ @discussion Class to get current version of the SDK
+ */
 @interface MTRGVersion : NSObject
 
+/**
+ @discussion Method to get current version of SDK
+ 
+ @return Version of SDK as NSString
+ */
 + (NSString *)currentVersion;
 
 @end
