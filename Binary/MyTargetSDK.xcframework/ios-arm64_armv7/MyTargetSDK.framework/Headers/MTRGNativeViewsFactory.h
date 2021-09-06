@@ -1,12 +1,13 @@
 //
 //  MTRGNativeViewsFactory.h
-//  myTargetSDK 5.13.0
+//  myTargetSDK 5.13.1
 //
 //  Created by Anton Bulankin on 17.11.14.
 //  Copyright (c) 2014 Mail.ru Group. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CGBase.h>
 
 @class MTRGNativeBannerAdView;
 @class MTRGNativeAdView;
@@ -71,6 +72,17 @@ NS_ASSUME_NONNULL_BEGIN
  @return Instance of MTRGPromoCardCollectionView.
  */
 + (MTRGPromoCardCollectionView *)createPromoCardCollectionView;
+
+/**
+ @discussion Creates promo card collection view with additional options.
+ 
+ @param cardScaleFactor Scale for cards (relation of card's width to collection width).
+ @param cardSpacing Spacing between cards.
+
+ @return Instance of MTRGPromoCardCollectionView.
+ */
++ (MTRGPromoCardCollectionView *)createPromoCardCollectionViewWithCardScaleFactor:(CGFloat)cardScaleFactor
+																	  cardSpacing:(CGFloat)cardSpacing;
 
 /**
  @discussion Creates ad choices view.

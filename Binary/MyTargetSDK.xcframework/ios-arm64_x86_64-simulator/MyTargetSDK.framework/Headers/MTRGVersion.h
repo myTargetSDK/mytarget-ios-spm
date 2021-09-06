@@ -1,6 +1,6 @@
 //
 //  MTRGVersion.h
-//  myTargetSDK 5.13.0
+//  myTargetSDK 5.13.1
 //
 //  Created by Andrey Seredkin on 29.06.17.
 //  Copyright © 2017 Mail.ru Group. All rights reserved.
