@@ -15,11 +15,15 @@ let package = Package(
 			targets: ["MyTargetSDKLib"]),
 	],
 	dependencies:
-	[],
+	[
+		.package(name: "MyTrackerSDK",
+				 url: "https://github.com/myTrackerSDK/mytracker-ios-spm.git",
+				 .upToNextMinor(from: "3.0.3"))
+	],
 	targets:
 	[
 		.target(name: "MyTargetSDKLib",
-				dependencies: ["MyTargetSDK"],
+				dependencies: ["MyTargetSDK", "MyTrackerSDK"],
 				path: "MyTargetPackageWrapper",
 				linkerSettings: [
 					.linkedFramework("SystemConfiguration"),

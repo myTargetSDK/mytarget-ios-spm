@@ -1,14 +1,28 @@
 //
 //  MTRGUtils.h
-//  myTargetSDK 5.13.1
+//  myTargetSDK 5.14.0
 //
 //  Created by Andrey Seredkin on 29/05/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CGBase.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+typedef enum : NSUInteger
+{
+	MTRGCompareResultLess,
+	MTRGCompareResultEquals,
+	MTRGCompareResultGreater
+} MTRGCompareResult;
+
+extern MTRGCompareResult mtrgCompareFloat(float lhs, float rhs);
+
+extern MTRGCompareResult mtrgCompareDouble(double lhs, double rhs);
+
+extern MTRGCompareResult mtrgCompareCGFloat(CGFloat lhs, CGFloat rhs);
 
 /**
  @discussion Utils class.

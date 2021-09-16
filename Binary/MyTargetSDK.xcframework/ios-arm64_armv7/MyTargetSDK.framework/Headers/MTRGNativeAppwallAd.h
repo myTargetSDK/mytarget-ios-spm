@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAppwallAd.h
-//  myTargetSDK 5.13.1
+//  myTargetSDK 5.14.0
 //
 // Created by Timur on 4/12/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -180,7 +180,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Method to handle array of banners show.
  
- @param banner Array of instances of MTRGNativeAppwallBanner.
+ @param banners Array of instances of MTRGNativeAppwallBanner.
  */
 - (void)handleBannersShow:(NSArray<MTRGNativeAppwallBanner *> *)banners;
 

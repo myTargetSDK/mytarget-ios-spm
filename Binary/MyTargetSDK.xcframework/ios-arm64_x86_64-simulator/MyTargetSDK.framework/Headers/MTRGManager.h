@@ -1,6 +1,6 @@
 //
 //  MTRGManager.h
-//  myTargetSDK 5.13.1
+//  myTargetSDK 5.14.0
 //
 //  Created by Anton Bulankin on 18.09.15.
 //  Copyright © 2015 Mail.ru. All rights reserved.

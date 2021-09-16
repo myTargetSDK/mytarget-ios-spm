@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.13.1
+//  myTargetSDK 5.14.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -108,7 +108,8 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Calls on banner's time left change.
  
- @param banner Current instream ad banner.
+ @param timeLeft Remaining playback time.
+ @param duration Duration of video.
  @param instreamAd Current instream ad.
  */
 - (void)onBannerTimeLeftChange:(NSTimeInterval)timeLeft duration:(NSTimeInterval)duration instreamAd:(MTRGInstreamAd *)instreamAd;
