@@ -1,6 +1,6 @@
 //
 //  MTRGCustomParams.h
-//  myTargetSDK 5.14.2
+//  myTargetSDK 5.14.3
 //
 //  Created by Anton Bulankin on 22.12.14.
 //  Copyright (c) 2014 Mail.ru Group. All rights reserved.
@@ -106,6 +106,13 @@ typedef enum
  @return Parameters as NSDictionary
  */
 - (NSDictionary<NSString *, NSString *> *)asDictionary;
+
+/**
+ @discussion Method to get custom parameters as NSDictionary
+ 
+ @return Custom parameters as NSDictionary
+ */
+- (NSDictionary<NSString *, NSString *> *)asCustomDataDictionary;
 
 /**
  @discussion Method ot set custom parameters as key-value

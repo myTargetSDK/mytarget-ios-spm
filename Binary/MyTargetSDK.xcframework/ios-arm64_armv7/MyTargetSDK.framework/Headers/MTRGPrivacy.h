@@ -1,6 +1,6 @@
 //
 //  MTRGPrivacy.h
-//  myTargetSDK 5.14.2
+//  myTargetSDK 5.14.3
 //
 //  Created by Andrey Seredkin on 28.05.2018.
 //  Copyright © 2018 Mail.Ru Group. All rights reserved.
