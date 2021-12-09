@@ -1,6 +1,6 @@
 //
 //  MTRGBaseInterstitialAd.h
-//  myTargetSDK 5.14.3
+//  myTargetSDK 5.14.4
 //
 //  Created by Andrey Seredkin on 31.07.2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
