@@ -1,6 +1,6 @@
 //
 //  MTRGMediaData.h
-//  myTargetSDK 5.14.4
+//  myTargetSDK 5.15.0
 //
 // Created by Timur on 2/9/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -23,12 +23,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Data of media
  */
-@property(nonatomic, nullable) id data;
+@property(atomic, nullable) id data;
 
 /**
  @discussion Size of media to display
  */
-@property(nonatomic) CGSize size;
+@property(atomic) CGSize size;
 
 /**
  @discussion Constructor of MTRGMediaData

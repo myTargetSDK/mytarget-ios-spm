@@ -1,6 +1,6 @@
 //
 //  MTRGVideoData.h
-//  myTargetSDK 5.14.4
+//  myTargetSDK 5.15.0
 //
 // Created by Timur on 2/9/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Path to video data
  */
-@property(nonatomic, readonly, nullable) NSString *path;
+@property(atomic, readonly, nullable) NSString *path;
 
 /**
  @discussion Flag defines that video can be cached
@@ -52,6 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return Instance of NSURL
  */
 - (nullable NSURL *)createVideoUrl;
+
 @end
 
 NS_ASSUME_NONNULL_END

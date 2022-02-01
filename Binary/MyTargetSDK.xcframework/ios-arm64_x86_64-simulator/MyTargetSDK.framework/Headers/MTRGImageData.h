@@ -1,6 +1,6 @@
 //
 //  MTRGImageData.h
-//  myTargetSDK 5.14.4
+//  myTargetSDK 5.15.0
 //
 // Created by Timur on 2/9/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -19,12 +19,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Instance of UIImage
  */
-@property(nonatomic, readonly, nullable) UIImage *image;
+@property(atomic, readonly, nullable) UIImage *image;
 
 /**
  @discussion Define use cache for image or not
  */
-@property(nonatomic) BOOL useCache;
+@property(atomic) BOOL useCache;
 
 /**
  @discussion Sets capacity of image cache in bytes

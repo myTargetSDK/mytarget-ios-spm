@@ -1,6 +1,6 @@
 //
 //  MTRGManager.h
-//  myTargetSDK 5.14.4
+//  myTargetSDK 5.15.0
 //
 //  Created by Anton Bulankin on 18.09.15.
 //  Copyright © 2015 Mail.ru. All rights reserved.
@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Instance of MTRGConfig
  */
-@property(class, nonatomic, nonnull) MTRGConfig *sdkConfig;
+@property(class, atomic, nonnull) MTRGConfig *sdkConfig;
 
 /**
  @discussion Method to init the SDK

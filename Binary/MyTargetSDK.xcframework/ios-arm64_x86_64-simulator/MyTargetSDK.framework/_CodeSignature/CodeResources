@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/libAppVerificationLibrary.a</key>
+		<data>
+		9C/VDK+qh+wjs0LjlhZCCjrXM1U=
+		</data>
 		<key>Headers/MTRGAdChoicesPlacement.h</key>
 		<data>
 		Cbw2x5wSBSUnyOo6Z93vR8zq1t8=
@@ -58,7 +62,7 @@
 		</data>
 		<key>Headers/MTRGImageData.h</key>
 		<data>
-		xlC+IabBRaBdwfz6pdiY6C/pFnE=
+		CzqE19FDm2F8jZhzQNUGy+IUfsI=
 		</data>
 		<key>Headers/MTRGInstreamAd.h</key>
 		<data>
@@ -86,7 +90,7 @@
 		</data>
 		<key>Headers/MTRGManager.h</key>
 		<data>
-		UNpH2opYltTqf/X7ZFwhfB3bzsk=
+		yBxhb3Rz1ZxG6N7OO/IFzG9pKTY=
 		</data>
 		<key>Headers/MTRGMediaAdView.h</key>
 		<data>
@@ -94,7 +98,7 @@
 		</data>
 		<key>Headers/MTRGMediaData.h</key>
 		<data>
-		PgDVp5fs02tUn+dEF8HmjLfwDVw=
+		DBfszzVYdz90FeM2FA7yVi2ZVD8=
 		</data>
 		<key>Headers/MTRGMediationAdConfig.h</key>
 		<data>
@@ -246,7 +250,7 @@
 		</data>
 		<key>Headers/MTRGVideoData.h</key>
 		<data>
-		m/4/6M2iXqWyTVjfECeYImqeiwU=
+		axPE0PnkosqPw9qimAe6waqP9Yc=
 		</data>
 		<key>Headers/MyTargetSDK.h</key>
 		<data>
@@ -254,7 +258,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/xlmrRkWhMS7LiqOOTLHWZH77yc=
+		NKzs3DmB7nf+2PNlu9HNrtQLVkk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -263,6 +267,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/libAppVerificationLibrary.a</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9C/VDK+qh+wjs0LjlhZCCjrXM1U=
+			</data>
+			<key>hash2</key>
+			<data>
+			kxpWckt1Pq/aa3zgPN1UwQzEqSvfYUYY4p20GXM5yIw=
+			</data>
+		</dict>
 		<key>Headers/MTRGAdChoicesPlacement.h</key>
 		<dict>
 			<key>hash</key>
@@ -410,11 +425,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xlC+IabBRaBdwfz6pdiY6C/pFnE=
+			CzqE19FDm2F8jZhzQNUGy+IUfsI=
 			</data>
 			<key>hash2</key>
 			<data>
-			QbYi1StwxQ/VKQ5J8PFgc55igxSeqngDjlF7dRtBd34=
+			eFBZzf5+DzsVt6ncjnbK2ALyMVad0fQDu7BWD215+Fc=
 			</data>
 		</dict>
 		<key>Headers/MTRGInstreamAd.h</key>
@@ -487,11 +502,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UNpH2opYltTqf/X7ZFwhfB3bzsk=
+			yBxhb3Rz1ZxG6N7OO/IFzG9pKTY=
 			</data>
 			<key>hash2</key>
 			<data>
-			8nilktF3HO96BnkOpDUURa+LpJgOyDXhD7xQycs6m7M=
+			hKz+DkmR1oGV06s3fWwet+X0h+DyhDsdECUTI5p/zyc=
 			</data>
 		</dict>
 		<key>Headers/MTRGMediaAdView.h</key>
@@ -509,11 +524,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PgDVp5fs02tUn+dEF8HmjLfwDVw=
+			DBfszzVYdz90FeM2FA7yVi2ZVD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			WTTaD/cQK0v+O15Twf2OxP35rQaeOH5+9+NLdRlhtVo=
+			2TKLOQwUYGiGL5SIeQLHdub32YiBO56+EEspdMvWZiY=
 			</data>
 		</dict>
 		<key>Headers/MTRGMediationAdConfig.h</key>
@@ -927,11 +942,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m/4/6M2iXqWyTVjfECeYImqeiwU=
+			axPE0PnkosqPw9qimAe6waqP9Yc=
 			</data>
 			<key>hash2</key>
 			<data>
-			XlSXpmpQ9L0qnfPZDrvRguShWewdSaqoF2u9ArAB3LM=
+			XlQkuROZdu/NSOdoASxK5pHm6/pSF2hEaH5bbxPq168=
 			</data>
 		</dict>
 		<key>Headers/MyTargetSDK.h</key>
