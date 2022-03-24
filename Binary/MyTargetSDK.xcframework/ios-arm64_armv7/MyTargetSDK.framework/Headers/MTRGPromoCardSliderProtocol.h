@@ -1,6 +1,6 @@
 //
 //  MTRGPromoCardSliderProtocol.h
-//  myTargetSDK 5.15.0
+//  myTargetSDK 5.15.1
 //
 //  Created by Andrey Seredkin on 24.11.17.
 //  Copyright © 2017 Mail.ru Group. All rights reserved.
@@ -43,6 +43,13 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 /**
+ @discussion Protocol for card slider state.
+ */
+@protocol MTRGPromoCardSliderStateProtocol <NSObject>
+
+@end
+
+/**
  @discussion Protocol for card slider class.
  */
 @protocol MTRGPromoCardSliderProtocol <NSObject>
@@ -70,6 +77,13 @@ NS_ASSUME_NONNULL_BEGIN
  @return Array of MTRGNativePromoCard.
  */
 - (NSArray<MTRGNativePromoCard *> *)visibleCards;
+
+@optional
+
+/**
+ @discussion State of cards in collection.
+ */
+@property (nonatomic) id <MTRGPromoCardSliderStateProtocol> sliderState;
 
 @end
 

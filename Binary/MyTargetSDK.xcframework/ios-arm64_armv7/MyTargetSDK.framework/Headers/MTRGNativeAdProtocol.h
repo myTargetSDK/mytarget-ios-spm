@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdProtocol.h
-//  myTargetSDK 5.15.0
+//  myTargetSDK 5.15.1
 //
 //  Created by Andrey Seredkin on 10/02/2020.
 //  Copyright © 2020 Mail.Ru Group. All rights reserved.
