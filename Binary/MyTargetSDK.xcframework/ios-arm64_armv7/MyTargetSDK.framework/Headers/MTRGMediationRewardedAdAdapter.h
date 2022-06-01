@@ -1,6 +1,6 @@
 //
 //  MTRGMediationRewardedAdAdapter.h
-//  myTargetSDK 5.15.1
+//  myTargetSDK 5.15.2
 //
 //  Created by Andrey Seredkin on 13.08.2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.

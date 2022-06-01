@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.15.1
+//  myTargetSDK 5.15.2
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -12,6 +12,7 @@
 @protocol MTRGInstreamAdPlayer;
 @class MTRGInstreamAd;
 @class AVPlayer;
+@class MTRGInstreamAdCompanionBanner;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -48,12 +49,22 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion CTA text.
  */
-@property(nonatomic, readonly, copy, nullable) NSString *ctaText;
+@property(nonatomic, readonly) NSString *ctaText;
 
 /**
  @discussion The banner identifier.
  */
 @property(nonatomic, readonly) NSString *bannerId;
+
+/**
+ @discussion If banner has a companion html page.
+ */
+@property(nonatomic, readonly) BOOL hasShoppable;
+
+/**
+ @discussion Array of Instances of banner's companions(MTRGInstreamAdCompanionBanner).
+ */
+@property(nonatomic, readonly) NSArray<MTRGInstreamAdCompanionBanner *> *companionBanners;
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -197,6 +208,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) float volume;
 
 /**
+ @discussion View for companion html page.
+ */
+@property(nonatomic, readonly, nullable) UIView *shoppableView;
+
+/**
+ @discussion Determines ad shows shoppable view or not.
+ */
+@property(nonatomic) BOOL shoppablePresented;
+
+/**
  @discussion Static constructor. Creates instream ad with slot identifier.
  
  @param slotId Slot identifier.
@@ -252,6 +273,21 @@ NS_ASSUME_NONNULL_BEGIN
  @param controller Instance of UIViewController.
  */
 - (void)handleClickWithController:(UIViewController *)controller;
+
+/**
+ @discussion Method to handle companion click.
+
+ @param companionBanner The companion for the ad.
+ @param controller Used UIViewController.
+ */
+- (void)handleCompanionClick:(MTRGInstreamAdCompanionBanner *)companionBanner withController:(UIViewController *)controller;
+
+/**
+ @discussion Method to handle companion show.
+
+ @param companionBanner The companion for the ad.
+ */
+- (void)handleCompanionShow:(MTRGInstreamAdCompanionBanner *)companionBanner;
 
 /**
  @discussion Starts preroll.
