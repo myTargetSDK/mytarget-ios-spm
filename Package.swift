@@ -6,7 +6,7 @@ let package = Package(
 	name: "MyTargetSDK",
 	platforms:
 	[
-		.iOS(.v9)
+		.iOS(.v10)
 	],
 	products:
 	[

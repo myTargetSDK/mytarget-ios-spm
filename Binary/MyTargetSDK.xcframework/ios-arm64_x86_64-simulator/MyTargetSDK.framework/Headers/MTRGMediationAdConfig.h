@@ -1,6 +1,6 @@
 //
 //  MTRGMediationAdConfig.h
-//  myTargetSDK 5.15.2
+//  myTargetSDK 5.16.0
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -9,6 +9,7 @@
 #import <MyTargetSDK/MTRGCustomParams.h>
 
 @class MTRGPrivacy;
+@protocol MTRGAdNetworkConfigProtocol;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -53,6 +54,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly) MTRGPrivacy *privacy;
 
 /**
+ @discussion Additional data for mediation
+ */
+@property(nonatomic, readonly, nullable) id <MTRGAdNetworkConfigProtocol> adNetworkConfig;
+
+/**
  @discussion Constructor
  
  @param placementId Placement ID
@@ -69,7 +75,8 @@ NS_ASSUME_NONNULL_BEGIN
 						 serverParams:(NSDictionary<NSString *, NSString *> *)serverParams
 								  age:(nullable NSNumber *)age
 							   gender:(MTRGGender)gender
-							  privacy:(MTRGPrivacy *)privacy;
+							  privacy:(MTRGPrivacy *)privacy
+					  adNetworkConfig:(nullable id <MTRGAdNetworkConfigProtocol>)adNetworkConfig;
 
 - (instancetype)init NS_UNAVAILABLE;
 

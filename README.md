@@ -26,7 +26,7 @@ Demo-app with examples of integration available in [myTargetDemo folder](https:/
 
 ## Requirements
 
-iOS 9.0
+iOS 10.0
 
 ## Author
 

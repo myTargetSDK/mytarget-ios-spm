@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.15.2
+//  myTargetSDK 5.16.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -10,6 +10,7 @@
 #import <MyTargetSDK/MTRGBaseAd.h>
 
 @protocol MTRGInstreamAdPlayer;
+@protocol MTRGMenuFactory;
 @class MTRGInstreamAd;
 @class AVPlayer;
 @class MTRGInstreamAdCompanionBanner;
@@ -60,6 +61,21 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion If banner has a companion html page.
  */
 @property(nonatomic, readonly) BOOL hasShoppable;
+
+/**
+ @discussion Advertising label.
+ */
+@property(nonatomic, readonly) NSString *advertisingLabel;
+
+/**
+ @discussion AdChoices image.
+ */
+@property(nonatomic, readonly, nullable) UIImage *adChoicesImage;
+
+/**
+ @discussion If banner has AdChoices.
+ */
+@property(nonatomic, readonly) BOOL hasAdChoices;
 
 /**
  @discussion Array of Instances of banner's companions(MTRGInstreamAdCompanionBanner).
@@ -155,6 +171,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onLeaveApplicationWithInstreamAd:(MTRGInstreamAd *)instreamAd;
 
+@optional
+
+/**
+ @discussion The method is called by clicking in the adChoices menu on certain items, such as "Complain", so the content should be hidden. You should call skip() method.
+
+ @param banner Current instream ad banner.
+ @param instreamAd Current instream ad.
+ */
+- (void)onBannerShouldClose:(MTRGInstreamAdBanner *)banner instreamAd:(MTRGInstreamAd *)instreamAd;
+
 @end
 
 /**
@@ -226,6 +252,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (instancetype)instreamAdWithSlotId:(NSUInteger)slotId;
 
+/**
+ @discussion Static constructor. Creates instream ad with slot identifier and menu factory.
+
+ @param slotId Slot identifier.
+ @param menuFactory Menu factory.
+
+ @return Instance of the class.
+ */
++ (instancetype)instreamAdWithSlotId:(NSUInteger)slotId menuFactory:(id<MTRGMenuFactory>)menuFactory;
+
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
@@ -236,6 +272,16 @@ NS_ASSUME_NONNULL_BEGIN
  @return Instance of the class.
  */
 - (instancetype)initWithSlotId:(NSUInteger)slotId;
+
+/**
+ @discussion Creates instream ad with slot identifier and menu factory.
+
+ @param slotId Slot identifier.
+ @param menuFactory Menu factory.
+
+ @return Instance of the class.
+ */
+- (instancetype)initWithSlotId:(NSUInteger)slotId menuFactory:(id<MTRGMenuFactory>)menuFactory;
 
 /**
  @discussion Loads the ad.
@@ -288,6 +334,14 @@ NS_ASSUME_NONNULL_BEGIN
  @param companionBanner The companion for the ad.
  */
 - (void)handleCompanionShow:(MTRGInstreamAdCompanionBanner *)companionBanner;
+
+/**
+ @discussion Method to handle adChoices click.
+
+ @param viewController Used UIViewController.
+ @param sourceView UIView for iPad popover.
+ */
+- (void)handleAdChoicesClickWithController:(UIViewController *)viewController sourceView:(nullable UIView *)sourceView NS_SWIFT_NAME(handleAdChoicesClick(with:sourceView:));
 
 /**
  @discussion Starts preroll.

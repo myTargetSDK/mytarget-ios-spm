@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeAdConfig.h
-//  myTargetSDK 5.15.2
+//  myTargetSDK 5.16.0
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -47,7 +47,8 @@ NS_ASSUME_NONNULL_BEGIN
 							   gender:(MTRGGender)gender
 							  privacy:(MTRGPrivacy *)privacy
 						  cachePolicy:(MTRGCachePolicy)cachePolicy
-				   adChoicesPlacement:(MTRGAdChoicesPlacement)adChoicesPlacement;
+				   adChoicesPlacement:(MTRGAdChoicesPlacement)adChoicesPlacement
+					  adNetworkConfig:(nullable id <MTRGAdNetworkConfigProtocol>)adNetworkConfig;
 
 @end
 

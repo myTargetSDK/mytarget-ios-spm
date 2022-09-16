@@ -1,6 +1,6 @@
 //
 //  MTRGAdView.h
-//  myTargetSDK 5.15.2
+//  myTargetSDK 5.16.0
 //
 // Created by Timur on 3/22/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -11,6 +11,7 @@
 @class MTRGAdView;
 @class MTRGAdSize;
 @class MTRGCustomParams;
+@protocol MTRGAdNetworkConfigProtocol;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -153,6 +154,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param bidId Bid identifier.
  */
 - (void)loadFromBid:(NSString *)bidId;
+
+/**
+ @discussion Additional parameters for mediation.
+
+ @param adNetworkConfig An object implemented MTRGAdNetworkConfigProtocol.
+ */
+- (void)setAdNetworkConfig:(nullable id <MTRGAdNetworkConfigProtocol>)adNetworkConfig networkName:(NSString *)networkName;
 
 @end
 

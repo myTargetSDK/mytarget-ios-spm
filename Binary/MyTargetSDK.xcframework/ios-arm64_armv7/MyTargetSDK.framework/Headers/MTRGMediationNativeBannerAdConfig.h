@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeBannerAdConfig.h
-//  myTargetSDK 5.15.2
+//  myTargetSDK 5.16.0
 //
 //  Created by Andrey Seredkin on 11/06/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -51,7 +51,8 @@ NS_ASSUME_NONNULL_BEGIN
 							   gender:(MTRGGender)gender
 							  privacy:(MTRGPrivacy *)privacy
 						  cachePolicy:(MTRGCachePolicy)cachePolicy
-				   adChoicesPlacement:(MTRGAdChoicesPlacement)adChoicesPlacement;
+				   adChoicesPlacement:(MTRGAdChoicesPlacement)adChoicesPlacement
+					  adNetworkConfig:(nullable id <MTRGAdNetworkConfigProtocol>)adNetworkConfig;
 
 @end
 
