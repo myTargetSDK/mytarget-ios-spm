@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeBannerAdAdapter.h
-//  myTargetSDK 5.16.0
+//  myTargetSDK 5.17.0
 //
 //  Created by Andrey Seredkin on 11/06/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -13,6 +13,7 @@
 @class MTRGNativeBanner;
 @class MTRGMediationNativeBannerAdConfig;
 @protocol MTRGMediationNativeBannerAdAdapter;
+@protocol MTRGMediationNativeBannerAdChoicesOptionDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -112,10 +113,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  @discussion Returns instance of UIView for the icon of the banner.
- 
+
  @return Instance of UIView.
  */
 - (nullable UIView *)iconView;
+
+@optional
+
+/**
+ @discussion Method to handle adChoices click. Used when the user controls adChoices himself.
+
+ @param viewController Used UIViewController.
+ @param sourceView UIView for iPad popover.
+ */
+- (void)handleAdChoicesClickWithController:(UIViewController *)viewController sourceView:(nullable UIView *)sourceView NS_SWIFT_NAME(handleAdChoicesClick(controller:sourceView:));
+
+/**
+ @discussion Setter for AdChoicesOptionDelegate of the adapter. Must conforms MTRGMediationNativeBannerAdChoicesOptionDelegate protocol.
+
+ @param adChoicesOptionDelegate AdChoicesOptionDelegate of the adapter.
+ */
+- (void)setAdChoicesOptionDelegate:(nullable id <MTRGMediationNativeBannerAdChoicesOptionDelegate>)adChoicesOptionDelegate;
 
 @end
 

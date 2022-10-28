@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBanner.h
-//  myTargetSDK 5.16.0
+//  myTargetSDK 5.17.0
 //
 //  Created by Andrey Seredkin on 10/02/2020.
 //  Copyright © 2020 Mail.Ru Group. All rights reserved.
@@ -72,6 +72,16 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Icon's image data for the banner.
  */
 @property(nonatomic, readonly, nullable) MTRGImageData *icon;
+
+/**
+ @discussion AdChoices image.
+ */
+@property(nonatomic, readonly, nullable) MTRGImageData *adChoicesIcon;
+
+/**
+ @discussion If banner has AdChoices.
+ */
+@property(nonatomic, readonly) BOOL hasAdChoices;
 
 @end
 

@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeAdAdapter.h
-//  myTargetSDK 5.16.0
+//  myTargetSDK 5.17.0
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -11,6 +11,7 @@
 
 @class MTRGMediationNativeAdConfig;
 @protocol MTRGMediationNativeAdAdapter;
+@protocol MTRGMediationNativeAdChoicesOptionDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -136,6 +137,23 @@ NS_ASSUME_NONNULL_BEGIN
  @return Instance of UIView.
  */
 - (nullable UIView *)mediaView;
+
+@optional
+
+/**
+ @discussion Method to handle adChoices click. Used when the user controls adChoices himself.
+
+ @param viewController Used UIViewController.
+ @param sourceView UIView for iPad popover.
+ */
+- (void)handleAdChoicesClickWithController:(UIViewController *)viewController sourceView:(nullable UIView *)sourceView NS_SWIFT_NAME(handleAdChoicesClick(controller:sourceView:));
+
+/**
+ @discussion Setter for AdChoicesOptionDelegate of the adapter. Must conforms MTRGMediationNativeAdChoicesOptionDelegate protocol.
+
+ @param adChoicesOptionDelegate AdChoicesOptionDelegate of the adapter.
+ */
+- (void)setAdChoicesOptionDelegate:(nullable id <MTRGMediationNativeAdChoicesOptionDelegate>)adChoicesOptionDelegate;
 
 @end
 

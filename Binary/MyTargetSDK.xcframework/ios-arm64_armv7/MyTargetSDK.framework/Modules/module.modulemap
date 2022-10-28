@@ -4,3 +4,8 @@ framework module MyTargetSDK {
   export *
   module * { export * }
 }
+
+module MyTargetSDK.Swift {
+    header "MyTargetSDK-Swift.h"
+    requires objc
+}

@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdProtocol.h
-//  myTargetSDK 5.16.0
+//  myTargetSDK 5.17.0
 //
 //  Created by Andrey Seredkin on 10/02/2020.
 //  Copyright © 2020 Mail.Ru Group. All rights reserved.
@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <MyTargetSDK/MTRGCachePolicy.h>
 #import <MyTargetSDK/MTRGAdChoicesPlacement.h>
+
+@protocol MTRGMenuFactory;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -52,6 +54,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithSlotId:(NSUInteger)slotId;
 
 /**
+ @discussion Create instance of the class with slot identifier.
+
+ @param slotId Slot identifier.
+ @param adChoicesMenuFactory AdChoices menu factory
+
+ @return Instance of the class.
+ */
+- (instancetype)initWithSlotId:(NSUInteger)slotId adChoicesMenuFactory:(id<MTRGMenuFactory>)adChoicesMenuFactory;
+
+/**
  @discussion Handles data.
  
  @param data Data as a string.
@@ -93,6 +105,14 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Unregister view for the ad.
  */
 - (void)unregisterView;
+
+/**
+ @discussion Method to handle adChoices click.
+
+ @param viewController Used UIViewController.
+ @param sourceView UIView for iPad popover.
+ */
+- (void)handleAdChoicesClickWithController:(UIViewController *)viewController sourceView:(nullable UIView *)sourceView NS_SWIFT_NAME(handleAdChoicesClick(controller:sourceView:));
 
 @end
 

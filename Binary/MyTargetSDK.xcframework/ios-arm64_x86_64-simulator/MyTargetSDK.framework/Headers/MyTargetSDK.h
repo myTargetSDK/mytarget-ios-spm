@@ -1,6 +1,6 @@
 //
 //  MyTargetSDK.h
-//  myTargetSDK 5.16.0
+//  myTargetSDK 5.17.0
 //
 //  Created by Andrey Seredkin on 15.02.2018.
 //  Copyright © 2018 Mail.Ru Group. All rights reserved.
@@ -14,7 +14,6 @@
 #import <MyTargetSDK/MTRGUtils.h>
 #import <MyTargetSDK/MTRGNavigationType.h>
 #import <MyTargetSDK/MTRGPrivacy.h>
-#import <MyTargetSDK/MTRGVersion.h>
 #import <MyTargetSDK/MTRGMediaAdView.h>
 #import <MyTargetSDK/MTRGStarsRatingLabel.h>
 #import <MyTargetSDK/MTRGAudioData.h>
@@ -54,6 +53,10 @@
 #import <MyTargetSDK/MTRGMediationNativeBannerAdConfig.h>
 #import <MyTargetSDK/MTRGNativeAdContainer.h>
 #import <MyTargetSDK/MTRGIconAdView.h>
+#import <MyTargetSDK/MTRGNativeAdChoicesOptionDelegate.h>
+#import <MyTargetSDK/MTRGNativeBannerAdChoicesOptionDelegate.h>
+#import <MyTargetSDK/MTRGMediationNativeAdChoicesOptionDelegate.h>
+#import <MyTargetSDK/MTRGMediationNativeBannerAdChoicesOptionDelegate.h>
 
 #import <MyTargetSDK/MTRGAdView.h>
 #import <MyTargetSDK/MTRGAdSize.h>

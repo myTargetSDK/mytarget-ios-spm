@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.16.0
+//  myTargetSDK 5.17.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -170,8 +170,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param instreamAd Current instream ad.
  */
 - (void)onLeaveApplicationWithInstreamAd:(MTRGInstreamAd *)instreamAd;
-
-@optional
 
 /**
  @discussion The method is called by clicking in the adChoices menu on certain items, such as "Complain", so the content should be hidden. You should call skip() method.

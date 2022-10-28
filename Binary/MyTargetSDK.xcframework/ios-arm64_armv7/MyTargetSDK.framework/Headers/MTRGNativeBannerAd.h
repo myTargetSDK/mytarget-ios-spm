@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBannerAd.h
-//  myTargetSDK 5.16.0
+//  myTargetSDK 5.17.0
 //
 //  Created by Andrey Seredkin on 10/02/2020.
 //  Copyright © 2020 Mail.Ru Group. All rights reserved.
@@ -12,6 +12,8 @@
 @class MTRGNativeBannerAd;
 @class MTRGNativeBanner;
 @class MTRGImageData;
+@protocol MTRGMenuFactory;
+@protocol MTRGNativeBannerAdChoicesOptionDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -87,6 +89,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onIconLoadWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
 
+/**
+ @discussion Calls when adChoices image loaded for the ad.
+
+ @param nativeBannerAd Current banner ad.
+ */
+- (void)onAdChoicesIconLoadWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
+
 @end
 
 /**
@@ -110,6 +119,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, weak, nullable) id <MTRGNativeBannerAdMediaDelegate> mediaDelegate;
 
 /**
+ @discussion Delegate for the AdChoices options. Must conforms MTRGNativeBannerAdChoicesOptionDelegate protocol.
+ See MTRGNativeBannerAdChoicesOptionDelegate.h
+ */
+@property(nonatomic, weak, nullable) id <MTRGNativeBannerAdChoicesOptionDelegate> adChoicesOptionDelegate;
+
+/**
  @discussion Instance of native banner.
  */
 @property(nonatomic, readonly, nullable) MTRGNativeBanner *banner;
@@ -123,6 +138,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (instancetype)nativeBannerAdWithSlotId:(NSUInteger)slotId;
 
+/**
+ @discussion Static constructor. Creates instance of the class with slot identifier and menu factory.
+
+ @param slotId Slot identifier.
+ @param adChoicesMenuFactory AdChoices menu factory.
+
+ @return Instance of the class.
+ */
++ (instancetype)nativeBannerAdWithSlotId:(NSUInteger)slotId adChoicesMenuFactory:(id<MTRGMenuFactory>)adChoicesMenuFactory;
+
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
@@ -133,6 +158,16 @@ NS_ASSUME_NONNULL_BEGIN
  @return Instance of the class.
  */
 - (instancetype)initWithSlotId:(NSUInteger)slotId;
+
+/**
+ @discussion Creates instance of the class with slot identifier and menu factory.
+
+ @param slotId Slot identifier.
+ @param adChoicesMenuFactory AdChoices menu factory.
+
+ @return Instance of the class.
+ */
+- (instancetype)initWithSlotId:(NSUInteger)slotId adChoicesMenuFactory:(id<MTRGMenuFactory>)adChoicesMenuFactory;
 
 /**
  @discussion Loads the ad.
@@ -169,6 +204,14 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Unregister view for the ad.
  */
 - (void)unregisterView;
+
+/**
+ @discussion Method to handle adChoices click.
+
+ @param viewController Used UIViewController.
+ @param sourceView UIView for iPad popover.
+ */
+- (void)handleAdChoicesClickWithController:(UIViewController *)viewController sourceView:(nullable UIView *)sourceView NS_SWIFT_NAME(handleAdChoicesClick(controller:sourceView:));
 
 @end
 

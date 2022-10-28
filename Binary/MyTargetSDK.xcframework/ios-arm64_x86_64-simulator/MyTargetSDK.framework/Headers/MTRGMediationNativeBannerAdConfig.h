@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeBannerAdConfig.h
-//  myTargetSDK 5.16.0
+//  myTargetSDK 5.17.0
 //
 //  Created by Andrey Seredkin on 11/06/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -12,6 +12,7 @@
 #import <MyTargetSDK/MTRGAdChoicesPlacement.h>
 
 @class MTRGPrivacy;
+@protocol MTRGMenuFactory;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,6 +32,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly) MTRGAdChoicesPlacement adChoicesPlacement;
 
 /**
+ @discussion Menu factory for drawing adChoices menu manually. See MTRGMenuFactory protocol.
+ */
+@property(nonatomic, readonly) id <MTRGMenuFactory> adChoicesMenuFactory;
+
+/**
  @discussion Constructor
  
  @param placementId Placement ID
@@ -41,6 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param privacy Privacy object
  @param cachePolicy Current cache policy for the banner ad.
  @param adChoicesPlacement Placement for ad choices.
+ @param adChoicesMenuFactory Menu factory.
  
  @return Instance of MTRGMediationNativeBannerAdConfig
  */
@@ -52,7 +59,8 @@ NS_ASSUME_NONNULL_BEGIN
 							  privacy:(MTRGPrivacy *)privacy
 						  cachePolicy:(MTRGCachePolicy)cachePolicy
 				   adChoicesPlacement:(MTRGAdChoicesPlacement)adChoicesPlacement
-					  adNetworkConfig:(nullable id <MTRGAdNetworkConfigProtocol>)adNetworkConfig;
+					  adNetworkConfig:(nullable id <MTRGAdNetworkConfigProtocol>)adNetworkConfig
+				 adChoicesMenuFactory:(id <MTRGMenuFactory>)adChoicesMenuFactory;
 
 @end
 

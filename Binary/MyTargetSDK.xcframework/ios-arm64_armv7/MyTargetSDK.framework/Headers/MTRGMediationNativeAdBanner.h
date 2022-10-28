@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeAdBanner.h
-//  myTargetSDK 5.16.0
+//  myTargetSDK 5.17.0
 //
 //  Created by Andrey Seredkin on 18/04/2019.
 //  Copyright © 2019 Mail.Ru Group. All rights reserved.
@@ -100,6 +100,16 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Flag shows video exist or not.
  */
 @property(nonatomic) BOOL hasVideo;
+
+/**
+ @discussion AdChoices image.
+ */
+@property(nonatomic, nullable) MTRGImageData *adChoicesIcon;
+
+/**
+ @discussion If banner has AdChoices.
+ */
+@property(nonatomic) BOOL hasAdChoices;
 
 /**
  @discussion Creates native promo banner.

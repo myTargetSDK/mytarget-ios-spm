@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAd.h
-//  myTargetSDK 5.16.0
+//  myTargetSDK 5.17.0
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -12,6 +12,8 @@
 @class MTRGNativeAd;
 @class MTRGNativePromoBanner;
 @class MTRGImageData;
+@protocol MTRGMenuFactory;
+@protocol MTRGNativeAdChoicesOptionDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -115,6 +117,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onImageLoadWithNativeAd:(MTRGNativeAd *)nativeAd;
 
+/**
+ @discussion Calls when adChoices image loaded for the ad.
+
+ @param nativeAd Current ad.
+ */
+- (void)onAdChoicesIconLoadWithNativeAd:(MTRGNativeAd *)nativeAd;
+
 @end
 
 /**
@@ -138,6 +147,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, weak, nullable) id <MTRGNativeAdMediaDelegate> mediaDelegate;
 
 /**
+ @discussion Delegate for the AdChoices options. Must conforms MTRGNativeAdChoicesOptionDelegate protocol.
+ See MTRGNativeAdChoicesOptionDelegate.h
+ */
+@property(nonatomic, weak, nullable) id <MTRGNativeAdChoicesOptionDelegate> adChoicesOptionDelegate;
+
+/**
  @discussion Promo banner for the ad.
  */
 @property(nonatomic, readonly, nullable) MTRGNativePromoBanner *banner;
@@ -151,6 +166,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (instancetype)nativeAdWithSlotId:(NSUInteger)slotId;
 
+/**
+ @discussion Static constructor. Create instance of the class with slot identifier and menu factory.
+
+ @param slotId Slot identifier.
+ @param adChoicesMenuFactory Menu factory for drawing adChoices menu manually. See MTRGMenuFactory protocol.
+
+ @return Instance of the class.
+ */
++ (instancetype)nativeAdWithSlotId:(NSUInteger)slotId adChoicesMenuFactory:(id<MTRGMenuFactory>)adChoicesMenuFactory;
+
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
@@ -161,6 +186,16 @@ NS_ASSUME_NONNULL_BEGIN
  @return Instance of the class.
  */
 - (instancetype)initWithSlotId:(NSUInteger)slotId;
+
+/**
+ @discussion Create instance of the class with slot identifier.
+
+ @param slotId Slot identifier.
+ @param adChoicesMenuFactory Menu factory for drawing adChoices menu manually. See MTRGMenuFactory protocol.
+
+ @return Instance of the class.
+ */
+- (instancetype)initWithSlotId:(NSUInteger)slotId adChoicesMenuFactory:(id<MTRGMenuFactory>)adChoicesMenuFactory;
 
 /**
  @discussion Loads the ad.
@@ -197,6 +232,14 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Unregister view for the ad.
  */
 - (void)unregisterView;
+
+/**
+ @discussion Method to handle adChoices click.
+
+ @param viewController Used UIViewController.
+ @param sourceView UIView for iPad popover.
+ */
+- (void)handleAdChoicesClickWithController:(UIViewController *)viewController sourceView:(nullable UIView *)sourceView NS_SWIFT_NAME(handleAdChoicesClick(controller:sourceView:));
 
 @end
 
