@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.17.0
+//  myTargetSDK 5.17.1
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -14,6 +14,7 @@
 @class MTRGInstreamAd;
 @class AVPlayer;
 @class MTRGInstreamAdCompanionBanner;
+@class MTRGShoppableAdsItem;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -81,6 +82,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Array of Instances of banner's companions(MTRGInstreamAdCompanionBanner).
  */
 @property(nonatomic, readonly) NSArray<MTRGInstreamAdCompanionBanner *> *companionBanners;
+
+/**
+ @discussion Array of Instances of shoppable cards (MTRGShoppableAdsItem).
+ */
+@property(nonatomic, readonly, nullable) NSArray<MTRGShoppableAdsItem *> *shoppableAdsItems;
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -392,6 +398,20 @@ NS_ASSUME_NONNULL_BEGIN
  @param videoDuration Duration of the video ad.
  */
 - (void)configureMidpointsForVideoDuration:(NSTimeInterval)videoDuration;
+
+/**
+ @discussion Method to handle shoppable item show.
+
+ @param identifier Shoppable card id
+ */
+- (void)shoppableAdsItemShowForIdentifier:(nonnull NSString *)identifier;
+
+/**
+ @discussion Method to handle shoppable item click.
+
+ @param identifier Shoppable card id
+ */
+- (void)shoppableAdsItemClickForIdentifier:(nonnull NSString *)identifier;
 
 @end
 

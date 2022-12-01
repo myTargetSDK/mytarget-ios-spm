@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeBannerAdAdapter.h
-//  myTargetSDK 5.17.0
+//  myTargetSDK 5.17.1
 //
 //  Created by Andrey Seredkin on 11/06/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -13,6 +13,7 @@
 @class MTRGNativeBanner;
 @class MTRGMediationNativeBannerAdConfig;
 @protocol MTRGMediationNativeBannerAdAdapter;
+@protocol MTRGMediationNativeBannerAdMediaDelegate;
 @protocol MTRGMediationNativeBannerAdChoicesOptionDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -134,6 +135,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param adChoicesOptionDelegate AdChoicesOptionDelegate of the adapter.
  */
 - (void)setAdChoicesOptionDelegate:(nullable id <MTRGMediationNativeBannerAdChoicesOptionDelegate>)adChoicesOptionDelegate;
+
+/**
+ @discussion Setter for media delegate of the adapter. Must conforms MTRGMediationNativeAdMediaDelegate protocol.
+
+ @param mediaDelegate Media delegate of the adapter.
+ */
+- (void)setMediaDelegate:(nullable id <MTRGMediationNativeBannerAdMediaDelegate>)mediaDelegate;
 
 @end
 

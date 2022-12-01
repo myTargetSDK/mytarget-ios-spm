@@ -200,6 +200,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 #endif
 
+#import <MyTargetSDK/MyTargetSDK.h>
+
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 #if __has_warning("-Wpragma-clang-attribute")
@@ -215,7 +217,40 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+/// The various log message types that the logger provides.
+typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
+/// The informative log message type.
+  MTRGLogMessageTypeInfo = 0,
+/// The warning log message type.
+  MTRGLogMessageTypeWarning = 1,
+/// The error log message type.
+  MTRGLogMessageTypeError = 2,
+/// The critical log message type.
+  MTRGLogMessageTypeCritical = 3,
+};
+
 @class NSString;
+
+/// A <code>MTRGLogger</code> is an implementation of a logger.
+SWIFT_PROTOCOL("_TtP11MyTargetSDK10MTRGLogger_")
+@protocol MTRGLogger
+/// This method is called when a <code>MTRGLogger</code> must emit a log message.
+/// \param message The message to be logged.
+///
+/// \param type The log message type of <code>message</code>. For the available log message types, see <code>MTRGLogMessageType</code>.
+///
+- (void)logMessage:(NSString * _Nonnull)message type:(enum MTRGLogMessageType)type;
+@end
+
+
+@interface MTRGManager (SWIFT_EXTENSION(MyTargetSDK))
+/// Сustomizable logger for receiving messages from myTargetSDK.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <MTRGLogger> _Nullable customLogger;)
++ (id <MTRGLogger> _Nullable)customLogger SWIFT_WARN_UNUSED_RESULT;
++ (void)setCustomLogger:(id <MTRGLogger> _Nullable)newValue;
+@end
+
+
 
 /// Class to get current version of the SDK
 SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
@@ -227,6 +262,17 @@ SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 /// returns:
 /// Version of SDK as string
 + (NSString * _Nonnull)currentVersion SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS_NAMED("ShoppableAdsItem")
+@interface MTRGShoppableAdsItem : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull url;
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+@property (nonatomic, readonly, copy) NSString * _Nullable price;
+@property (nonatomic, readonly, copy) NSString * _Nullable oldPrice;
+@property (nonatomic, readonly, copy) NSString * _Nonnull picture;
+@property (nonatomic, readonly, copy) NSString * _Nonnull text;
 @end
 
 
@@ -437,6 +483,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 #endif
 
+#import <MyTargetSDK/MyTargetSDK.h>
+
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 #if __has_warning("-Wpragma-clang-attribute")
@@ -452,7 +500,40 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+/// The various log message types that the logger provides.
+typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
+/// The informative log message type.
+  MTRGLogMessageTypeInfo = 0,
+/// The warning log message type.
+  MTRGLogMessageTypeWarning = 1,
+/// The error log message type.
+  MTRGLogMessageTypeError = 2,
+/// The critical log message type.
+  MTRGLogMessageTypeCritical = 3,
+};
+
 @class NSString;
+
+/// A <code>MTRGLogger</code> is an implementation of a logger.
+SWIFT_PROTOCOL("_TtP11MyTargetSDK10MTRGLogger_")
+@protocol MTRGLogger
+/// This method is called when a <code>MTRGLogger</code> must emit a log message.
+/// \param message The message to be logged.
+///
+/// \param type The log message type of <code>message</code>. For the available log message types, see <code>MTRGLogMessageType</code>.
+///
+- (void)logMessage:(NSString * _Nonnull)message type:(enum MTRGLogMessageType)type;
+@end
+
+
+@interface MTRGManager (SWIFT_EXTENSION(MyTargetSDK))
+/// Сustomizable logger for receiving messages from myTargetSDK.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <MTRGLogger> _Nullable customLogger;)
++ (id <MTRGLogger> _Nullable)customLogger SWIFT_WARN_UNUSED_RESULT;
++ (void)setCustomLogger:(id <MTRGLogger> _Nullable)newValue;
+@end
+
+
 
 /// Class to get current version of the SDK
 SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
@@ -464,6 +545,17 @@ SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 /// returns:
 /// Version of SDK as string
 + (NSString * _Nonnull)currentVersion SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS_NAMED("ShoppableAdsItem")
+@interface MTRGShoppableAdsItem : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull url;
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+@property (nonatomic, readonly, copy) NSString * _Nullable price;
+@property (nonatomic, readonly, copy) NSString * _Nullable oldPrice;
+@property (nonatomic, readonly, copy) NSString * _Nonnull picture;
+@property (nonatomic, readonly, copy) NSString * _Nonnull text;
 @end
 
 

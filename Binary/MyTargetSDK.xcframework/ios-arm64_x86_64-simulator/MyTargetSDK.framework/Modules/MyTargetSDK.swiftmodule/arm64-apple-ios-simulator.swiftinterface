@@ -6,7 +6,41 @@ import Foundation
 import Swift
 import UIKit
 import _Concurrency
+import os
+@objc public enum MTRGLogMessageType : Swift.Int {
+  case info
+  case warning
+  case error
+  case critical
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension MyTargetSDK.MTRGManager {
+  @objc public static var customLogger: MyTargetSDK.MTRGLogger? {
+    @objc get
+    @objc set
+  }
+}
+@objc public protocol MTRGLogger {
+  @objc func logMessage(_ message: Swift.String, type: MyTargetSDK.MTRGLogMessageType)
+}
+@objc(MTRGShoppableAdsItem) final public class ShoppableAdsItem : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let url: Swift.String
+  @objc final public let id: Swift.String
+  @objc final public let price: Swift.String?
+  @objc final public let oldPrice: Swift.String?
+  @objc final public let picture: Swift.String
+  @objc final public let text: Swift.String
+  @objc deinit
+  public init(from decoder: Swift.Decoder) throws
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class MTRGVersion : ObjectiveC.NSObject {
   @objc final public class func currentVersion() -> Swift.String
   @objc deinit
 }
+extension MyTargetSDK.MTRGLogMessageType : Swift.Equatable {}
+extension MyTargetSDK.MTRGLogMessageType : Swift.Hashable {}
+extension MyTargetSDK.MTRGLogMessageType : Swift.RawRepresentable {}
