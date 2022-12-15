@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdContainer.h
-//  myTargetSDK 5.17.1
+//  myTargetSDK 5.17.2
 //
 //  Created by Andrey Seredkin on 21/05/2019.
 //  Copyright © 2019 Mail.Ru Group. All rights reserved.

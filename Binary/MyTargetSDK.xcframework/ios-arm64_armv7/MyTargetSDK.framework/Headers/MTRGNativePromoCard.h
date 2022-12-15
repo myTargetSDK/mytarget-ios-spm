@@ -1,6 +1,6 @@
 //
 //  MTRGNativePromoCard.h
-//  myTargetSDK 5.17.1
+//  myTargetSDK 5.17.2
 //
 //  Created by Andrey Seredkin on 18.10.16.
 //  Copyright © 2016 Mail.ru. All rights reserved.
@@ -35,6 +35,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Image data for the card.
  */
 @property(nonatomic, readonly, nullable) MTRGImageData *image;
+
+/**
+ @discussion Discount text for the card.
+ */
+@property(nonatomic, readonly, nullable) NSString *discount;
 
 @end
 
