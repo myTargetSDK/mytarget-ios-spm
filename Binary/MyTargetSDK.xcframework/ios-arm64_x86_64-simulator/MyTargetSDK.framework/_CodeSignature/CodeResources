@@ -294,7 +294,7 @@
 		</data>
 		<key>Headers/MyTargetSDK-Swift.h</key>
 		<data>
-		gPrJ9WzZPKvzOVQj1q7lImYosds=
+		21zE8a2Fkan9srakf1FMG2y7gl8=
 		</data>
 		<key>Headers/MyTargetSDK.h</key>
 		<data>
@@ -314,7 +314,7 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TeoQQyp1Ul9dDZnKUk8FXTnjvFQ=
+		O+0EYF+RG4MoqZeIts6y3H6DIQI=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -326,7 +326,7 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Q9l26wnJDiO79vQEDj8hDLgb6zY=
+		qyJAwMTb2MUfH7QxiqOEAQT8hHQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1131,11 +1131,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gPrJ9WzZPKvzOVQj1q7lImYosds=
+			21zE8a2Fkan9srakf1FMG2y7gl8=
 			</data>
 			<key>hash2</key>
 			<data>
-			LtDrHCQusZjj8MdA+Oni0rQikhYoHzN73/9ATXYfKX0=
+			XYRSzTyJw1DW1n38M4aYxGwbp3sVF0cSIfYUIPBsc74=
 			</data>
 		</dict>
 		<key>Headers/MyTargetSDK.h</key>
@@ -1175,11 +1175,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TeoQQyp1Ul9dDZnKUk8FXTnjvFQ=
+			O+0EYF+RG4MoqZeIts6y3H6DIQI=
 			</data>
 			<key>hash2</key>
 			<data>
-			dy2+pNBPAZdeca/WltVEvzUSz34GbRgzDnWNA9T4m6Y=
+			TAW0taS6iF88PtKU30h6LI2GKfKoPcy8gOvPskVurbc=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1208,11 +1208,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q9l26wnJDiO79vQEDj8hDLgb6zY=
+			qyJAwMTb2MUfH7QxiqOEAQT8hHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			FMt2E2QeCcgncyrKKw40coiCfQLaPS/+j7ZDML0jpPg=
+			MfLmnfzw3dPcvbj9QIEnWm5vPuYTVqjcVyUZTAeo18Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

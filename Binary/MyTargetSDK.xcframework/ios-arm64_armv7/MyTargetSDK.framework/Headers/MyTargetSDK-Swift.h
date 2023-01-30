@@ -253,6 +253,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <MTRGLogger> _Nulla
 
 
 
+
 /// Class to get current version of the SDK
 SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 @interface MTRGVersion : NSObject
@@ -534,6 +535,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <MTRGLogger> _Nulla
 + (id <MTRGLogger> _Nullable)customLogger SWIFT_WARN_UNUSED_RESULT;
 + (void)setCustomLogger:(id <MTRGLogger> _Nullable)newValue;
 @end
+
 
 
 

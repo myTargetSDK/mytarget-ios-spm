@@ -1,6 +1,6 @@
 //
 //  MTRGAdNetworkConfigProtocol.h
-//  myTargetSDK 5.17.2
+//  myTargetSDK 5.17.3
 //
 //  Created by Andrey Seredkin on 07.04.2022.
 //  Copyright © 2022 VK. All rights reserved.

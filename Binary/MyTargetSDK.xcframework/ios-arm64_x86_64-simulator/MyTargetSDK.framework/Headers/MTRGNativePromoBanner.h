@@ -1,6 +1,6 @@
 //
 //  MTRGNativePromoBanner.h
-//  myTargetSDK 5.17.2
+//  myTargetSDK 5.17.3
 //
 // Created by Timur on 2/12/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
