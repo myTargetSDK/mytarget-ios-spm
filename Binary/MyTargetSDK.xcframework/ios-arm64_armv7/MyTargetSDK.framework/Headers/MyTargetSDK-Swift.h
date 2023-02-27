@@ -218,6 +218,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+
+
 /// The various log message types that the logger provides.
 typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The informative log message type.
@@ -229,6 +231,7 @@ typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The critical log message type.
   MTRGLogMessageTypeCritical = 3,
 };
+
 
 @class NSString;
 
@@ -503,6 +506,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+
+
 /// The various log message types that the logger provides.
 typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The informative log message type.
@@ -514,6 +519,7 @@ typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The critical log message type.
   MTRGLogMessageTypeCritical = 3,
 };
+
 
 @class NSString;
 
