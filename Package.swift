@@ -12,7 +12,7 @@ let package = Package(
 	[
 		.library(
 			name: "MyTargetSDK",
-			targets: ["MyTargetSDKLib"]),
+			targets: ["MyTargetSDKLib"])
 	],
 	dependencies:
 	[
@@ -37,6 +37,6 @@ let package = Package(
 				]
 		),
 		.binaryTarget(name: "MyTargetSDK",
-					  path: "Binary/MyTargetSDK.xcframework"),
+					  path: "Binary/MyTargetSDK.xcframework")
 	]
 )

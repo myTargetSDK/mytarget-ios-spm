@@ -247,6 +247,7 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK10MTRGLogger_")
 @end
 
 
+
 @interface MTRGManager (SWIFT_EXTENSION(MyTargetSDK))
 /// Сustomizable logger for receiving messages from myTargetSDK.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <MTRGLogger> _Nullable customLogger;)
@@ -533,6 +534,7 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK10MTRGLogger_")
 ///
 - (void)logMessage:(NSString * _Nonnull)message type:(enum MTRGLogMessageType)type;
 @end
+
 
 
 @interface MTRGManager (SWIFT_EXTENSION(MyTargetSDK))

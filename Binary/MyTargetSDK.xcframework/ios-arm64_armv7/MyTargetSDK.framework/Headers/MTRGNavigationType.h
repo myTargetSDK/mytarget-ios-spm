@@ -1,6 +1,6 @@
 //
 //  MTRGNavigationType.h
-//  myTargetSDK 5.17.4
+//  myTargetSDK 5.17.5
 //
 //  Created by Anton Bulankin on 30.05.16.
 //  Copyright © 2016 Mail.ru. All rights reserved.
