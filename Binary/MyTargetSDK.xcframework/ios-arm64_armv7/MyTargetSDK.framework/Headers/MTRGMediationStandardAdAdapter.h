@@ -1,6 +1,6 @@
 //
 //  MTRGMediationStandardAdAdapter.h
-//  myTargetSDK 5.17.5
+//  myTargetSDK 5.18.0
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -25,15 +25,17 @@ NS_ASSUME_NONNULL_BEGIN
  @param adView View with ad.
  @param adapter Instance conforms protocol MTRGMediationStandedAdAdapter.
  */
-- (void)onLoadWithAdView:(UIView *)adView adapter:(id <MTRGMediationStandardAdAdapter>)adapter;
+- (void)onLoadWithAdView:(UIView *)adView
+				 adapter:(id <MTRGMediationStandardAdAdapter>)adapter;
 
 /**
- @discussion Calls when there is no ad for adapter.
- 
- @param reason String with a reason.
- @param adapter Adapter which has no ad.
+ @discussion Calls if there is no ad.
+
+ @param error An error code/description.
+ @param adapter Current adapter.
  */
-- (void)onNoAdWithReason:(NSString *)reason adapter:(id <MTRGMediationStandardAdAdapter>)adapter;
+- (void)onLoadFailedWithError:(NSError *)error
+					  adapter:(id <MTRGMediationStandardAdAdapter>)adapter NS_SWIFT_NAME(onLoadFailed(error:adapter:));
 
 /**
  @discussion Calls on click for adapter.
@@ -69,6 +71,17 @@ NS_ASSUME_NONNULL_BEGIN
  @param adapter Adapter for which calls the method on leave.
  */
 - (void)onLeaveApplicationWithAdapter:(id <MTRGMediationStandardAdAdapter>)adapter;
+
+@optional
+
+/**
+ @discussion Calls when there is no ad for adapter.
+
+ @param reason String with a reason.
+ @param adapter Adapter which has no ad.
+ */
+- (void)onNoAdWithReason:(NSString *)reason
+				 adapter:(id <MTRGMediationStandardAdAdapter>)adapter __attribute__((deprecated("use onLoadFailed method instead.")));
 
 @end
 

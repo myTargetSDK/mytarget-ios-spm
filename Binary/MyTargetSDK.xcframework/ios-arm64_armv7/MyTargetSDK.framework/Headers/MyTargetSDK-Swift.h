@@ -218,6 +218,51 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+/// Error codes for onLoadFailed() callback.
+typedef SWIFT_ENUM_NAMED(NSInteger, MTRGAdLoadingError, "AdLoadingError", open) {
+/// Undefined network error
+  MTRGAdLoadingErrorUndefinedNetworkError = 1000,
+/// Invalid URL for ad request.
+  MTRGAdLoadingErrorInvalidUrl = 1001,
+/// Network connection failed.
+  MTRGAdLoadingErrorNetworkFailed = 1002,
+/// Request timeout
+  MTRGAdLoadingErrorRequestTimeout = 1003,
+/// Forbidden server response.
+  MTRGAdLoadingErrorForbidden = 1403,
+/// Not Found server response.
+  MTRGAdLoadingErrorNotFound = 1404,
+/// Internal Server Error.
+  MTRGAdLoadingErrorInternalServerError = 1500,
+/// Undefined parse error
+  MTRGAdLoadingErrorUndefinedParseError = 2000,
+/// Empty response.
+  MTRGAdLoadingErrorEmptyResponse = 2001,
+/// Invalid JSON.
+  MTRGAdLoadingErrorInvalidJson = 2002,
+/// Invalid XML.
+  MTRGAdLoadingErrorInvalidXml = 2003,
+/// Invalid ad type.
+  MTRGAdLoadingErrorInvalidAdType = 2004,
+/// Required field missed.
+  MTRGAdLoadingErrorRequiredFieldMissed = 2005,
+/// Undefined data error
+  MTRGAdLoadingErrorUndefinedDataError = 3000,
+/// Banner has no image(s).
+  MTRGAdLoadingErrorMissedImages = 3001,
+/// Banner has no html source.
+  MTRGAdLoadingErrorMissedHtml = 3002,
+/// No banners
+  MTRGAdLoadingErrorNoBanners = 3003,
+/// Reloading not allowed.
+  MTRGAdLoadingErrorReloadingNotAllowed = 4001,
+/// Undefined mediation error
+  MTRGAdLoadingErrorUndefinedMediationError = 5000,
+/// Ad not loaded from mediation network.
+  MTRGAdLoadingErrorMediationAdNotLoaded = 5001,
+};
+static NSString * _Nonnull const MTRGAdLoadingErrorDomain = @"MyTargetSDK.AdLoadingError";
+
 
 
 /// The various log message types that the logger provides.
@@ -279,6 +324,8 @@ SWIFT_CLASS_NAMED("ShoppableAdsItem")
 @property (nonatomic, readonly, copy) NSString * _Nullable oldPrice;
 @property (nonatomic, readonly, copy) NSString * _Nonnull picture;
 @property (nonatomic, readonly, copy) NSString * _Nonnull text;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -507,6 +554,51 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+/// Error codes for onLoadFailed() callback.
+typedef SWIFT_ENUM_NAMED(NSInteger, MTRGAdLoadingError, "AdLoadingError", open) {
+/// Undefined network error
+  MTRGAdLoadingErrorUndefinedNetworkError = 1000,
+/// Invalid URL for ad request.
+  MTRGAdLoadingErrorInvalidUrl = 1001,
+/// Network connection failed.
+  MTRGAdLoadingErrorNetworkFailed = 1002,
+/// Request timeout
+  MTRGAdLoadingErrorRequestTimeout = 1003,
+/// Forbidden server response.
+  MTRGAdLoadingErrorForbidden = 1403,
+/// Not Found server response.
+  MTRGAdLoadingErrorNotFound = 1404,
+/// Internal Server Error.
+  MTRGAdLoadingErrorInternalServerError = 1500,
+/// Undefined parse error
+  MTRGAdLoadingErrorUndefinedParseError = 2000,
+/// Empty response.
+  MTRGAdLoadingErrorEmptyResponse = 2001,
+/// Invalid JSON.
+  MTRGAdLoadingErrorInvalidJson = 2002,
+/// Invalid XML.
+  MTRGAdLoadingErrorInvalidXml = 2003,
+/// Invalid ad type.
+  MTRGAdLoadingErrorInvalidAdType = 2004,
+/// Required field missed.
+  MTRGAdLoadingErrorRequiredFieldMissed = 2005,
+/// Undefined data error
+  MTRGAdLoadingErrorUndefinedDataError = 3000,
+/// Banner has no image(s).
+  MTRGAdLoadingErrorMissedImages = 3001,
+/// Banner has no html source.
+  MTRGAdLoadingErrorMissedHtml = 3002,
+/// No banners
+  MTRGAdLoadingErrorNoBanners = 3003,
+/// Reloading not allowed.
+  MTRGAdLoadingErrorReloadingNotAllowed = 4001,
+/// Undefined mediation error
+  MTRGAdLoadingErrorUndefinedMediationError = 5000,
+/// Ad not loaded from mediation network.
+  MTRGAdLoadingErrorMediationAdNotLoaded = 5001,
+};
+static NSString * _Nonnull const MTRGAdLoadingErrorDomain = @"MyTargetSDK.AdLoadingError";
+
 
 
 /// The various log message types that the logger provides.
@@ -568,6 +660,8 @@ SWIFT_CLASS_NAMED("ShoppableAdsItem")
 @property (nonatomic, readonly, copy) NSString * _Nullable oldPrice;
 @property (nonatomic, readonly, copy) NSString * _Nonnull picture;
 @property (nonatomic, readonly, copy) NSString * _Nonnull text;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

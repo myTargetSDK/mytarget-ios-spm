@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeBannerAdAdapter.h
-//  myTargetSDK 5.17.5
+//  myTargetSDK 5.18.0
 //
 //  Created by Andrey Seredkin on 11/06/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -33,12 +33,13 @@ NS_ASSUME_NONNULL_BEGIN
 					   adapter:(id <MTRGMediationNativeBannerAdAdapter>)adapter;
 
 /**
- @discussion Calls when there is no ad.
- 
- @param reason The reason why there is no ad.
+ @discussion Calls if there is no ad.
+
+ @param error An error code/description.
  @param adapter Current adapter.
  */
-- (void)onNoAdWithReason:(NSString *)reason adapter:(id <MTRGMediationNativeBannerAdAdapter>)adapter;
+- (void)onLoadFailedWithError:(NSError *)error
+					  adapter:(id <MTRGMediationNativeBannerAdAdapter>)adapter NS_SWIFT_NAME(onLoadFailed(error:adapter:));
 
 /**
  @discussion Calls on ad show.
@@ -74,6 +75,17 @@ NS_ASSUME_NONNULL_BEGIN
  @param adapter Current adapter.
  */
 - (void)onLeaveApplicationWithAdapter:(id <MTRGMediationNativeBannerAdAdapter>)adapter;
+
+@optional
+
+/**
+ @discussion Calls when there is no ad.
+
+ @param reason The reason why there is no ad.
+ @param adapter Current adapter.
+ */
+- (void)onNoAdWithReason:(NSString *)reason
+				 adapter:(id <MTRGMediationNativeBannerAdAdapter>)adapter __attribute__((deprecated("use onLoadFailed method instead.")));
 
 @end
 

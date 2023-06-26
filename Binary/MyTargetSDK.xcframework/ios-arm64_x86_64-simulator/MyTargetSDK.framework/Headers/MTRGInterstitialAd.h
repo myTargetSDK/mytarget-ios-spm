@@ -1,6 +1,6 @@
 //
 //  MTRGInterstitialAd.h
-//  myTargetSDK 5.17.5
+//  myTargetSDK 5.18.0
 //
 // Created by Timur on 3/5/18.
 // Copyright (c) 2018 MailRu Group. All rights reserved.
@@ -25,14 +25,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onLoadWithInterstitialAd:(MTRGInterstitialAd *)interstitialAd;
 
 /**
- @discussion Call when there is no an ad. (Required)
- 
+ @discussion Calls if there is no ad.
+
+ @param error An error code/description.
+ @param interstitialAd Current ad.
+ */
+- (void)onLoadFailedWithError:(NSError *)error interstitialAd:(MTRGInterstitialAd *)interstitialAd NS_SWIFT_NAME(onLoadFailed(error:interstitialAd:));
+
+@optional
+
+/**
+ @discussion Call when there is no an ad.
+
  @param reason The reason why there is no an ad.
  @param interstitialAd Current ad.
  */
-- (void)onNoAdWithReason:(NSString *)reason interstitialAd:(MTRGInterstitialAd *)interstitialAd;
-
-@optional
+- (void)onNoAdWithReason:(NSString *)reason interstitialAd:(MTRGInterstitialAd *)interstitialAd __attribute__((deprecated("use onLoadFailed method instead.")));
 
 /**
  @discussion Calls on click by the ad.

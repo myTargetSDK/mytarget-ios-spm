@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.17.5
+//  myTargetSDK 5.18.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -105,14 +105,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onLoadWithInstreamAd:(MTRGInstreamAd *)instreamAd;
 
 /**
- @discussion Calls if there is no ad. Required.
- 
+ @discussion Calls if there is no ad.
+
+ @param error An error code/description.
+ @param instreamAd Current instream ad.
+ */
+- (void)onLoadFailedWithError:(NSError *)error instreamAd:(MTRGInstreamAd *)instreamAd NS_SWIFT_NAME(onLoadFailed(error:instreamAd:));
+
+@optional
+
+/**
+ @discussion Calls if there is no ad.
+
  @param reason Reason why there is no ad.
  @param instreamAd Current instream ad.
  */
-- (void)onNoAdWithReason:(NSString *)reason instreamAd:(MTRGInstreamAd *)instreamAd;
-
-@optional
+- (void)onNoAdWithReason:(NSString *)reason instreamAd:(MTRGInstreamAd *)instreamAd __attribute__((deprecated("use onLoadFailed method instead.")));
 
 /**
  @discussion Calls on error for the ad.

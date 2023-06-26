@@ -28,7 +28,7 @@ extension MyTargetSDK.MTRGManager {
 @objc public protocol MTRGLogger {
   @objc func logMessage(_ message: Swift.String, type: MyTargetSDK.MTRGLogMessageType)
 }
-@objc(MTRGShoppableAdsItem) final public class ShoppableAdsItem : ObjectiveC.NSObject, Swift.Decodable {
+@_hasMissingDesignatedInitializers @objc(MTRGShoppableAdsItem) final public class ShoppableAdsItem : ObjectiveC.NSObject, Swift.Decodable {
   @objc final public let url: Swift.String
   @objc final public let id: Swift.String
   @objc final public let price: Swift.String?
@@ -42,6 +42,42 @@ extension MyTargetSDK.MTRGManager {
   @objc final public class func currentVersion() -> Swift.String
   @objc deinit
 }
+@objc(MTRGAdLoadingError) public enum AdLoadingError : Swift.Int, Foundation.LocalizedError {
+  case undefinedNetworkError = 1000
+  case invalidUrl = 1001
+  case networkFailed = 1002
+  case requestTimeout = 1003
+  case forbidden = 1403
+  case notFound = 1404
+  case internalServerError = 1500
+  case undefinedParseError = 2000
+  case emptyResponse = 2001
+  case invalidJson = 2002
+  case invalidXml = 2003
+  case invalidAdType = 2004
+  case requiredFieldMissed = 2005
+  case undefinedDataError = 3000
+  case missedImages = 3001
+  case missedHtml = 3002
+  case noBanners = 3003
+  case reloadingNotAllowed = 4001
+  case undefinedMediationError = 5000
+  case mediationAdNotLoaded = 5001
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 extension MyTargetSDK.MTRGLogMessageType : Swift.Equatable {}
 extension MyTargetSDK.MTRGLogMessageType : Swift.Hashable {}
 extension MyTargetSDK.MTRGLogMessageType : Swift.RawRepresentable {}
+extension MyTargetSDK.AdLoadingError : Swift.Equatable {}
+extension MyTargetSDK.AdLoadingError : Swift.Hashable {}
+extension MyTargetSDK.AdLoadingError : Swift.RawRepresentable {}

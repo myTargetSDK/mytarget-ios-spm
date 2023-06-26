@@ -1,6 +1,6 @@
 //
 //  MTRGRewardedAd.h
-//  myTargetSDK 5.17.5
+//  myTargetSDK 5.18.0
 //
 //  Created by Andrey Seredkin on 05.08.2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -26,12 +26,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onLoadWithRewardedAd:(MTRGRewardedAd *)rewardedAd;
 
 /**
- @discussion Call when there is no an ad. (Required)
- 
- @param reason The reason why there is no an ad.
+ @discussion Calls if there is no ad.
+
+ @param error An error code/description.
  @param rewardedAd Current ad.
  */
-- (void)onNoAdWithReason:(NSString *)reason rewardedAd:(MTRGRewardedAd *)rewardedAd;
+- (void)onLoadFailedWithError:(NSError *)error rewardedAd:(MTRGRewardedAd *)rewardedAd NS_SWIFT_NAME(onLoadFailed(error:rewardedAd:));
 
 /**
  @discussion Calls when user gets the reward.
@@ -42,6 +42,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onReward:(MTRGReward *)reward rewardedAd:(MTRGRewardedAd *)rewardedAd;
 
 @optional
+
+/**
+ @discussion Call when there is no an ad.
+
+ @param reason The reason why there is no an ad.
+ @param rewardedAd Current ad.
+ */
+- (void)onNoAdWithReason:(NSString *)reason rewardedAd:(MTRGRewardedAd *)rewardedAd __attribute__((deprecated("use onLoadFailed method instead.")));
 
 /**
  @discussion Calls on click by the ad.

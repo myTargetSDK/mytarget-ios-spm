@@ -1,6 +1,6 @@
 //
 //  MTRGBaseAd.h
-//  myTargetSDK 5.17.5
+//  myTargetSDK 5.18.0
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -10,6 +10,8 @@
 
 @class MTRGCustomParams;
 @protocol MTRGAdNetworkConfigProtocol;
+
+typedef NS_ENUM(NSInteger, MTRGAdLoadingError);
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAd.h
-//  myTargetSDK 5.17.5
+//  myTargetSDK 5.18.0
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -31,14 +31,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onLoadWithNativePromoBanner:(MTRGNativePromoBanner *)promoBanner nativeAd:(MTRGNativeAd *)nativeAd;
 
 /**
- @discussion Calls if there is no ad. (Required)
- 
+ @discussion Calls if there is no ad.
+
+ @param error An error code/description.
+ @param nativeAd Current ad.
+ */
+- (void)onLoadFailedWithError:(NSError *)error nativeAd:(MTRGNativeAd *)nativeAd NS_SWIFT_NAME(onLoadFailed(error:nativeAd:));
+
+@optional
+
+/**
+ @discussion Calls if there is no ad.
+
  @param reason The reason why there is no ad.
  @param nativeAd Current ad.
  */
-- (void)onNoAdWithReason:(NSString *)reason nativeAd:(MTRGNativeAd *)nativeAd;
-
-@optional
+- (void)onNoAdWithReason:(NSString *)reason nativeAd:(MTRGNativeAd *)nativeAd __attribute__((deprecated("use onLoadFailed method instead.")));
 
 /**
  @discussion Class on show the native ad.

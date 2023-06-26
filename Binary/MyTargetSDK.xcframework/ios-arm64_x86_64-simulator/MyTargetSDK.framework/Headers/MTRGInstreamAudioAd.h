@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAudioAd.h
-//  myTargetSDK 5.17.5
+//  myTargetSDK 5.18.0
 //
 // Created by Timur on 5/25/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -95,14 +95,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onLoadWithInstreamAudioAd:(MTRGInstreamAudioAd *)instreamAudioAd;
 
 /**
- @discussion Calls when there is no ad for instream audio.(Required)
- 
+ @discussion Calls if there is no ad.
+
+ @param error An error code/description.
+ @param instreamAudioAd Current instream audio ad. Instance of MTRGInstreamAudioAd.
+ */
+- (void)onLoadFailedWithError:(NSError *)error instreamAudioAd:(MTRGInstreamAudioAd *)instreamAudioAd NS_SWIFT_NAME(onLoadFailed(error:instreamAudioAd:));
+
+@optional
+
+/**
+ @discussion Calls when there is no ad for instream audio.
+
  @param reason String with reason.
  @param instreamAudioAd Current instream audio ad. Instance of MTRGInstreamAudioAd.
  */
-- (void)onNoAdWithReason:(NSString *)reason instreamAudioAd:(MTRGInstreamAudioAd *)instreamAudioAd;
-
-@optional
+- (void)onNoAdWithReason:(NSString *)reason instreamAudioAd:(MTRGInstreamAudioAd *)instreamAudioAd __attribute__((deprecated("use onLoadFailed method instead.")));
 
 /**
  @discussion Calls when error was happened.

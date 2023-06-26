@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAppwallAd.h
-//  myTargetSDK 5.17.5
+//  myTargetSDK 5.18.0
 //
 // Created by Timur on 4/12/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -30,14 +30,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onLoadWithBanners:(NSArray<MTRGNativeAppwallBanner *> *)banners appwallAd:(MTRGNativeAppwallAd *)appwallAd;
 
 /**
- @discussion Calls when there is no ad. Required.
- 
+ @discussion Calls if there is no ad.
+
+ @param error An error code/description.
+ @param appwallAd Appwall ad for which no ad was found.
+ */
+- (void)onLoadFailedWithError:(NSError *)error appwallAd:(MTRGNativeAppwallAd *)appwallAd NS_SWIFT_NAME(onLoadFailed(error:appwallAd:));
+
+@optional
+
+/**
+ @discussion Calls when there is no ad.
+
  @param reason The reason why there is no ad.
  @param appwallAd Appwall ad for which no ad was found.
  */
-- (void)onNoAdWithReason:(NSString *)reason appwallAd:(MTRGNativeAppwallAd *)appwallAd;
-
-@optional
+- (void)onNoAdWithReason:(NSString *)reason appwallAd:(MTRGNativeAppwallAd *)appwallAd __attribute__((deprecated("use onLoadFailed method instead.")));
 
 /**
  @discussion Calls when click on appwall add was happened. Optional.

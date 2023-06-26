@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamResearch.h
-//  myTargetSDK 5.17.5
+//  myTargetSDK 5.18.0
 //
 //  Created by Andrey Seredkin on 19/02/2019.
 //  Copyright © 2019 Mail.Ru Group. All rights reserved.
@@ -26,13 +26,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onLoadWithInstreamResearch:(MTRGInstreamResearch *)instreamResearch;
 
 /**
+ @discussion Calls if there is no data.
+
+ @param error An error code/description.
+ @param instreamResearch Current instream research.
+ */
+- (void)onLoadFailedWithError:(NSError *)error instreamResearch:(MTRGInstreamResearch *)instreamResearch NS_SWIFT_NAME(onLoadFailed(error:instreamResearch:));
+
+@optional
+
+/**
  @discussion Calls when there is no data for the instream research.
- 
+
  @param reason The reason why there is no data.
  @param instreamResearch Current instream research.
  */
-- (void)onNoDataWithReason:(NSString *)reason
-		  instreamResearch:(MTRGInstreamResearch *)instreamResearch;
+- (void)onNoDataWithReason:(NSString *)reason instreamResearch:(MTRGInstreamResearch *)instreamResearch __attribute__((deprecated("use onLoadFailed method instead.")));
 
 @end
 
