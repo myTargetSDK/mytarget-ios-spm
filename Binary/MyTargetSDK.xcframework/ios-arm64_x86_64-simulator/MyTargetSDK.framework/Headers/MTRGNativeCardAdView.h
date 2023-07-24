@@ -1,6 +1,6 @@
 //
 //  MTRGNativeCardAdView.h
-//  myTargetSDK 5.18.0
+//  myTargetSDK 5.19.0
 //
 //  Created by Andrey Seredkin on 20.10.16.
 //  Copyright © 2016 Mail.ru. All rights reserved.

@@ -1,0 +1,83 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios12.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MyTargetSDK
+import AVFAudio
+import Foundation
+@_exported import MyTargetSDK
+import Swift
+import UIKit
+import _Concurrency
+import os
+@objc public enum MTRGLogMessageType : Swift.Int {
+  case info
+  case warning
+  case error
+  case critical
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension MyTargetSDK.MTRGManager {
+  @objc public static var customLogger: MyTargetSDK.MTRGLogger? {
+    @objc get
+    @objc set
+  }
+}
+@objc public protocol MTRGLogger {
+  @objc func logMessage(_ message: Swift.String, type: MyTargetSDK.MTRGLogMessageType)
+}
+@_hasMissingDesignatedInitializers @objc(MTRGShoppableAdsItem) final public class ShoppableAdsItem : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let url: Swift.String
+  @objc final public let id: Swift.String
+  @objc final public let price: Swift.String?
+  @objc final public let oldPrice: Swift.String?
+  @objc final public let picture: Swift.String
+  @objc final public let text: Swift.String
+  @objc deinit
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class MTRGVersion : ObjectiveC.NSObject {
+  @objc final public class func currentVersion() -> Swift.String
+  @objc deinit
+}
+@objc(MTRGAdLoadingError) public enum AdLoadingError : Swift.Int, Foundation.LocalizedError {
+  case undefinedNetworkError = 1000
+  case invalidUrl = 1001
+  case networkFailed = 1002
+  case requestTimeout = 1003
+  case forbidden = 1403
+  case notFound = 1404
+  case internalServerError = 1500
+  case undefinedParseError = 2000
+  case emptyResponse = 2001
+  case invalidJson = 2002
+  case invalidXml = 2003
+  case invalidAdType = 2004
+  case requiredFieldMissed = 2005
+  case undefinedDataError = 3000
+  case missedImages = 3001
+  case missedHtml = 3002
+  case noBanners = 3003
+  case reloadingNotAllowed = 4001
+  case undefinedMediationError = 5000
+  case mediationAdNotLoaded = 5001
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension MyTargetSDK.MTRGLogMessageType : Swift.Equatable {}
+extension MyTargetSDK.MTRGLogMessageType : Swift.Hashable {}
+extension MyTargetSDK.MTRGLogMessageType : Swift.RawRepresentable {}
+extension MyTargetSDK.AdLoadingError : Swift.Equatable {}
+extension MyTargetSDK.AdLoadingError : Swift.Hashable {}
+extension MyTargetSDK.AdLoadingError : Swift.RawRepresentable {}
