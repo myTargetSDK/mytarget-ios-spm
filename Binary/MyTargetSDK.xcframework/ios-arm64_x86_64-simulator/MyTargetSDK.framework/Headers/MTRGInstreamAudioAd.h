@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAudioAd.h
-//  myTargetSDK 5.19.0
+//  myTargetSDK 5.20.0
 //
 // Created by Timur on 5/25/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -22,6 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Class of instream audio banner.
  */
 @interface MTRGInstreamAudioAdBanner : NSObject
+
+/**
+ @discussion The bundle identifier.
+ */
+@property(nonatomic, readonly, nullable) NSString *bundleId;
 
 /**
  @discussion Ad duration.

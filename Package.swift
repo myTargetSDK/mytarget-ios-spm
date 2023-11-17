@@ -18,7 +18,7 @@ let package = Package(
 	[
 		.package(name: "MyTrackerSDK",
 				 url: "https://github.com/myTrackerSDK/mytracker-ios-spm.git",
-				 .upToNextMinor(from: "3.0.3"))
+				 .upToNextMinor(from: "3.1.1"))
 	],
 	targets:
 	[

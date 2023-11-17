@@ -1,6 +1,6 @@
 //
 //  MTRGUtils.h
-//  myTargetSDK 5.19.0
+//  myTargetSDK 5.20.0
 //
 //  Created by Andrey Seredkin on 29/05/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.

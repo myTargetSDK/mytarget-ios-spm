@@ -6,6 +6,6 @@ framework module MyTargetSDK {
 }
 
 module MyTargetSDK.Swift {
-    header "MyTargetSDK-Swift.h"
-    requires objc
+  header "MyTargetSDK-Swift.h"
+  requires objc
 }

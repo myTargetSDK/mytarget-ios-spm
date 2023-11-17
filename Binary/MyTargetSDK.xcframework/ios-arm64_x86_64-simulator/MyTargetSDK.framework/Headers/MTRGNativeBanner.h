@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBanner.h
-//  myTargetSDK 5.19.0
+//  myTargetSDK 5.20.0
 //
 //  Created by Andrey Seredkin on 10/02/2020.
 //  Copyright © 2020 Mail.Ru Group. All rights reserved.
@@ -17,6 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Data model for a native banner.
  */
 @interface MTRGNativeBanner : NSObject
+
+/**
+ @discussion The bundle identifier.
+ */
+@property(nonatomic, readonly, nullable) NSString *bundleId;
 
 /**
  @discussion Advertising label for the banner.

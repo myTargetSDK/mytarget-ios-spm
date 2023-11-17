@@ -1,6 +1,6 @@
 //
 //  MyTargetSDK.h
-//  myTargetSDK 5.19.0
+//  myTargetSDK 5.20.0
 //
 //  Created by Andrey Seredkin on 15.02.2018.
 //  Copyright © 2018 Mail.Ru Group. All rights reserved.
@@ -10,7 +10,6 @@
 #import <MyTargetSDK/MTRGCachePolicy.h>
 #import <MyTargetSDK/MTRGCustomParams.h>
 #import <MyTargetSDK/MTRGConfig.h>
-#import <MyTargetSDK/MTRGManager.h>
 #import <MyTargetSDK/MTRGUtils.h>
 #import <MyTargetSDK/MTRGNavigationType.h>
 #import <MyTargetSDK/MTRGPrivacy.h>

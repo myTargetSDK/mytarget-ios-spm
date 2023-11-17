@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdLoader.h
-//  myTargetSDK 5.19.0
+//  myTargetSDK 5.20.0
 //
 //  Created by Andrey Seredkin on 31.05.2018.
 //  Copyright © 2018 Mail.Ru Group. All rights reserved.
@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param completionBlock Block which will be called on load.
  */
-- (void)loadWithCompletionBlock:(void (^)(NSArray<MTRGNativeAd *> *nativeAds))completionBlock;
+- (void)loadWithCompletionBlock:(void (^)(NSArray<MTRGNativeAd *> *nativeAds, NSError * _Nullable error))completionBlock;
 
 @end
 
