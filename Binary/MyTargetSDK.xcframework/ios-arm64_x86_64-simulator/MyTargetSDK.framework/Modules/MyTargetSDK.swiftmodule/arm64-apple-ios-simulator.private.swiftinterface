@@ -3,8 +3,14 @@
 // swift-module-flags: -target arm64-apple-ios12.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MyTargetSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFAudio
+import AVFoundation
+import AdSupport
+import CoreTelephony.CTCarrier
+import CoreTelephony.CTTelephonyNetworkInfo
+import CoreTelephony
 import Foundation
 @_exported import MyTargetSDK
+import SafariServices
 import StoreKit
 import Swift
 import UIKit

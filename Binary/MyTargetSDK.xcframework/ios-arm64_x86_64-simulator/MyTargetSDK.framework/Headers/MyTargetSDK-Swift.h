@@ -377,7 +377,6 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 
 
 
-
 @interface MTRGInstreamAd (SWIFT_EXTENSION(MyTargetSDK))
 @end
 
@@ -536,6 +535,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <MTRGLogger> _Nulla
 
 
 
+
+
 /// Class to get current version of the SDK
 SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 @interface MTRGVersion : NSObject
@@ -560,6 +561,8 @@ SWIFT_CLASS_NAMED("ShoppableAdsItem")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 
@@ -951,7 +954,6 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 
 
 
-
 @interface MTRGInstreamAd (SWIFT_EXTENSION(MyTargetSDK))
 @end
 
@@ -1110,6 +1112,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <MTRGLogger> _Nulla
 
 
 
+
+
 /// Class to get current version of the SDK
 SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 @interface MTRGVersion : NSObject
@@ -1134,6 +1138,8 @@ SWIFT_CLASS_NAMED("ShoppableAdsItem")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 
