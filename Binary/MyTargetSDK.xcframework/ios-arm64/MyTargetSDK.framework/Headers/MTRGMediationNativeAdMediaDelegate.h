@@ -33,5 +33,11 @@
  @param adapter Current adapter.
  */
 - (void)onAdChoicesIconLoadWithAdapter:(id <MTRGMediationNativeAdAdapter>)adapter;
+/**
+ @discussion Calls when media resources for the ad not loaded.
+
+ @param adapter Current ad.
+ */
+- (void)onMediaLoadFailedWithAdapter:(id <MTRGMediationNativeAdAdapter>)adapter;
 
 @end

@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAd.h
-//  myTargetSDK 5.20.2
+//  myTargetSDK 5.21.0
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -12,6 +12,7 @@
 @class MTRGNativeAd;
 @class MTRGNativePromoBanner;
 @class MTRGImageData;
+@class MTRGBannerMediaRecovery;
 @protocol MTRGMenuFactory;
 @protocol MTRGNativeAdChoicesOptionDelegate;
 
@@ -132,6 +133,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onAdChoicesIconLoadWithNativeAd:(MTRGNativeAd *)nativeAd;
 
+/**
+ @discussion Calls when media resources for the ad not loaded.
+
+ @param nativeAd Current ad.
+ */
+- (void)onMediaLoadFailedWithNativeAd:(MTRGNativeAd *)nativeAd;
+
 @end
 
 /**
@@ -159,6 +167,16 @@ NS_ASSUME_NONNULL_BEGIN
  See MTRGNativeAdChoicesOptionDelegate.h
  */
 @property(nonatomic, weak, nullable) id <MTRGNativeAdChoicesOptionDelegate> adChoicesOptionDelegate;
+
+/**
+ @discussion Recovery option for media downloads in banner.
+ */
+@property(nonatomic, nonnull) MTRGBannerMediaRecovery *bannerMediaRecovery;
+
+/**
+ @discussion Timeout for media downloads in banner.
+ */
+@property(nonatomic) NSTimeInterval bannerMediaTimeout;
 
 /**
  @discussion Promo banner for the ad.

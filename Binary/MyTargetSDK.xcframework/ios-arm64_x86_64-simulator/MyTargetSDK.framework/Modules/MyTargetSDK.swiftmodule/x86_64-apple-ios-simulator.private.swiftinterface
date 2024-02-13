@@ -28,6 +28,16 @@ import os
     get
   }
 }
+@_hasMissingDesignatedInitializers @objc(MTRGBannerMediaRecovery) final public class BannerMediaRecovery : ObjectiveC.NSObject {
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc public static var skip: MyTargetSDK.BannerMediaRecovery {
+    @objc get
+  }
+  @objc public static func retry(maxRetryCount: Swift.Int) -> MyTargetSDK.BannerMediaRecovery
+  @objc deinit
+}
 extension MyTargetSDK.MTRGInstreamAd {
   @_hasMissingDesignatedInitializers @objc(MTRGInstreamAdVideoMotionHeader) final public class VideoMotionHeader : ObjectiveC.NSObject {
     @objc final public let icon: Foundation.URL

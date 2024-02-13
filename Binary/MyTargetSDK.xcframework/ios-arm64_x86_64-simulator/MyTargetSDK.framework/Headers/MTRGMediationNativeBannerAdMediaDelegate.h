@@ -27,4 +27,11 @@
  */
 - (void)onAdChoicesIconLoadWithAdapter:(id <MTRGMediationNativeBannerAdAdapter>)adapter;
 
+/**
+ @discussion Calls when media resources for the ad not loaded.
+
+ @param adapter Current ad.
+ */
+- (void)onMediaLoadFailedWithAdapter:(id <MTRGMediationNativeBannerAdAdapter>)adapter;
+
 @end

@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBannerAdLoader.h
-//  myTargetSDK 5.20.2
+//  myTargetSDK 5.21.0
 //
 //  Created by Andrey Seredkin on 03/03/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -24,6 +24,16 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Placement for ad choices.
  */
 @property(nonatomic) MTRGAdChoicesPlacement adChoicesPlacement;
+
+/**
+ @discussion Recovery option for media downloads in banner.
+ */
+@property(nonatomic, nonnull) MTRGBannerMediaRecovery *bannerMediaRecovery;
+
+/**
+ @discussion Timeout for media downloads in banner.
+ */
+@property(nonatomic) NSTimeInterval bannerMediaTimeout;
 
 /**
  @discussion Static constructor. Creates instance of the class with count and slot identifier.

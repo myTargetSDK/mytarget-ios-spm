@@ -332,6 +332,18 @@ typedef SWIFT_ENUM_NAMED(NSInteger, MTRGAdLoadingError, "AdLoadingError", open) 
 };
 static NSString * _Nonnull const MTRGAdLoadingErrorDomain = @"MyTargetSDK.AdLoadingError";
 
+@class NSString;
+
+SWIFT_CLASS_NAMED("BannerMediaRecovery")
+@interface MTRGBannerMediaRecovery : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MTRGBannerMediaRecovery * _Nonnull skip;)
++ (MTRGBannerMediaRecovery * _Nonnull)skip SWIFT_WARN_UNUSED_RESULT;
++ (MTRGBannerMediaRecovery * _Nonnull)retryWithMaxRetryCount:(NSInteger)maxRetryCount SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 
 @protocol MTRGInstreamAdVideoMotionPlayerDelegate;
@@ -347,7 +359,6 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayer")
 - (void)play:(MTRGInstreamAdVideoMotionBanner * _Nonnull)videoMotionBanner;
 @end
 
-@class NSString;
 
 SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 @protocol MTRGInstreamAdVideoMotionPlayerDelegate
@@ -377,10 +388,64 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 
 
 
+
+
+@interface MTRGInstreamAd (SWIFT_EXTENSION(MyTargetSDK))
+@end
+
+@class MTRGInstreamAdVideoMotionData;
+@class NSNumber;
+@class UIImage;
+
+SWIFT_CLASS_NAMED("VideoMotionBanner")
+@interface MTRGInstreamAdVideoMotionBanner : NSObject
+@property (nonatomic, readonly, strong) MTRGInstreamAdVideoMotionData * _Nonnull videoMotionData;
+@property (nonatomic, readonly) BOOL allowClose;
+@property (nonatomic, readonly, strong) NSNumber * _Nullable allowCloseDelay;
+@property (nonatomic, readonly) float duration;
+@property (nonatomic, readonly, strong) UIImage * _Nullable adChoicesImage;
+@property (nonatomic, readonly) BOOL hasAdChoices;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 @interface MTRGInstreamAd (SWIFT_EXTENSION(MyTargetSDK))
 @end
 
 @class NSURL;
+
+SWIFT_CLASS_NAMED("VideoMotionHeader")
+@interface MTRGInstreamAdVideoMotionHeader : NSObject
+@property (nonatomic, readonly, copy) NSURL * _Nonnull icon;
+@property (nonatomic, readonly, copy) NSString * _Nonnull title;
+@property (nonatomic, readonly, copy) NSString * _Nonnull linkText;
+@property (nonatomic, readonly, copy) NSString * _Nonnull ageRestrictionText;
+@property (nonatomic, readonly, copy) NSString * _Nonnull adDisclaimerText;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface MTRGInstreamAd (SWIFT_EXTENSION(MyTargetSDK))
+@end
+
+@class MTRGInstreamAdVideoMotionItem;
+@class MTRGInstreamAdVideoMotionDisclaimer;
+
+SWIFT_CLASS_NAMED("VideoMotionData")
+@interface MTRGInstreamAdVideoMotionData : NSObject
+@property (nonatomic, readonly, strong) MTRGInstreamAdVideoMotionHeader * _Nonnull header;
+@property (nonatomic, readonly, copy) NSArray<MTRGInstreamAdVideoMotionItem *> * _Nonnull items;
+@property (nonatomic, readonly, strong) MTRGInstreamAdVideoMotionDisclaimer * _Nullable disclaimer;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface MTRGInstreamAd (SWIFT_EXTENSION(MyTargetSDK))
+@end
+
 
 SWIFT_CLASS_NAMED("VideoMotionItem")
 @interface MTRGInstreamAdVideoMotionItem : NSObject
@@ -399,61 +464,10 @@ SWIFT_CLASS_NAMED("VideoMotionItem")
 @interface MTRGInstreamAd (SWIFT_EXTENSION(MyTargetSDK))
 @end
 
-@class MTRGInstreamAdVideoMotionHeader;
-@class MTRGInstreamAdVideoMotionDisclaimer;
-
-SWIFT_CLASS_NAMED("VideoMotionData")
-@interface MTRGInstreamAdVideoMotionData : NSObject
-@property (nonatomic, readonly, strong) MTRGInstreamAdVideoMotionHeader * _Nonnull header;
-@property (nonatomic, readonly, copy) NSArray<MTRGInstreamAdVideoMotionItem *> * _Nonnull items;
-@property (nonatomic, readonly, strong) MTRGInstreamAdVideoMotionDisclaimer * _Nullable disclaimer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-@interface MTRGInstreamAd (SWIFT_EXTENSION(MyTargetSDK))
-@end
-
 
 SWIFT_CLASS_NAMED("VideoMotionDisclaimer")
 @interface MTRGInstreamAdVideoMotionDisclaimer : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull text;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-@interface MTRGInstreamAd (SWIFT_EXTENSION(MyTargetSDK))
-@end
-
-
-SWIFT_CLASS_NAMED("VideoMotionHeader")
-@interface MTRGInstreamAdVideoMotionHeader : NSObject
-@property (nonatomic, readonly, copy) NSURL * _Nonnull icon;
-@property (nonatomic, readonly, copy) NSString * _Nonnull title;
-@property (nonatomic, readonly, copy) NSString * _Nonnull linkText;
-@property (nonatomic, readonly, copy) NSString * _Nonnull ageRestrictionText;
-@property (nonatomic, readonly, copy) NSString * _Nonnull adDisclaimerText;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-@interface MTRGInstreamAd (SWIFT_EXTENSION(MyTargetSDK))
-@end
-
-@class NSNumber;
-@class UIImage;
-
-SWIFT_CLASS_NAMED("VideoMotionBanner")
-@interface MTRGInstreamAdVideoMotionBanner : NSObject
-@property (nonatomic, readonly, strong) MTRGInstreamAdVideoMotionData * _Nonnull videoMotionData;
-@property (nonatomic, readonly) BOOL allowClose;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable allowCloseDelay;
-@property (nonatomic, readonly) float duration;
-@property (nonatomic, readonly, strong) UIImage * _Nullable adChoicesImage;
-@property (nonatomic, readonly) BOOL hasAdChoices;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -537,6 +551,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <MTRGLogger> _Nulla
 
 
 
+
 /// Class to get current version of the SDK
 SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 @interface MTRGVersion : NSObject
@@ -550,6 +565,7 @@ SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 @end
 
 
+
 SWIFT_CLASS_NAMED("ShoppableAdsItem")
 @interface MTRGShoppableAdsItem : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull url;
@@ -561,6 +577,9 @@ SWIFT_CLASS_NAMED("ShoppableAdsItem")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+
 
 
 
