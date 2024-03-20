@@ -5,6 +5,102 @@
     "printedName": "TopLevel",
     "children": [
       {
+        "kind": "TypeDecl",
+        "name": "MTRGMenu",
+        "printedName": "MTRGMenu",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "add",
+            "printedName": "add(menuAction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MTRGMenuAction",
+                "printedName": "MyTargetSDK.MTRGMenuAction",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MyTargetSDK@objc(pl)MTRGMenu(im)addMenuAction:",
+            "mangledName": "$s11MyTargetSDK8MTRGMenuP3add10menuActionyAA0dG0C_tF",
+            "moduleName": "MyTargetSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : MyTargetSDK.MTRGMenu>",
+            "sugared_genericSig": "<Self where Self : MyTargetSDK.MTRGMenu>",
+            "protocolReq": true,
+            "objc_name": "addMenuAction:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "present",
+            "printedName": "present(in:sourceView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MyTargetSDK@objc(pl)MTRGMenu(im)presentInViewController:sourceView:",
+            "mangledName": "$s11MyTargetSDK8MTRGMenuP7present2in10sourceViewySo16UIViewControllerC_So0I0CSgtF",
+            "moduleName": "MyTargetSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : MyTargetSDK.MTRGMenu>",
+            "sugared_genericSig": "<Self where Self : MyTargetSDK.MTRGMenu>",
+            "protocolReq": true,
+            "objc_name": "presentInViewController:sourceView:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@MyTargetSDK@objc(pl)MTRGMenu",
+        "mangledName": "$s11MyTargetSDK8MTRGMenuP",
+        "moduleName": "MyTargetSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -42,6 +138,503 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MTRGMenuActionStyle",
+        "printedName": "MTRGMenuActionStyle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.MTRGMenuActionStyle.Type) -> MyTargetSDK.MTRGMenuActionStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MTRGMenuActionStyle",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MTRGMenuActionStyle",
+                        "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle@MTRGMenuActionStyleDefault",
+            "mangledName": "$s11MyTargetSDK19MTRGMenuActionStyleO7defaultyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "cancel",
+            "printedName": "cancel",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.MTRGMenuActionStyle.Type) -> MyTargetSDK.MTRGMenuActionStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MTRGMenuActionStyle",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MTRGMenuActionStyle",
+                        "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle@MTRGMenuActionStyleCancel",
+            "mangledName": "$s11MyTargetSDK19MTRGMenuActionStyleO6cancelyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MyTargetSDK.MTRGMenuActionStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MTRGMenuActionStyle",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11MyTargetSDK19MTRGMenuActionStyleO8rawValueACSgSi_tcfc",
+            "mangledName": "$s11MyTargetSDK19MTRGMenuActionStyleO8rawValueACSgSi_tcfc",
+            "moduleName": "MyTargetSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11MyTargetSDK19MTRGMenuActionStyleO8rawValueSivp",
+            "mangledName": "$s11MyTargetSDK19MTRGMenuActionStyleO8rawValueSivp",
+            "moduleName": "MyTargetSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MyTargetSDK19MTRGMenuActionStyleO8rawValueSivg",
+                "mangledName": "$s11MyTargetSDK19MTRGMenuActionStyleO8rawValueSivg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle",
+        "mangledName": "$s11MyTargetSDK19MTRGMenuActionStyleO",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MTRGMenuAction",
+        "printedName": "MTRGMenuAction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction(py)title",
+            "mangledName": "$s11MyTargetSDK14MTRGMenuActionC5titleSSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction(im)title",
+                "mangledName": "$s11MyTargetSDK14MTRGMenuActionC5titleSSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "style",
+            "printedName": "style",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MTRGMenuActionStyle",
+                "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction(py)style",
+            "mangledName": "$s11MyTargetSDK14MTRGMenuActionC5styleAA0dE5StyleOvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MTRGMenuActionStyle",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction(im)style",
+                "mangledName": "$s11MyTargetSDK14MTRGMenuActionC5styleAA0dE5StyleOvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:style:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MTRGMenuAction",
+                "printedName": "MyTargetSDK.MTRGMenuAction",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MTRGMenuActionStyle",
+                "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction(im)initWithTitle:style:handler:",
+            "mangledName": "$s11MyTargetSDK14MTRGMenuActionC5title5style7handlerACSS_AA0dE5StyleOyycSgtcfc",
+            "moduleName": "MyTargetSDK",
+            "objc_name": "initWithTitle:style:handler:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "handleClick",
+            "printedName": "handleClick()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction(im)handleClick",
+            "mangledName": "$s11MyTargetSDK14MTRGMenuActionC11handleClickyyF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MTRGMenuAction",
+                "printedName": "MyTargetSDK.MTRGMenuAction",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction(im)init",
+            "mangledName": "$s11MyTargetSDK14MTRGMenuActionCACycfc",
+            "moduleName": "MyTargetSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction",
+        "mangledName": "$s11MyTargetSDK14MTRGMenuActionC",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -1473,6 +2066,26 @@
       },
       {
         "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreTelephony.CTCarrier",
         "printedName": "CoreTelephony.CTCarrier",
         "declKind": "Import",
@@ -2149,6 +2762,355 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "InstreamAdVideoMotionHeader",
+        "printedName": "InstreamAdVideoMotionHeader",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "icon",
+            "printedName": "icon",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader(py)icon",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderC4icon10Foundation3URLVvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader(im)icon",
+                "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderC4icon10Foundation3URLVvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader(py)title",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderC5titleSSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader(im)title",
+                "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderC5titleSSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "linkText",
+            "printedName": "linkText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader(py)linkText",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderC8linkTextSSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader(im)linkText",
+                "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderC8linkTextSSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ageRestrictionText",
+            "printedName": "ageRestrictionText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader(py)ageRestrictionText",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderC18ageRestrictionTextSSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader(im)ageRestrictionText",
+                "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderC18ageRestrictionTextSSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adDisclaimerText",
+            "printedName": "adDisclaimerText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader(py)adDisclaimerText",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderC16adDisclaimerTextSSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader(im)adDisclaimerText",
+                "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderC16adDisclaimerTextSSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstreamAdVideoMotionHeader",
+                "printedName": "MyTargetSDK.InstreamAdVideoMotionHeader",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader(im)init",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderCACycfc",
+            "moduleName": "MyTargetSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader",
+        "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionHeaderC",
+        "moduleName": "MyTargetSDK",
+        "objc_name": "MTRGInstreamAdVideoMotionHeader",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -2195,6 +3157,59 @@
         "declKind": "Import",
         "moduleName": "MyTargetSDK",
         "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MTRGMenuFactory",
+        "printedName": "MTRGMenuFactory",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "menu",
+            "printedName": "menu()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MTRGMenu",
+                "printedName": "MyTargetSDK.MTRGMenu",
+                "usr": "c:@M@MyTargetSDK@objc(pl)MTRGMenu"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MyTargetSDK@objc(pl)MTRGMenuFactory(im)menu",
+            "mangledName": "$s11MyTargetSDK15MTRGMenuFactoryP4menuAA0D0_pyF",
+            "moduleName": "MyTargetSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : MyTargetSDK.MTRGMenuFactory>",
+            "sugared_genericSig": "<Self where Self : MyTargetSDK.MTRGMenuFactory>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@MyTargetSDK@objc(pl)MTRGMenuFactory",
+        "mangledName": "$s11MyTargetSDK15MTRGMenuFactoryP",
+        "moduleName": "MyTargetSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
           "RawDocComment"
         ]
       },
@@ -2915,6 +3930,16 @@
       },
       {
         "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3199,6 +4224,16 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
           "RawDocComment"
         ]
       },
@@ -3758,6 +4793,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -3924,6 +4969,16 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -4300,14 +5355,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VideoMotionBanner",
-                "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionBanner",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC"
+                "name": "InstreamAdVideoMotionBanner",
+                "printedName": "MyTargetSDK.InstreamAdVideoMotionBanner",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@MyTargetSDK@objc(pl)MTRGInstreamAdVideoMotionPlayer(im)play:",
-            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionPlayerP4playyySo012MTRGInstreamE0CAAE0fG6BannerCF",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionPlayerP4playyyAA0defG6BannerCF",
             "moduleName": "MyTargetSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : MyTargetSDK.InstreamAdVideoMotionPlayer>",
             "sugared_genericSig": "<Self where Self : MyTargetSDK.InstreamAdVideoMotionPlayer>",
@@ -4340,6 +5395,155 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InstreamAdVideoMotionDisclaimer",
+        "printedName": "InstreamAdVideoMotionDisclaimer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "text",
+            "printedName": "text",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer(py)text",
+            "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerC4textSSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer(im)text",
+                "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerC4textSSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstreamAdVideoMotionDisclaimer",
+                "printedName": "MyTargetSDK.InstreamAdVideoMotionDisclaimer",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer(im)init",
+            "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerCACycfc",
+            "moduleName": "MyTargetSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer",
+        "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerC",
+        "moduleName": "MyTargetSDK",
+        "objc_name": "MTRGInstreamAdVideoMotionDisclaimer",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -5962,6 +7166,287 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "InstreamAdVideoMotionData",
+        "printedName": "InstreamAdVideoMotionData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "header",
+            "printedName": "header",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstreamAdVideoMotionHeader",
+                "printedName": "MyTargetSDK.InstreamAdVideoMotionHeader",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionData(py)header",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionDataC6headerAA0defG6HeaderCvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstreamAdVideoMotionHeader",
+                    "printedName": "MyTargetSDK.InstreamAdVideoMotionHeader",
+                    "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionHeader"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionData(im)header",
+                "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionDataC6headerAA0defG6HeaderCvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "items",
+            "printedName": "items",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MyTargetSDK.InstreamAdVideoMotionItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstreamAdVideoMotionItem",
+                    "printedName": "MyTargetSDK.InstreamAdVideoMotionItem",
+                    "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionData(py)items",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionDataC5itemsSayAA0defG4ItemCGvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MyTargetSDK.InstreamAdVideoMotionItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InstreamAdVideoMotionItem",
+                        "printedName": "MyTargetSDK.InstreamAdVideoMotionItem",
+                        "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionData(im)items",
+                "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionDataC5itemsSayAA0defG4ItemCGvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "disclaimer",
+            "printedName": "disclaimer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MyTargetSDK.InstreamAdVideoMotionDisclaimer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstreamAdVideoMotionDisclaimer",
+                    "printedName": "MyTargetSDK.InstreamAdVideoMotionDisclaimer",
+                    "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionData(py)disclaimer",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionDataC10disclaimerAA0defG10DisclaimerCSgvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MyTargetSDK.InstreamAdVideoMotionDisclaimer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InstreamAdVideoMotionDisclaimer",
+                        "printedName": "MyTargetSDK.InstreamAdVideoMotionDisclaimer",
+                        "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionData(im)disclaimer",
+                "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionDataC10disclaimerAA0defG10DisclaimerCSgvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstreamAdVideoMotionData",
+                "printedName": "MyTargetSDK.InstreamAdVideoMotionData",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionData"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionData(im)init",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionDataCACycfc",
+            "moduleName": "MyTargetSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionData",
+        "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionDataC",
+        "moduleName": "MyTargetSDK",
+        "objc_name": "MTRGInstreamAdVideoMotionData",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -5969,6 +7454,16 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -6149,6 +7644,487 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "InstreamAdVideoMotionItem",
+        "printedName": "InstreamAdVideoMotionItem",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(py)id",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC2idSSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(im)id",
+                "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC2idSSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "price",
+            "printedName": "price",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(py)price",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC5priceSSSgvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(im)price",
+                "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC5priceSSSgvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "oldPrice",
+            "printedName": "oldPrice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(py)oldPrice",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC8oldPriceSSSgvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(im)oldPrice",
+                "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC8oldPriceSSSgvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currency",
+            "printedName": "currency",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(py)currency",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC8currencySSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(im)currency",
+                "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC8currencySSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "image",
+            "printedName": "image",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(py)image",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC5image10Foundation3URLVvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(im)image",
+                "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC5image10Foundation3URLVvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "text",
+            "printedName": "text",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(py)text",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC4textSSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(im)text",
+                "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC4textSSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ctaText",
+            "printedName": "ctaText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(py)ctaText",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC7ctaTextSSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(im)ctaText",
+                "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC7ctaTextSSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstreamAdVideoMotionItem",
+                "printedName": "MyTargetSDK.InstreamAdVideoMotionItem",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem(im)init",
+            "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemCACycfc",
+            "moduleName": "MyTargetSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionItem",
+        "mangledName": "$s11MyTargetSDK25InstreamAdVideoMotionItemC",
+        "moduleName": "MyTargetSDK",
+        "objc_name": "MTRGInstreamAdVideoMotionItem",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -6156,6 +8132,437 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InstreamAdVideoMotionBanner",
+        "printedName": "InstreamAdVideoMotionBanner",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "videoMotionData",
+            "printedName": "videoMotionData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstreamAdVideoMotionData",
+                "printedName": "MyTargetSDK.InstreamAdVideoMotionData",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionData"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(py)videoMotionData",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC05videoG4DataAA0defgJ0Cvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstreamAdVideoMotionData",
+                    "printedName": "MyTargetSDK.InstreamAdVideoMotionData",
+                    "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionData"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(im)videoMotionData",
+                "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC05videoG4DataAA0defgJ0Cvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allowClose",
+            "printedName": "allowClose",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(py)allowClose",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC10allowCloseSbvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(im)allowClose",
+                "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC10allowCloseSbvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allowCloseDelay",
+            "printedName": "allowCloseDelay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(py)allowCloseDelay",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC15allowCloseDelaySo8NSNumberCSgvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(im)allowCloseDelay",
+                "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC15allowCloseDelaySo8NSNumberCSgvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "duration",
+            "printedName": "duration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(py)duration",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC8durationSfvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(im)duration",
+                "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC8durationSfvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adChoicesImage",
+            "printedName": "adChoicesImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(py)adChoicesImage",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC14adChoicesImageSo7UIImageCSgvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(im)adChoicesImage",
+                "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC14adChoicesImageSo7UIImageCSgvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hasAdChoices",
+            "printedName": "hasAdChoices",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(py)hasAdChoices",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC03hasE7ChoicesSbvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(im)hasAdChoices",
+                "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC03hasE7ChoicesSbvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstreamAdVideoMotionBanner",
+                "printedName": "MyTargetSDK.InstreamAdVideoMotionBanner",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner(im)init",
+            "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerCACycfc",
+            "moduleName": "MyTargetSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionBanner",
+        "mangledName": "$s11MyTargetSDK27InstreamAdVideoMotionBannerC",
+        "moduleName": "MyTargetSDK",
+        "objc_name": "MTRGInstreamAdVideoMotionBanner",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -7263,1771 +9670,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "MTRGInstreamAd",
-        "printedName": "MTRGInstreamAd",
-        "children": [
-          {
-            "kind": "TypeDecl",
-            "name": "VideoMotionHeader",
-            "printedName": "VideoMotionHeader",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "icon",
-                "printedName": "icon",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC4icon10Foundation3URLVvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC4icon10Foundation3URLVvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URL",
-                        "printedName": "Foundation.URL",
-                        "usr": "s:10Foundation3URLV"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC4icon10Foundation3URLVvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC4icon10Foundation3URLVvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "title",
-                "printedName": "title",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC5titleSSvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC5titleSSvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC5titleSSvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC5titleSSvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "linkText",
-                "printedName": "linkText",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC8linkTextSSvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC8linkTextSSvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC8linkTextSSvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC8linkTextSSvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "ageRestrictionText",
-                "printedName": "ageRestrictionText",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC18ageRestrictionTextSSvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC18ageRestrictionTextSSvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC18ageRestrictionTextSSvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC18ageRestrictionTextSSvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "adDisclaimerText",
-                "printedName": "adDisclaimerText",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC16adDisclaimerTextSSvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC16adDisclaimerTextSSvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC16adDisclaimerTextSSvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC16adDisclaimerTextSSvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoMotionHeader",
-                    "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionHeader",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderCAEycfc",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderCAEycfc",
-                "moduleName": "MyTargetSDK",
-                "overriding": true,
-                "implicit": true,
-                "objc_name": "init",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC",
-                  "Override"
-                ],
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC",
-            "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC",
-            "moduleName": "MyTargetSDK",
-            "objc_name": "MTRGInstreamAdVideoMotionHeader",
-            "declAttributes": [
-              "Final",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "superclassUsr": "c:objc(cs)NSObject",
-            "hasMissingDesignatedInitializers": true,
-            "superclassNames": [
-              "ObjectiveC.NSObject"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CVarArg",
-                "printedName": "CVarArg",
-                "usr": "s:s7CVarArgP",
-                "mangledName": "$ss7CVarArgP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObservingPublishing",
-                "printedName": "_KeyValueCodingAndObservingPublishing",
-                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObserving",
-                "printedName": "_KeyValueCodingAndObserving",
-                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomStringConvertible",
-                "printedName": "CustomStringConvertible",
-                "usr": "s:s23CustomStringConvertibleP",
-                "mangledName": "$ss23CustomStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomDebugStringConvertible",
-                "printedName": "CustomDebugStringConvertible",
-                "usr": "s:s28CustomDebugStringConvertibleP",
-                "mangledName": "$ss28CustomDebugStringConvertibleP"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "VideoMotionDisclaimer",
-            "printedName": "VideoMotionDisclaimer",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "text",
-                "printedName": "text",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE21VideoMotionDisclaimerC4textSSvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE21VideoMotionDisclaimerC4textSSvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE21VideoMotionDisclaimerC4textSSvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE21VideoMotionDisclaimerC4textSSvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoMotionDisclaimer",
-                    "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionDisclaimer",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE21VideoMotionDisclaimerC"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE21VideoMotionDisclaimerCAEycfc",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE21VideoMotionDisclaimerCAEycfc",
-                "moduleName": "MyTargetSDK",
-                "overriding": true,
-                "implicit": true,
-                "objc_name": "init",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC",
-                  "Override"
-                ],
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE21VideoMotionDisclaimerC",
-            "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE21VideoMotionDisclaimerC",
-            "moduleName": "MyTargetSDK",
-            "objc_name": "MTRGInstreamAdVideoMotionDisclaimer",
-            "declAttributes": [
-              "Final",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "superclassUsr": "c:objc(cs)NSObject",
-            "hasMissingDesignatedInitializers": true,
-            "superclassNames": [
-              "ObjectiveC.NSObject"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CVarArg",
-                "printedName": "CVarArg",
-                "usr": "s:s7CVarArgP",
-                "mangledName": "$ss7CVarArgP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObservingPublishing",
-                "printedName": "_KeyValueCodingAndObservingPublishing",
-                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObserving",
-                "printedName": "_KeyValueCodingAndObserving",
-                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomStringConvertible",
-                "printedName": "CustomStringConvertible",
-                "usr": "s:s23CustomStringConvertibleP",
-                "mangledName": "$ss23CustomStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomDebugStringConvertible",
-                "printedName": "CustomDebugStringConvertible",
-                "usr": "s:s28CustomDebugStringConvertibleP",
-                "mangledName": "$ss28CustomDebugStringConvertibleP"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "VideoMotionData",
-            "printedName": "VideoMotionData",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "header",
-                "printedName": "header",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoMotionHeader",
-                    "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionHeader",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC6headerAbCE0fG6HeaderCvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC6headerAbCE0fG6HeaderCvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VideoMotionHeader",
-                        "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionHeader",
-                        "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionHeaderC"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC6headerAbCE0fG6HeaderCvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC6headerAbCE0fG6HeaderCvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "items",
-                "printedName": "items",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[MyTargetSDK.MTRGInstreamAd.VideoMotionItem]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VideoMotionItem",
-                        "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionItem",
-                        "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC5itemsSayAbCE0fG4ItemCGvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC5itemsSayAbCE0fG4ItemCGvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[MyTargetSDK.MTRGInstreamAd.VideoMotionItem]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "VideoMotionItem",
-                            "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionItem",
-                            "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC5itemsSayAbCE0fG4ItemCGvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC5itemsSayAbCE0fG4ItemCGvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "disclaimer",
-                "printedName": "disclaimer",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionDisclaimer?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VideoMotionDisclaimer",
-                        "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionDisclaimer",
-                        "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE21VideoMotionDisclaimerC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC10disclaimerAbCE0fG10DisclaimerCSgvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC10disclaimerAbCE0fG10DisclaimerCSgvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionDisclaimer?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "VideoMotionDisclaimer",
-                            "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionDisclaimer",
-                            "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE21VideoMotionDisclaimerC"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC10disclaimerAbCE0fG10DisclaimerCSgvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC10disclaimerAbCE0fG10DisclaimerCSgvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoMotionData",
-                    "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionData",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataCAEycfc",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataCAEycfc",
-                "moduleName": "MyTargetSDK",
-                "overriding": true,
-                "implicit": true,
-                "objc_name": "init",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC",
-                  "Override"
-                ],
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC",
-            "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC",
-            "moduleName": "MyTargetSDK",
-            "objc_name": "MTRGInstreamAdVideoMotionData",
-            "declAttributes": [
-              "Final",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "superclassUsr": "c:objc(cs)NSObject",
-            "hasMissingDesignatedInitializers": true,
-            "superclassNames": [
-              "ObjectiveC.NSObject"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CVarArg",
-                "printedName": "CVarArg",
-                "usr": "s:s7CVarArgP",
-                "mangledName": "$ss7CVarArgP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObservingPublishing",
-                "printedName": "_KeyValueCodingAndObservingPublishing",
-                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObserving",
-                "printedName": "_KeyValueCodingAndObserving",
-                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomStringConvertible",
-                "printedName": "CustomStringConvertible",
-                "usr": "s:s23CustomStringConvertibleP",
-                "mangledName": "$ss23CustomStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomDebugStringConvertible",
-                "printedName": "CustomDebugStringConvertible",
-                "usr": "s:s28CustomDebugStringConvertibleP",
-                "mangledName": "$ss28CustomDebugStringConvertibleP"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "VideoMotionItem",
-            "printedName": "VideoMotionItem",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "id",
-                "printedName": "id",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC2idSSvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC2idSSvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC2idSSvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC2idSSvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "price",
-                "printedName": "price",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC5priceSSSgvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC5priceSSSgvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC5priceSSSgvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC5priceSSSgvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "oldPrice",
-                "printedName": "oldPrice",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC8oldPriceSSSgvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC8oldPriceSSSgvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC8oldPriceSSSgvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC8oldPriceSSSgvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "currency",
-                "printedName": "currency",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC8currencySSvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC8currencySSvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC8currencySSvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC8currencySSvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "image",
-                "printedName": "image",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC5image10Foundation3URLVvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC5image10Foundation3URLVvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URL",
-                        "printedName": "Foundation.URL",
-                        "usr": "s:10Foundation3URLV"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC5image10Foundation3URLVvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC5image10Foundation3URLVvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "text",
-                "printedName": "text",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC4textSSvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC4textSSvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC4textSSvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC4textSSvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "ctaText",
-                "printedName": "ctaText",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC7ctaTextSSvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC7ctaTextSSvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC7ctaTextSSvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC7ctaTextSSvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoMotionItem",
-                    "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionItem",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemCAEycfc",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemCAEycfc",
-                "moduleName": "MyTargetSDK",
-                "overriding": true,
-                "implicit": true,
-                "objc_name": "init",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC",
-                  "Override"
-                ],
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC",
-            "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE15VideoMotionItemC",
-            "moduleName": "MyTargetSDK",
-            "objc_name": "MTRGInstreamAdVideoMotionItem",
-            "declAttributes": [
-              "Final",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "superclassUsr": "c:objc(cs)NSObject",
-            "hasMissingDesignatedInitializers": true,
-            "superclassNames": [
-              "ObjectiveC.NSObject"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CVarArg",
-                "printedName": "CVarArg",
-                "usr": "s:s7CVarArgP",
-                "mangledName": "$ss7CVarArgP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObservingPublishing",
-                "printedName": "_KeyValueCodingAndObservingPublishing",
-                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObserving",
-                "printedName": "_KeyValueCodingAndObserving",
-                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomStringConvertible",
-                "printedName": "CustomStringConvertible",
-                "usr": "s:s23CustomStringConvertibleP",
-                "mangledName": "$ss23CustomStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomDebugStringConvertible",
-                "printedName": "CustomDebugStringConvertible",
-                "usr": "s:s28CustomDebugStringConvertibleP",
-                "mangledName": "$ss28CustomDebugStringConvertibleP"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "VideoMotionBanner",
-            "printedName": "VideoMotionBanner",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "videoMotionData",
-                "printedName": "videoMotionData",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoMotionData",
-                    "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionData",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC05videoG4DataAbCE0fgJ0Cvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC05videoG4DataAbCE0fgJ0Cvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VideoMotionData",
-                        "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionData",
-                        "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE15VideoMotionDataC"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC05videoG4DataAbCE0fgJ0Cvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC05videoG4DataAbCE0fgJ0Cvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "allowClose",
-                "printedName": "allowClose",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC10allowCloseSbvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC10allowCloseSbvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC10allowCloseSbvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC10allowCloseSbvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "allowCloseDelay",
-                "printedName": "allowCloseDelay",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.NSNumber?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSNumber",
-                        "printedName": "Foundation.NSNumber",
-                        "usr": "c:objc(cs)NSNumber"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC15allowCloseDelaySo8NSNumberCSgvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC15allowCloseDelaySo8NSNumberCSgvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSNumber?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSNumber",
-                            "printedName": "Foundation.NSNumber",
-                            "usr": "c:objc(cs)NSNumber"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC15allowCloseDelaySo8NSNumberCSgvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC15allowCloseDelaySo8NSNumberCSgvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "duration",
-                "printedName": "duration",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC8durationSfvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC8durationSfvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC8durationSfvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC8durationSfvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "adChoicesImage",
-                "printedName": "adChoicesImage",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIImage?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIImage",
-                        "printedName": "UIKit.UIImage",
-                        "usr": "c:objc(cs)UIImage"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC14adChoicesImageSo7UIImageCSgvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC14adChoicesImageSo7UIImageCSgvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "UIKit.UIImage?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UIImage",
-                            "printedName": "UIKit.UIImage",
-                            "usr": "c:objc(cs)UIImage"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC14adChoicesImageSo7UIImageCSgvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC14adChoicesImageSo7UIImageCSgvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "hasAdChoices",
-                "printedName": "hasAdChoices",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC03hasB7ChoicesSbvp",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC03hasB7ChoicesSbvp",
-                "moduleName": "MyTargetSDK",
-                "declAttributes": [
-                  "Final",
-                  "HasStorage",
-                  "AccessControl",
-                  "ObjC"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC03hasB7ChoicesSbvg",
-                    "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC03hasB7ChoicesSbvg",
-                    "moduleName": "MyTargetSDK",
-                    "implicit": true,
-                    "declAttributes": [
-                      "Final",
-                      "ObjC"
-                    ],
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoMotionBanner",
-                    "printedName": "MyTargetSDK.MTRGInstreamAd.VideoMotionBanner",
-                    "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerCAEycfc",
-                "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerCAEycfc",
-                "moduleName": "MyTargetSDK",
-                "overriding": true,
-                "implicit": true,
-                "objc_name": "init",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC",
-                  "Override"
-                ],
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:So14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC",
-            "mangledName": "$sSo14MTRGInstreamAdC11MyTargetSDKE17VideoMotionBannerC",
-            "moduleName": "MyTargetSDK",
-            "objc_name": "MTRGInstreamAdVideoMotionBanner",
-            "declAttributes": [
-              "Final",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "superclassUsr": "c:objc(cs)NSObject",
-            "hasMissingDesignatedInitializers": true,
-            "superclassNames": [
-              "ObjectiveC.NSObject"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CVarArg",
-                "printedName": "CVarArg",
-                "usr": "s:s7CVarArgP",
-                "mangledName": "$ss7CVarArgP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObservingPublishing",
-                "printedName": "_KeyValueCodingAndObservingPublishing",
-                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObserving",
-                "printedName": "_KeyValueCodingAndObserving",
-                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomStringConvertible",
-                "printedName": "CustomStringConvertible",
-                "usr": "s:s23CustomStringConvertibleP",
-                "mangledName": "$ss23CustomStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomDebugStringConvertible",
-                "printedName": "CustomDebugStringConvertible",
-                "usr": "s:s28CustomDebugStringConvertibleP",
-                "mangledName": "$ss28CustomDebugStringConvertibleP"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)MTRGInstreamAd",
-        "moduleName": "MyTargetSDK",
-        "isOpen": true,
-        "objc_name": "MTRGInstreamAd",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)MTRGBaseAd",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "MyTargetSDK.MTRGBaseAd",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "MTRGFingerprintDataProvider",
         "printedName": "MTRGFingerprintDataProvider",
         "declKind": "Class",
@@ -9456,6 +10098,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -10088,6 +10737,27 @@
       "value": "\"MyTargetSDK.NativeAppwallAdInteractor\""
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 233,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 233,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
+      "kind": "StringLiteral",
+      "offset": 268,
+      "length": 14,
+      "value": "\"MyTargetSDK.MTRGMenuAction\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker.swift",
       "kind": "BooleanLiteral",
       "offset": 829,
@@ -10114,13 +10784,6 @@
       "offset": 1124,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker.swift",
-      "kind": "FloatLiteral",
-      "offset": 6027,
-      "length": 3,
-      "value": "0.5"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker.swift",
@@ -10310,6 +10973,13 @@
       "offset": 1080,
       "length": 13,
       "value": "1000000000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Controllers\/InstreamAdVideoMotionController.swift",
+      "kind": "StringLiteral",
+      "offset": 862,
+      "length": 31,
+      "value": "\"MyTargetSDK.InstreamAdVideoMotionController\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamAudio\/Private\/Engines\/InstreamAudioAdEngineInteractor.swift",
@@ -10653,6 +11323,13 @@
       "offset": 1745,
       "length": 28,
       "value": "\"https:\/\/ad.mail.ru\/sdk\/ms\/\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ActionSheetMenu\/ActionSheetMenu.swift",
+      "kind": "Array",
+      "offset": 312,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/MediaDownload\/VideoDownloadManager.swift",
@@ -11293,10 +11970,17 @@
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ClickHandler\/AdClickHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 619,
-      "length": 5,
-      "value": "false"
+      "kind": "Array",
+      "offset": 640,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ClickHandler\/AdClickHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2243,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ClickHandler\/AdClickHandler.swift",
@@ -11341,11 +12025,11 @@
       "value": "\"MyTargetSDK.BannerAdView\""
     },
     {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/VideoMotionHeader.swift",
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/InstreamAdVideoMotionHeader.swift",
       "kind": "StringLiteral",
-      "offset": 259,
-      "length": 17,
-      "value": "\"MyTargetSDK.VideoMotionHeader\""
+      "offset": 234,
+      "length": 27,
+      "value": "\"MyTargetSDK.InstreamAdVideoMotionHeader\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/MediaDownload\/MediaDownloadManager.swift",
@@ -11649,6 +12333,41 @@
       "value": "\"MyTargetSDK.LocationDataProvider\""
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityVideoTracker.swift",
+      "kind": "Array",
+      "offset": 463,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityVideoTracker.swift",
+      "kind": "Array",
+      "offset": 508,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityVideoTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 556,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityVideoTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 269,
+      "length": 23,
+      "value": "\"MyTargetSDK.ViewabilityVideoTracker\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityVideoTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4591,
+      "length": 1,
+      "value": "1"
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Net\/MetricFactory.swift",
       "kind": "StringLiteral",
       "offset": 215,
@@ -11915,6 +12634,13 @@
       "value": "0.3"
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/VisiblePercentCalculator.swift",
+      "kind": "FloatLiteral",
+      "offset": 1505,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/SkadParserErrorTracker\/SkadParserErrorTracker.swift",
       "kind": "StringLiteral",
       "offset": 1921,
@@ -12029,7 +12755,7 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/AdClient\/AdClientInteractor.swift",
       "kind": "IntegerLiteral",
-      "offset": 7388,
+      "offset": 7363,
       "length": 1,
       "value": "0"
     },
@@ -12090,11 +12816,11 @@
       "value": "\"deeplink_fallback_url\""
     },
     {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/VideoMotionDisclaimer.swift",
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/InstreamAdVideoMotionDisclaimer.swift",
       "kind": "StringLiteral",
-      "offset": 267,
-      "length": 21,
-      "value": "\"MyTargetSDK.VideoMotionDisclaimer\""
+      "offset": 242,
+      "length": 31,
+      "value": "\"MyTargetSDK.InstreamAdVideoMotionDisclaimer\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
@@ -12489,11 +13215,18 @@
       "value": "\"MyTargetSDK.OptionParser\""
     },
     {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/VideoMotionData.swift",
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/InstreamAdVideoMotionData.swift",
       "kind": "StringLiteral",
-      "offset": 255,
-      "length": 15,
-      "value": "\"MyTargetSDK.VideoMotionData\""
+      "offset": 230,
+      "length": 25,
+      "value": "\"MyTargetSDK.InstreamAdVideoMotionData\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/PostMessageParser.swift",
+      "kind": "StringLiteral",
+      "offset": 256,
+      "length": 17,
+      "value": "\"MyTargetSDK.PostMessageParser\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/NetworkDataProvider.swift",
@@ -12545,18 +13278,18 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/VideoMotionItem.swift",
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/InstreamAdVideoMotionItem.swift",
       "kind": "StringLiteral",
-      "offset": 255,
-      "length": 15,
-      "value": "\"MyTargetSDK.VideoMotionItem\""
+      "offset": 230,
+      "length": 25,
+      "value": "\"MyTargetSDK.InstreamAdVideoMotionItem\""
     },
     {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/VideoMotionBanner.swift",
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/InstreamAdVideoMotionBanner.swift",
       "kind": "StringLiteral",
-      "offset": 254,
-      "length": 17,
-      "value": "\"MyTargetSDK.VideoMotionBanner\""
+      "offset": 229,
+      "length": 27,
+      "value": "\"MyTargetSDK.InstreamAdVideoMotionBanner\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeAdResultProcessor.swift",

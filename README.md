@@ -5,6 +5,11 @@ After you integrate the myTarget SDK, thousands of myTarget customers will becom
 
 ## Usage
 
+For Objective-C projects required to use "@import" directive:
+   ```ruby
+   @import MyTargetSDK;
+   ```
+
 Integration instructions are available on our [website](https://target.my.com/partners/help/sdk/).
 
 Demo-app with examples of integration available in [myTargetDemo folder](https://github.com/myTargetSDK/mytarget-ios/blob/master/myTargetDemo).

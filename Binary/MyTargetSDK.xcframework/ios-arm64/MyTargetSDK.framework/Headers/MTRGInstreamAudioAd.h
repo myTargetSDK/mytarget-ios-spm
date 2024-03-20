@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAudioAd.h
-//  myTargetSDK 5.21.0
+//  myTargetSDK 5.21.1
 //
 // Created by Timur on 5/25/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -285,6 +285,13 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Skip the banner.
  */
 - (void)skipBanner;
+
+/**
+ @discussion Method to handle click with specific controller.
+
+ @param controller Instance of UIViewController.
+ */
+- (void)handleClickWithController:(UIViewController *)controller;
 
 /**
  @discussion Method to handle companion click.

@@ -1,7 +1,7 @@
 framework module MyTargetSDK {
   umbrella header "MyTargetSDK.h"
-
   export *
+
   module * { export * }
 }
 
