@@ -151,6 +151,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MTRGMenuActionStyle",
         "printedName": "MTRGMenuActionStyle",
@@ -6996,6 +7006,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -13189,21 +13209,21 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/AdChoices\/AdChoicesOptionParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 8340,
+      "offset": 8348,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/AdChoices\/AdChoicesOptionParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 8387,
+      "offset": 8395,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/AdChoices\/AdChoicesOptionParser.swift",
       "kind": "StringLiteral",
-      "offset": 8435,
+      "offset": 8443,
       "length": 10,
       "value": "\"&reason=\""
     },

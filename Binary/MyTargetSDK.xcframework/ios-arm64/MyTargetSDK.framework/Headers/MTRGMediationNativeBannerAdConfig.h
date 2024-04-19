@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeBannerAdConfig.h
-//  myTargetSDK 5.21.1
+//  myTargetSDK 5.21.2
 //
 //  Created by Andrey Seredkin on 11/06/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -8,18 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <MyTargetSDK/MTRGMediationAdConfig.h>
-#import <MyTargetSDK/MTRGCachePolicy.h>
-#import <MyTargetSDK/MTRGAdChoicesPlacement.h>
-
-@class MTRGPrivacy;
-@protocol MTRGMenuFactory;
+#import <MyTargetSDK/MTRGMediationNativeAdConfigProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  @discussion Class describes configuration for native banner ad.
  */
-@interface MTRGMediationNativeBannerAdConfig : MTRGMediationAdConfig
+@interface MTRGMediationNativeBannerAdConfig : MTRGMediationAdConfig <MTRGMediationNativeAdConfigProtocol>
 
 /**
  @discussion Current cache policy for the banner ad.
@@ -56,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 						 serverParams:(NSDictionary<NSString *, NSString *> *)serverParams
 								  age:(nullable NSNumber *)age
 							   gender:(MTRGGender)gender
-							  privacy:(MTRGPrivacy *)privacy
+							  privacy:(id <MTRGPrivacyProtocol>)privacy
 						  cachePolicy:(MTRGCachePolicy)cachePolicy
 				   adChoicesPlacement:(MTRGAdChoicesPlacement)adChoicesPlacement
 					  adNetworkConfig:(nullable id <MTRGAdNetworkConfigProtocol>)adNetworkConfig

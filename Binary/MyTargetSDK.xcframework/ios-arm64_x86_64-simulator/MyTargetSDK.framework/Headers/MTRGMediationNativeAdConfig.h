@@ -1,12 +1,13 @@
 //
 //  MTRGMediationNativeAdConfig.h
-//  myTargetSDK 5.21.1
+//  myTargetSDK 5.21.2
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <MyTargetSDK/MTRGMediationAdConfig.h>
+#import <MyTargetSDK/MTRGMediationNativeAdConfigProtocol.h>
 #import <MyTargetSDK/MTRGNativeAd.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -14,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Configuration of native ad.
  */
-@interface MTRGMediationNativeAdConfig : MTRGMediationAdConfig
+@interface MTRGMediationNativeAdConfig : MTRGMediationAdConfig <MTRGMediationNativeAdConfigProtocol>
 
 /**
  @discussion Cache policy for the native ad.
@@ -51,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 						 serverParams:(NSDictionary<NSString *, NSString *> *)serverParams
 								  age:(nullable NSNumber *)age
 							   gender:(MTRGGender)gender
-							  privacy:(MTRGPrivacy *)privacy
+							  privacy:(id <MTRGPrivacyProtocol>)privacy
 						  cachePolicy:(MTRGCachePolicy)cachePolicy
 				   adChoicesPlacement:(MTRGAdChoicesPlacement)adChoicesPlacement
 					  adNetworkConfig:(nullable id <MTRGAdNetworkConfigProtocol>)adNetworkConfig

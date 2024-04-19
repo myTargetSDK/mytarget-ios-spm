@@ -1,19 +1,20 @@
 //
 //  MTRGPrivacy.h
-//  myTargetSDK 5.21.1
+//  myTargetSDK 5.21.2
 //
 //  Created by Andrey Seredkin on 28.05.2018.
 //  Copyright © 2018 Mail.Ru Group. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <MyTargetSDK/MTRGPrivacyProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  @discussion Class manages all privacy options
  */
-@interface MTRGPrivacy : NSObject
+@interface MTRGPrivacy : NSObject <MTRGPrivacyProtocol>
 
 /**
  @discussion Flag of user's consent

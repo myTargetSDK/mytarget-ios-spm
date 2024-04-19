@@ -1,6 +1,6 @@
 //
 //  MTRGMediationStandardAdAdapter.h
-//  myTargetSDK 5.21.1
+//  myTargetSDK 5.21.2
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -10,7 +10,7 @@
 #import <MyTargetSDK/MTRGAdView.h>
 
 @protocol MTRGMediationStandardAdAdapter;
-@class MTRGMediationAdConfig;
+@protocol MTRGMediationAdConfigProtocol;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -103,10 +103,10 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Method to load mediation with config.
  
- @param mediationAdConfig Mediation ad config. Instance of MTRGMediationAdConfig.
+ @param mediationAdConfig Mediation ad config. Instance of MTRGMediationAdConfigProtocol.
  @param adSize Size of ad. Instance of MTRGAdSize.
  */
-- (void)loadWithMediationAdConfig:(MTRGMediationAdConfig *)mediationAdConfig adSize:(MTRGAdSize *)adSize;
+- (void)loadWithMediationAdConfig:(id <MTRGMediationAdConfigProtocol>)mediationAdConfig adSize:(MTRGAdSize *)adSize NS_SWIFT_NAME(load(with:adSize:));
 
 @end
 

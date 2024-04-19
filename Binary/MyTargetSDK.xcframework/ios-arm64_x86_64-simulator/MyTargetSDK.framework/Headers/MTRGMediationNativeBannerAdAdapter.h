@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeBannerAdAdapter.h
-//  myTargetSDK 5.21.1
+//  myTargetSDK 5.21.2
 //
 //  Created by Andrey Seredkin on 11/06/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -11,7 +11,7 @@
 #import <MyTargetSDK/MTRGAdChoicesPlacement.h>
 
 @class MTRGNativeBanner;
-@class MTRGMediationNativeBannerAdConfig;
+@protocol MTRGMediationNativeAdConfigProtocol;
 @protocol MTRGMediationNativeBannerAdAdapter;
 @protocol MTRGMediationNativeBannerAdMediaDelegate;
 @protocol MTRGMediationNativeBannerAdChoicesOptionDelegate;
@@ -104,7 +104,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param mediationAdConfig Mediation ad configuration.
  */
-- (void)loadWithMediationAdConfig:(MTRGMediationNativeBannerAdConfig *)mediationAdConfig;
+- (void)loadWithMediationAdConfig:(id <MTRGMediationNativeAdConfigProtocol>)mediationAdConfig NS_SWIFT_NAME(load(with:));
 
 /**
  @discussion Registers view for the adapter.

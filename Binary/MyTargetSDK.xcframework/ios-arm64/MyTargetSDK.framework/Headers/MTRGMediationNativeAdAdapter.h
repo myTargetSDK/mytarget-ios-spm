@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeAdAdapter.h
-//  myTargetSDK 5.21.1
+//  myTargetSDK 5.21.2
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -9,7 +9,7 @@
 #import <MyTargetSDK/MTRGMediationAdapter.h>
 #import <MyTargetSDK/MTRGNativeAd.h>
 
-@class MTRGMediationNativeAdConfig;
+@protocol MTRGMediationNativeAdConfigProtocol;
 @protocol MTRGMediationNativeAdAdapter;
 @protocol MTRGMediationNativeAdMediaDelegate;
 @protocol MTRGMediationNativeAdChoicesOptionDelegate;
@@ -123,7 +123,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param mediationAdConfig Mediation's configuration.
  */
-- (void)loadWithMediationAdConfig:(MTRGMediationNativeAdConfig *)mediationAdConfig;
+- (void)loadWithMediationAdConfig:(id <MTRGMediationNativeAdConfigProtocol>)mediationAdConfig NS_SWIFT_NAME(load(with:));
 
 /**
  @discussion Registers view for the adapter.
