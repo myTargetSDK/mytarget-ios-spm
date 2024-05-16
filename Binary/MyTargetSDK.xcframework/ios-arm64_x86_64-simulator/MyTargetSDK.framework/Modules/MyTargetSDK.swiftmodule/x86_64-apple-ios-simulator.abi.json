@@ -5,6 +5,195 @@
     "printedName": "TopLevel",
     "children": [
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InstreamAdVideoMotionDisclaimer",
+        "printedName": "InstreamAdVideoMotionDisclaimer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "text",
+            "printedName": "text",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer(py)text",
+            "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerC4textSSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer(im)text",
+                "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerC4textSSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstreamAdVideoMotionDisclaimer",
+                "printedName": "MyTargetSDK.InstreamAdVideoMotionDisclaimer",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer(im)init",
+            "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerCACycfc",
+            "moduleName": "MyTargetSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer",
+        "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerC",
+        "moduleName": "MyTargetSDK",
+        "objc_name": "MTRGInstreamAdVideoMotionDisclaimer",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MTRGMenu",
         "printedName": "MTRGMenu",
@@ -708,6 +897,26 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MTRGLogMessageType",
         "printedName": "MTRGLogMessageType",
@@ -1064,6 +1273,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
@@ -1195,36 +1414,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MyTargetSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MyTargetSDK_Internal",
-        "printedName": "MyTargetSDK_Internal",
-        "declKind": "Import",
-        "moduleName": "MyTargetSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MyTargetSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
@@ -1295,12 +1484,72 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -1382,12 +1631,52 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -1679,6 +1968,36 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
@@ -1759,6 +2078,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
@@ -1795,6 +2124,26 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -2153,6 +2502,26 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -2713,6 +3082,93 @@
       },
       {
         "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3193,7 +3649,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MTRGMenu",
-                "printedName": "MyTargetSDK.MTRGMenu",
+                "printedName": "any MyTargetSDK.MTRGMenu",
                 "usr": "c:@M@MyTargetSDK@objc(pl)MTRGMenu"
               }
             ],
@@ -3307,6 +3763,26 @@
         "declAttributes": [
           "ImplementationOnly",
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -3580,12 +4056,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MyTargetSDK.MTRGLogger?",
+                "printedName": "(any MyTargetSDK.MTRGLogger)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MTRGLogger",
-                    "printedName": "MyTargetSDK.MTRGLogger",
+                    "printedName": "any MyTargetSDK.MTRGLogger",
                     "usr": "c:@M@MyTargetSDK@objc(pl)MTRGLogger"
                   }
                 ],
@@ -3612,12 +4088,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MyTargetSDK.MTRGLogger?",
+                    "printedName": "(any MyTargetSDK.MTRGLogger)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MTRGLogger",
-                        "printedName": "MyTargetSDK.MTRGLogger",
+                        "printedName": "any MyTargetSDK.MTRGLogger",
                         "usr": "c:@M@MyTargetSDK@objc(pl)MTRGLogger"
                       }
                     ],
@@ -3648,12 +4124,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MyTargetSDK.MTRGLogger?",
+                    "printedName": "(any MyTargetSDK.MTRGLogger)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MTRGLogger",
-                        "printedName": "MyTargetSDK.MTRGLogger",
+                        "printedName": "any MyTargetSDK.MTRGLogger",
                         "usr": "c:@M@MyTargetSDK@objc(pl)MTRGLogger"
                       }
                     ],
@@ -3990,6 +4466,26 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
@@ -4031,26 +4527,6 @@
       },
       {
         "kind": "Import",
-        "name": "MyTargetSDK_Internal",
-        "printedName": "MyTargetSDK_Internal",
-        "declKind": "Import",
-        "moduleName": "MyTargetSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MyTargetSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4081,6 +4557,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
@@ -4107,6 +4593,270 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Disclaimer",
+        "printedName": "Disclaimer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "text",
+            "printedName": "text",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGDisclaimer(py)text",
+            "mangledName": "$s11MyTargetSDK10DisclaimerC4textSSvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGDisclaimer(im)text",
+                "mangledName": "$s11MyTargetSDK10DisclaimerC4textSSvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DisclaimerType",
+                "printedName": "MyTargetSDK.DisclaimerType",
+                "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGDisclaimer(py)type",
+            "mangledName": "$s11MyTargetSDK10DisclaimerC4typeAA0D4TypeOvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisclaimerType",
+                    "printedName": "MyTargetSDK.DisclaimerType",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGDisclaimer(im)type",
+                "mangledName": "$s11MyTargetSDK10DisclaimerC4typeAA0D4TypeOvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(text:type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Disclaimer",
+                "printedName": "MyTargetSDK.Disclaimer",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGDisclaimer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DisclaimerType",
+                "printedName": "MyTargetSDK.DisclaimerType",
+                "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGDisclaimer(im)initWithText:type:",
+            "mangledName": "$s11MyTargetSDK10DisclaimerC4text4typeACSS_AA0D4TypeOtcfc",
+            "moduleName": "MyTargetSDK",
+            "objc_name": "initWithText:type:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Disclaimer",
+                "printedName": "MyTargetSDK.Disclaimer",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGDisclaimer"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGDisclaimer(im)init",
+            "mangledName": "$s11MyTargetSDK10DisclaimerCACycfc",
+            "moduleName": "MyTargetSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MyTargetSDK@objc(cs)MTRGDisclaimer",
+        "mangledName": "$s11MyTargetSDK10DisclaimerC",
+        "moduleName": "MyTargetSDK",
+        "objc_name": "MTRGDisclaimer",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -4188,6 +4938,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
@@ -4236,6 +4996,33 @@
           "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK"
       },
       {
         "kind": "Import",
@@ -4714,7 +5501,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -4815,6 +5602,26 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MyTargetSDK",
         "declAttributes": [
@@ -5265,7 +6072,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "MyTargetSDK.InstreamAdVideoMotionPlayerDelegate?"
+                "printedName": "(any MyTargetSDK.InstreamAdVideoMotionPlayerDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -5288,12 +6095,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MyTargetSDK.InstreamAdVideoMotionPlayerDelegate?",
+                    "printedName": "(any MyTargetSDK.InstreamAdVideoMotionPlayerDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "InstreamAdVideoMotionPlayerDelegate",
-                        "printedName": "MyTargetSDK.InstreamAdVideoMotionPlayerDelegate",
+                        "printedName": "any MyTargetSDK.InstreamAdVideoMotionPlayerDelegate",
                         "usr": "c:@M@MyTargetSDK@objc(pl)MTRGInstreamAdVideoMotionPlayerDelegate"
                       }
                     ],
@@ -5326,12 +6133,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "MyTargetSDK.InstreamAdVideoMotionPlayerDelegate?",
+                    "printedName": "(any MyTargetSDK.InstreamAdVideoMotionPlayerDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "InstreamAdVideoMotionPlayerDelegate",
-                        "printedName": "MyTargetSDK.InstreamAdVideoMotionPlayerDelegate",
+                        "printedName": "any MyTargetSDK.InstreamAdVideoMotionPlayerDelegate",
                         "usr": "c:@M@MyTargetSDK@objc(pl)MTRGInstreamAdVideoMotionPlayerDelegate"
                       }
                     ],
@@ -5408,152 +6215,13 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "InstreamAdVideoMotionDisclaimer",
-        "printedName": "InstreamAdVideoMotionDisclaimer",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "text",
-            "printedName": "text",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer(py)text",
-            "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerC4textSSvp",
-            "moduleName": "MyTargetSDK",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer(im)text",
-                "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerC4textSSvg",
-                "moduleName": "MyTargetSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "InstreamAdVideoMotionDisclaimer",
-                "printedName": "MyTargetSDK.InstreamAdVideoMotionDisclaimer",
-                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer(im)init",
-            "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerCACycfc",
-            "moduleName": "MyTargetSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@MyTargetSDK@objc(cs)MTRGInstreamAdVideoMotionDisclaimer",
-        "mangledName": "$s11MyTargetSDK31InstreamAdVideoMotionDisclaimerC",
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
         "moduleName": "MyTargetSDK",
-        "objc_name": "MTRGInstreamAdVideoMotionDisclaimer",
         "declAttributes": [
-          "Final",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
+          "ImplementationOnly"
         ]
       },
       {
@@ -5594,6 +6262,16 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -6637,6 +7315,90 @@
           },
           {
             "kind": "Var",
+            "name": "loadingCancelled",
+            "printedName": "loadingCancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.AdLoadingError.Type) -> MyTargetSDK.AdLoadingError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdLoadingError",
+                    "printedName": "MyTargetSDK.AdLoadingError",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGAdLoadingError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.AdLoadingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdLoadingError",
+                        "printedName": "MyTargetSDK.AdLoadingError",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGAdLoadingError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGAdLoadingError@MTRGAdLoadingErrorLoadingCancelled",
+            "mangledName": "$s11MyTargetSDK14AdLoadingErrorO16loadingCancelledyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 19
+          },
+          {
+            "kind": "Var",
+            "name": "undefinedSubmodelLoadingError",
+            "printedName": "undefinedSubmodelLoadingError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.AdLoadingError.Type) -> MyTargetSDK.AdLoadingError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdLoadingError",
+                    "printedName": "MyTargetSDK.AdLoadingError",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGAdLoadingError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.AdLoadingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdLoadingError",
+                        "printedName": "MyTargetSDK.AdLoadingError",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGAdLoadingError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGAdLoadingError@MTRGAdLoadingErrorUndefinedSubmodelLoadingError",
+            "mangledName": "$s11MyTargetSDK14AdLoadingErrorO017undefinedSubmodeleF0yA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 20
+          },
+          {
+            "kind": "Var",
             "name": "undefinedMediationError",
             "printedName": "undefinedMediationError",
             "children": [
@@ -6675,7 +7437,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 19
+            "fixedbinaryorder": 21
           },
           {
             "kind": "Var",
@@ -6717,7 +7479,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 20
+            "fixedbinaryorder": 22
           },
           {
             "kind": "Var",
@@ -7002,6 +7764,16 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -7498,6 +8270,46 @@
       },
       {
         "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -7614,6 +8426,472 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "DisclaimerType",
+        "printedName": "DisclaimerType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "undefined",
+            "printedName": "undefined",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.DisclaimerType.Type) -> MyTargetSDK.DisclaimerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisclaimerType",
+                    "printedName": "MyTargetSDK.DisclaimerType",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.DisclaimerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DisclaimerType",
+                        "printedName": "MyTargetSDK.DisclaimerType",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType@MTRGDisclaimerTypeUndefined",
+            "mangledName": "$s11MyTargetSDK14DisclaimerTypeO9undefinedyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "alcohol",
+            "printedName": "alcohol",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.DisclaimerType.Type) -> MyTargetSDK.DisclaimerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisclaimerType",
+                    "printedName": "MyTargetSDK.DisclaimerType",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.DisclaimerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DisclaimerType",
+                        "printedName": "MyTargetSDK.DisclaimerType",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType@MTRGDisclaimerTypeAlcohol",
+            "mangledName": "$s11MyTargetSDK14DisclaimerTypeO7alcoholyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "beer",
+            "printedName": "beer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.DisclaimerType.Type) -> MyTargetSDK.DisclaimerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisclaimerType",
+                    "printedName": "MyTargetSDK.DisclaimerType",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.DisclaimerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DisclaimerType",
+                        "printedName": "MyTargetSDK.DisclaimerType",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType@MTRGDisclaimerTypeBeer",
+            "mangledName": "$s11MyTargetSDK14DisclaimerTypeO4beeryA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "tobacco",
+            "printedName": "tobacco",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.DisclaimerType.Type) -> MyTargetSDK.DisclaimerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisclaimerType",
+                    "printedName": "MyTargetSDK.DisclaimerType",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.DisclaimerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DisclaimerType",
+                        "printedName": "MyTargetSDK.DisclaimerType",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType@MTRGDisclaimerTypeTobacco",
+            "mangledName": "$s11MyTargetSDK14DisclaimerTypeO7tobaccoyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "medical",
+            "printedName": "medical",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.DisclaimerType.Type) -> MyTargetSDK.DisclaimerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisclaimerType",
+                    "printedName": "MyTargetSDK.DisclaimerType",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.DisclaimerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DisclaimerType",
+                        "printedName": "MyTargetSDK.DisclaimerType",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType@MTRGDisclaimerTypeMedical",
+            "mangledName": "$s11MyTargetSDK14DisclaimerTypeO7medicalyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "drugs",
+            "printedName": "drugs",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.DisclaimerType.Type) -> MyTargetSDK.DisclaimerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisclaimerType",
+                    "printedName": "MyTargetSDK.DisclaimerType",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.DisclaimerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DisclaimerType",
+                        "printedName": "MyTargetSDK.DisclaimerType",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType@MTRGDisclaimerTypeDrugs",
+            "mangledName": "$s11MyTargetSDK14DisclaimerTypeO5drugsyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "dietary",
+            "printedName": "dietary",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.DisclaimerType.Type) -> MyTargetSDK.DisclaimerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisclaimerType",
+                    "printedName": "MyTargetSDK.DisclaimerType",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.DisclaimerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DisclaimerType",
+                        "printedName": "MyTargetSDK.DisclaimerType",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType@MTRGDisclaimerTypeDietary",
+            "mangledName": "$s11MyTargetSDK14DisclaimerTypeO7dietaryyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "declaration",
+            "printedName": "declaration",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.DisclaimerType.Type) -> MyTargetSDK.DisclaimerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisclaimerType",
+                    "printedName": "MyTargetSDK.DisclaimerType",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.DisclaimerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DisclaimerType",
+                        "printedName": "MyTargetSDK.DisclaimerType",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType@MTRGDisclaimerTypeDeclaration",
+            "mangledName": "$s11MyTargetSDK14DisclaimerTypeO11declarationyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MyTargetSDK.DisclaimerType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisclaimerType",
+                    "printedName": "MyTargetSDK.DisclaimerType",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11MyTargetSDK14DisclaimerTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s11MyTargetSDK14DisclaimerTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "MyTargetSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11MyTargetSDK14DisclaimerTypeO8rawValueSivp",
+            "mangledName": "$s11MyTargetSDK14DisclaimerTypeO8rawValueSivp",
+            "moduleName": "MyTargetSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MyTargetSDK14DisclaimerTypeO8rawValueSivg",
+                "mangledName": "$s11MyTargetSDK14DisclaimerTypeO8rawValueSivg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MyTargetSDK@E@MTRGDisclaimerType",
+        "mangledName": "$s11MyTargetSDK14DisclaimerTypeO",
+        "moduleName": "MyTargetSDK",
+        "objc_name": "MTRGDisclaimerType",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
@@ -7621,6 +8899,16 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -8686,6 +9974,26 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MTRGInterstitialAdResponseParser",
         "printedName": "MTRGInterstitialAdResponseParser",
@@ -8973,24 +10281,27 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "MTRGStatParser",
-        "printedName": "MTRGStatParser",
-        "declKind": "Class",
-        "usr": "c:objc(cs)MTRGStatParser",
-        "moduleName": "MyTargetSDK_Internal",
-        "isOpen": true,
-        "objc_name": "MTRGStatParser",
+        "name": "Array",
+        "printedName": "Array",
+        "declKind": "Struct",
+        "usr": "s:Sa",
+        "mangledName": "$sSa",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Element>",
         "declAttributes": [
-          "ObjC",
-          "Dynamic"
+          "EagerMove",
+          "Frozen"
         ],
-        "superclassUsr": "c:objc(cs)NSObject",
         "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_DestructorSafeContainer",
+            "printedName": "_DestructorSafeContainer",
+            "usr": "s:s24_DestructorSafeContainerP",
+            "mangledName": "$ss24_DestructorSafeContainerP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9000,31 +10311,445 @@
           },
           {
             "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
+            "name": "_ArrayProtocol",
+            "printedName": "_ArrayProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Buffer",
+                "printedName": "_Buffer",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_ArrayBuffer",
+                    "printedName": "Swift._ArrayBuffer<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s12_ArrayBufferV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s14_ArrayProtocolP",
+            "mangledName": "$ss14_ArrayProtocolP"
           },
           {
             "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "RandomAccessCollection",
+            "printedName": "RandomAccessCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sk",
+            "mangledName": "$sSk"
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+            "name": "MutableCollection",
+            "printedName": "MutableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SM",
+            "mangledName": "$sSM"
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<[τ_0_0]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<[τ_0_0]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByArrayLiteral",
+            "printedName": "ExpressibleByArrayLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayLiteralElement",
+                "printedName": "ArrayLiteralElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByArrayLiteralP",
+            "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
           },
           {
             "kind": "Conformance",
@@ -9039,6 +10764,460 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasContiguousBytes",
+            "printedName": "_HasContiguousBytes",
+            "usr": "s:s19_HasContiguousBytesP",
+            "mangledName": "$ss19_HasContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EncodableWithConfiguration",
+            "printedName": "EncodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "EncodingConfiguration",
+                "printedName": "EncodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.EncodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26EncodableWithConfigurationP",
+            "mangledName": "$s10Foundation26EncodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DecodableWithConfiguration",
+            "printedName": "DecodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "DecodingConfiguration",
+                "printedName": "DecodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.DecodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26DecodableWithConfigurationP",
+            "mangledName": "$s10Foundation26DecodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Set",
+        "printedName": "Set",
+        "declKind": "Struct",
+        "usr": "s:Sh",
+        "mangledName": "$sSh",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Hashable>",
+        "sugared_genericSig": "<Element where Element : Swift.Hashable>",
+        "declAttributes": [
+          "EagerMove",
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByArrayLiteral",
+            "printedName": "ExpressibleByArrayLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayLiteralElement",
+                "printedName": "ArrayLiteralElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByArrayLiteralP",
+            "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Set<τ_0_0>.Iterator",
+                    "usr": "s:Sh8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.Set<τ_0_0>.Index",
+                    "usr": "s:Sh5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Set<τ_0_0>.Iterator",
+                    "usr": "s:Sh8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<Swift.Set<τ_0_0>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Set",
+                        "printedName": "Swift.Set<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sh"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Swift.Set<τ_0_0>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Set",
+                        "printedName": "Swift.Set<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sh"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SetAlgebra",
+            "printedName": "SetAlgebra",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s10SetAlgebraP",
+            "mangledName": "$ss10SetAlgebraP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSSet",
+                    "printedName": "Foundation.NSSet",
+                    "usr": "c:objc(cs)NSSet"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           }
         ]
       },
@@ -10729,6 +12908,13 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/InstreamAdVideoMotionDisclaimer.swift",
+      "kind": "StringLiteral",
+      "offset": 242,
+      "length": 31,
+      "value": "\"MyTargetSDK.InstreamAdVideoMotionDisclaimer\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/MyTrackerUtils.swift",
       "kind": "StringLiteral",
       "offset": 2116,
@@ -10960,6 +13146,13 @@
       "value": "2"
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Extensions\/CodingUserInfoKey+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 38,
+      "value": "\"com.my.target.decodableConfiguration\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/Utils\/NativeAdContentMediaLoader.swift",
       "kind": "StringLiteral",
       "offset": 262,
@@ -11000,6 +13193,20 @@
       "offset": 862,
       "length": 31,
       "value": "\"MyTargetSDK.InstreamAdVideoMotionController\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKResearch\/Private\/Models\/Stats\/ResearchViewabilityStat.swift",
+      "kind": "IntegerLiteral",
+      "offset": 503,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKResearch\/Private\/Models\/Stats\/ResearchViewabilityStat.swift",
+      "kind": "StringLiteral",
+      "offset": 268,
+      "length": 23,
+      "value": "\"MyTargetSDK.ResearchViewabilityStat\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamAudio\/Private\/Engines\/InstreamAudioAdEngineInteractor.swift",
@@ -11163,11 +13370,39 @@
       "value": "1"
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKResearch\/Private\/Models\/StatResponses\/ResearchStatTypeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1145,
+      "length": 22,
+      "value": "\"playheadReachedValue\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKResearch\/Private\/Models\/StatResponses\/ResearchStatTypeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1205,
+      "length": 26,
+      "value": "\"playheadViewabilityValue\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKResearch\/Private\/Models\/StatResponses\/ResearchStatTypeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1263,
+      "length": 20,
+      "value": "\"playheadTimerValue\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKResearch\/Private\/InstreamResearchAdInteractor.swift",
       "kind": "StringLiteral",
       "offset": 659,
       "length": 28,
       "value": "\"MyTargetSDK.InstreamResearchAdInteractor\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Stats\/OVVStat.swift",
+      "kind": "StringLiteral",
+      "offset": 236,
+      "length": 7,
+      "value": "\"MyTargetSDK.OVVStat\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/MediaDownload\/ImageDownloadManager.swift",
@@ -11226,6 +13461,13 @@
       "value": "\"MyTargetSDK.NativeAdInteractor\""
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Stats\/ProgressStat.swift",
+      "kind": "StringLiteral",
+      "offset": 246,
+      "length": 12,
+      "value": "\"MyTargetSDK.ProgressStat\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/MediaDownload\/ImageDisplaying\/ImageDisplaying.swift",
       "kind": "BooleanLiteral",
       "offset": 1067,
@@ -11270,21 +13512,21 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Parsers\/VideoMotionParser.swift",
       "kind": "StringLiteral",
-      "offset": 5585,
+      "offset": 5313,
       "length": 10,
       "value": "\"bannerID\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Parsers\/VideoMotionParser.swift",
       "kind": "StringLiteral",
-      "offset": 5628,
+      "offset": 5356,
       "length": 12,
       "value": "\"statistics\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Parsers\/VideoMotionParser.swift",
       "kind": "StringLiteral",
-      "offset": 640,
+      "offset": 637,
       "length": 17,
       "value": "\"MyTargetSDK.VideoMotionParser\""
     },
@@ -11294,6 +13536,13 @@
       "offset": 669,
       "length": 32,
       "value": "\"MyTargetSDK.StandardAdMasterEngineInteractor\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKResearch\/Private\/Parsers\/InstreamResearchStatResponseMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7682,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Engines\/InstreamAdEngineInteractor.swift",
@@ -11312,7 +13561,7 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/AdClient\/AdClient.swift",
       "kind": "Array",
-      "offset": 735,
+      "offset": 571,
       "length": 2,
       "value": "[]"
     },
@@ -11550,16 +13799,23 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/StatSender.swift",
       "kind": "StringLiteral",
-      "offset": 1669,
+      "offset": 1788,
       "length": 21,
       "value": "\"viewability_percent\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/StatSender.swift",
       "kind": "StringLiteral",
-      "offset": 1729,
+      "offset": 1848,
       "length": 22,
       "value": "\"viewability_duration\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/StatHolder.swift",
+      "kind": "Dictionary",
+      "offset": 311,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Net\/MetricMessage.swift",
@@ -12031,6 +14287,55 @@
       "value": "\"MyTargetSDK.BannerMediaRecovery\""
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Stats\/Stat.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 4,
+      "value": "\"MyTargetSDK.Stat\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/UI\/InstreamAdVideoPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 399,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/UI\/InstreamAdVideoPlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 452,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/UI\/InstreamAdVideoPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 854,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Stats\/OrientationStat.swift",
+      "kind": "StringLiteral",
+      "offset": 252,
+      "length": 15,
+      "value": "\"MyTargetSDK.OrientationStat\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Stats\/MRCStat.swift",
+      "kind": "IntegerLiteral",
+      "offset": 421,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Stats\/MRCStat.swift",
+      "kind": "StringLiteral",
+      "offset": 236,
+      "length": 7,
+      "value": "\"MyTargetSDK.MRCStat\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKBanner\/Private\/BannerAd\/BannerAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 384,
@@ -12089,30 +14394,37 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Models\/VideoMotionItemPrivate.swift",
       "kind": "StringLiteral",
-      "offset": 903,
+      "offset": 893,
       "length": 11,
       "value": "\"old_price\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Models\/VideoMotionItemPrivate.swift",
       "kind": "StringLiteral",
-      "offset": 950,
+      "offset": 940,
       "length": 23,
       "value": "\"deeplink_fallback_url\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Models\/VideoMotionItemPrivate.swift",
       "kind": "StringLiteral",
-      "offset": 903,
+      "offset": 893,
       "length": 11,
       "value": "\"old_price\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Models\/VideoMotionItemPrivate.swift",
       "kind": "StringLiteral",
-      "offset": 950,
+      "offset": 940,
       "length": 23,
       "value": "\"deeplink_fallback_url\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKResearch\/Private\/Models\/Stats\/ResearchTimerStat.swift",
+      "kind": "StringLiteral",
+      "offset": 256,
+      "length": 17,
+      "value": "\"MyTargetSDK.ResearchTimerStat\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
@@ -12355,21 +14667,21 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityVideoTracker.swift",
       "kind": "Array",
-      "offset": 463,
+      "offset": 459,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityVideoTracker.swift",
       "kind": "Array",
-      "offset": 508,
+      "offset": 500,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityVideoTracker.swift",
       "kind": "IntegerLiteral",
-      "offset": 556,
+      "offset": 548,
       "length": 1,
       "value": "0"
     },
@@ -12383,7 +14695,7 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityVideoTracker.swift",
       "kind": "IntegerLiteral",
-      "offset": 4591,
+      "offset": 4550,
       "length": 1,
       "value": "1"
     },
@@ -12479,6 +14791,27 @@
       "value": "6"
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Responses\/StatResponses\/StatTypeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1242,
+      "length": 22,
+      "value": "\"playheadReachedValue\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Responses\/StatResponses\/StatTypeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1302,
+      "length": 26,
+      "value": "\"playheadViewabilityValue\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Responses\/StatResponses\/StatTypeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1366,
+      "length": 13,
+      "value": "\"orientation\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/MediaDownload\/MediaDownloadOperation.swift",
       "kind": "StringLiteral",
       "offset": 183,
@@ -12547,6 +14880,13 @@
       "offset": 267,
       "length": 21,
       "value": "\"MyTargetSDK.LoggerDetailedMessage\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/Disclaimer.swift",
+      "kind": "StringLiteral",
+      "offset": 219,
+      "length": 10,
+      "value": "\"MyTargetSDK.Disclaimer\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/IdfaDataProvider.swift",
@@ -12719,14 +15059,14 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/ShoppableAdsItem.swift",
       "kind": "StringLiteral",
-      "offset": 769,
+      "offset": 765,
       "length": 23,
       "value": "\"deeplink_fallback_url\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/ShoppableAdsItem.swift",
       "kind": "StringLiteral",
-      "offset": 769,
+      "offset": 765,
       "length": 23,
       "value": "\"deeplink_fallback_url\""
     },
@@ -12736,6 +15076,41 @@
       "offset": 261,
       "length": 16,
       "value": "\"MyTargetSDK.ShoppableAdsItem\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/StatResponseMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 7134,
+      "length": 14,
+      "value": "\"creativeView\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/StatResponseMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 7179,
+      "length": 6,
+      "value": "\"skip\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/StatResponseMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 7228,
+      "length": 17,
+      "value": "\"playbackStarted\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/StatResponseMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 7284,
+      "length": 14,
+      "value": "\"closedByUser\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/StatResponseMapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7332,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/Utils\/MediaGroupLoader.swift",
@@ -12775,7 +15150,7 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/AdClient\/AdClientInteractor.swift",
       "kind": "IntegerLiteral",
-      "offset": 7363,
+      "offset": 7384,
       "length": 1,
       "value": "0"
     },
@@ -12824,315 +15199,336 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Models\/VideoMotionHeaderPrivate.swift",
       "kind": "StringLiteral",
-      "offset": 901,
+      "offset": 891,
       "length": 23,
       "value": "\"deeplink_fallback_url\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Models\/VideoMotionHeaderPrivate.swift",
       "kind": "StringLiteral",
-      "offset": 901,
+      "offset": 891,
       "length": 23,
       "value": "\"deeplink_fallback_url\""
     },
     {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/InstreamAdVideoMotionDisclaimer.swift",
-      "kind": "StringLiteral",
-      "offset": 242,
-      "length": 31,
-      "value": "\"MyTargetSDK.InstreamAdVideoMotionDisclaimer\""
-    },
-    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 350,
+      "offset": 351,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 413,
+      "offset": 414,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 478,
+      "offset": 479,
       "length": 4,
       "value": "1002"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 533,
+      "offset": 535,
       "length": 4,
       "value": "1003"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 594,
+      "offset": 596,
       "length": 4,
       "value": "1403"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 654,
+      "offset": 656,
       "length": 4,
       "value": "1404"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 721,
+      "offset": 723,
       "length": 4,
       "value": "1500"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 788,
+      "offset": 791,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 842,
+      "offset": 845,
       "length": 4,
       "value": "2001"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 892,
+      "offset": 895,
       "length": 4,
       "value": "2002"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 940,
+      "offset": 943,
       "length": 4,
       "value": "2003"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 995,
+      "offset": 998,
       "length": 4,
       "value": "2004"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1062,
+      "offset": 1065,
       "length": 4,
       "value": "2005"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1127,
+      "offset": 1131,
       "length": 4,
       "value": "3000"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1188,
+      "offset": 1192,
       "length": 4,
       "value": "3001"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1250,
+      "offset": 1254,
       "length": 4,
       "value": "3002"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1295,
+      "offset": 1300,
       "length": 4,
       "value": "3003"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1361,
+      "offset": 1367,
       "length": 4,
       "value": "3004"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1429,
+      "offset": 1435,
       "length": 4,
       "value": "4001"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1504,
+      "offset": 1498,
+      "length": 4,
+      "value": "4002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1586,
+      "length": 4,
+      "value": "4003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1662,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1587,
+      "offset": 1745,
       "length": 4,
       "value": "5001"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 350,
+      "offset": 351,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 413,
+      "offset": 414,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 478,
+      "offset": 479,
       "length": 4,
       "value": "1002"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 533,
+      "offset": 535,
       "length": 4,
       "value": "1003"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 594,
+      "offset": 596,
       "length": 4,
       "value": "1403"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 654,
+      "offset": 656,
       "length": 4,
       "value": "1404"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 721,
+      "offset": 723,
       "length": 4,
       "value": "1500"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 788,
+      "offset": 791,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 842,
+      "offset": 845,
       "length": 4,
       "value": "2001"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 892,
+      "offset": 895,
       "length": 4,
       "value": "2002"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 940,
+      "offset": 943,
       "length": 4,
       "value": "2003"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 995,
+      "offset": 998,
       "length": 4,
       "value": "2004"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1062,
+      "offset": 1065,
       "length": 4,
       "value": "2005"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1127,
+      "offset": 1131,
       "length": 4,
       "value": "3000"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1188,
+      "offset": 1192,
       "length": 4,
       "value": "3001"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1250,
+      "offset": 1254,
       "length": 4,
       "value": "3002"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1295,
+      "offset": 1300,
       "length": 4,
       "value": "3003"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1361,
+      "offset": 1367,
       "length": 4,
       "value": "3004"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1429,
+      "offset": 1435,
       "length": 4,
       "value": "4001"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1504,
+      "offset": 1498,
+      "length": 4,
+      "value": "4002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1586,
+      "length": 4,
+      "value": "4003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1662,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/AdLoadingError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1587,
+      "offset": 1745,
       "length": 4,
       "value": "5001"
     },
@@ -13163,34 +15559,6 @@
       "offset": 1443,
       "length": 3,
       "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/ShoppableAdsDataParser\/ShoppableAdsDataParser.swift",
-      "kind": "StringLiteral",
-      "offset": 4982,
-      "length": 7,
-      "value": "\"items\""
-    },
-    {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/ShoppableAdsDataParser\/ShoppableAdsDataParser.swift",
-      "kind": "StringLiteral",
-      "offset": 5022,
-      "length": 12,
-      "value": "\"statistics\""
-    },
-    {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/ShoppableAdsDataParser\/ShoppableAdsDataParser.swift",
-      "kind": "StringLiteral",
-      "offset": 5101,
-      "length": 12,
-      "value": "\"statistics\""
-    },
-    {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/ShoppableAdsDataParser\/ShoppableAdsDataParser.swift",
-      "kind": "StringLiteral",
-      "offset": 702,
-      "length": 22,
-      "value": "\"MyTargetSDK.ShoppableAdsDataParser\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Async\/AsyncOperation.swift",
@@ -13291,11 +15659,137 @@
       "value": "\"MyTargetSDK.NetworkDataProvider\""
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 265,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 286,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 304,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 325,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 346,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 365,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 386,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 411,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 265,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 286,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 304,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 325,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 346,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 365,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 386,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 411,
+      "length": 2,
+      "value": "10"
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ClickHandler+VideoMotion.swift",
       "kind": "BooleanLiteral",
-      "offset": 2368,
+      "offset": 2362,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Responses\/ShoppableAdsDataResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 683,
+      "length": 23,
+      "value": "\"deeplink_fallback_url\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Responses\/ShoppableAdsDataResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 683,
+      "length": 23,
+      "value": "\"deeplink_fallback_url\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/InstreamAdVideoMotionItem.swift",
@@ -13310,6 +15804,13 @@
       "offset": 229,
       "length": 27,
       "value": "\"MyTargetSDK.InstreamAdVideoMotionBanner\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/ShoppableAdsDataResponseMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3560,
+      "length": 22,
+      "value": "\"shoppableAdsItemShow\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeAdResultProcessor.swift",
@@ -13335,35 +15836,42 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 588,
+      "offset": 584,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 637,
+      "offset": 633,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 2040,
+      "offset": 2028,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 4156,
+      "offset": 4136,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 4205,
+      "offset": 4185,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6167,
       "length": 5,
       "value": "false"
     },
@@ -13376,15 +15884,8 @@
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6265,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "FloatLiteral",
-      "offset": 8011,
+      "offset": 7958,
       "length": 4,
       "value": "60.0"
     },

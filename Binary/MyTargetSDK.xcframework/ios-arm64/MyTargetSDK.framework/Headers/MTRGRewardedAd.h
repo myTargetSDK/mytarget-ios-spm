@@ -1,6 +1,6 @@
 //
 //  MTRGRewardedAd.h
-//  myTargetSDK 5.21.2
+//  myTargetSDK 5.21.3
 //
 //  Created by Andrey Seredkin on 05.08.2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -71,6 +71,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param rewardedAd Current ad.
  */
 - (void)onDisplayWithRewardedAd:(MTRGRewardedAd *)rewardedAd;
+
+/**
+ @discussion Calls when video ad failed to show.
+
+ @param rewardedAd Current ad.
+ */
+- (void)onFailedToShowWithRewardedAd:(MTRGRewardedAd *)rewardedAd;
 
 /**
  @discussion Calls on leave application while ad is showing.

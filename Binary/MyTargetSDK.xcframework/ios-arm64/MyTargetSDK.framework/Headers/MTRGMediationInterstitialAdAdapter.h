@@ -1,6 +1,6 @@
 //
 //  MTRGMediationInterstitialAdAdapter.h
-//  myTargetSDK 5.21.2
+//  myTargetSDK 5.21.3
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -61,6 +61,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param adapter Current adapter.
  */
 - (void)onDisplayWithAdapter:(id <MTRGMediationInterstitialAdAdapter>)adapter;
+
+/**
+ @discussion Calls when ad failed to show by adapter.
+
+ @param adapter Current adapter.
+ */
+- (void)onFailedToShowWithAdapter:(id <MTRGMediationInterstitialAdAdapter>)adapter;
 
 /**
  @discussion Calls on leave the application while ad is showing.

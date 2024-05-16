@@ -1,6 +1,6 @@
 //
 //  MTRGMediationRewardedAdAdapter.h
-//  myTargetSDK 5.21.2
+//  myTargetSDK 5.21.3
 //
 //  Created by Andrey Seredkin on 13.08.2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -64,6 +64,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param adapter Current adapter.
  */
 - (void)onDisplayWithAdapter:(id <MTRGMediationRewardedAdAdapter>)adapter;
+
+/**
+ @discussion Calls when ad failed to show by adapter.
+
+ @param adapter Current adapter.
+ */
+- (void)onFailedToShowWithAdapter:(id <MTRGMediationRewardedAdAdapter>)adapter;
 
 /**
  @discussion Calls on leave the application while ad is showing.

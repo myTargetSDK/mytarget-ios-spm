@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios12.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MyTargetSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MyTargetSDK
 import AVFAudio
 import AVFoundation
 import AdSupport
@@ -18,6 +17,10 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
+@_hasMissingDesignatedInitializers @objc(MTRGInstreamAdVideoMotionDisclaimer) final public class InstreamAdVideoMotionDisclaimer : ObjectiveC.NSObject {
+  @objc final public let text: Swift.String
+  @objc deinit
+}
 @objc public protocol MTRGMenu {
   @objc(addMenuAction:) func add(menuAction action: MyTargetSDK.MTRGMenuAction)
   @objc(presentInViewController:sourceView:) func present(in viewController: UIKit.UIViewController, sourceView: UIKit.UIView?)
@@ -92,6 +95,12 @@ import os
   @objc override dynamic public init()
   @objc deinit
 }
+@objc(MTRGDisclaimer) final public class Disclaimer : ObjectiveC.NSObject {
+  @objc final public let text: Swift.String
+  @objc final public let type: MyTargetSDK.DisclaimerType
+  @objc public init(text: Swift.String, type: MyTargetSDK.DisclaimerType)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc(MTRGShoppableAdsItem) final public class ShoppableAdsItem : ObjectiveC.NSObject, Swift.Decodable {
   @objc final public let url: Swift.String
   @objc final public let id: Swift.String
@@ -114,10 +123,6 @@ import os
 @objc(MTRGInstreamAdVideoMotionPlayer) public protocol InstreamAdVideoMotionPlayer {
   @objc weak var delegate: (any MyTargetSDK.InstreamAdVideoMotionPlayerDelegate)? { get set }
   @objc func play(_ videoMotionBanner: MyTargetSDK.InstreamAdVideoMotionBanner)
-}
-@_hasMissingDesignatedInitializers @objc(MTRGInstreamAdVideoMotionDisclaimer) final public class InstreamAdVideoMotionDisclaimer : ObjectiveC.NSObject {
-  @objc final public let text: Swift.String
-  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class MTRGVersion : ObjectiveC.NSObject {
   @objc final public class func currentVersion() -> Swift.String
@@ -143,6 +148,8 @@ import os
   case noBanners = 3003
   case invalidBannerType = 3004
   case reloadingNotAllowed = 4001
+  case loadingCancelled = 4002
+  case undefinedSubmodelLoadingError = 4003
   case undefinedMediationError = 5000
   case mediationAdNotLoaded = 5001
   public var errorDescription: Swift.String? {
@@ -162,6 +169,21 @@ import os
   @objc final public let items: [MyTargetSDK.InstreamAdVideoMotionItem]
   @objc final public let disclaimer: MyTargetSDK.InstreamAdVideoMotionDisclaimer?
   @objc deinit
+}
+@objc(MTRGDisclaimerType) public enum DisclaimerType : Swift.Int {
+  case undefined = 0
+  case alcohol = 3
+  case beer = 4
+  case tobacco = 5
+  case medical = 6
+  case drugs = 8
+  case dietary = 9
+  case declaration = 10
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers @objc(MTRGInstreamAdVideoMotionItem) final public class InstreamAdVideoMotionItem : ObjectiveC.NSObject {
   @objc final public let id: Swift.String
@@ -191,3 +213,6 @@ extension MyTargetSDK.MTRGLogMessageType : Swift.RawRepresentable {}
 extension MyTargetSDK.AdLoadingError : Swift.Equatable {}
 extension MyTargetSDK.AdLoadingError : Swift.Hashable {}
 extension MyTargetSDK.AdLoadingError : Swift.RawRepresentable {}
+extension MyTargetSDK.DisclaimerType : Swift.Equatable {}
+extension MyTargetSDK.DisclaimerType : Swift.Hashable {}
+extension MyTargetSDK.DisclaimerType : Swift.RawRepresentable {}

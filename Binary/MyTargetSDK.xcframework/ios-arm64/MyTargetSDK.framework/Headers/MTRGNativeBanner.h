@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBanner.h
-//  myTargetSDK 5.21.2
+//  myTargetSDK 5.21.3
 //
 //  Created by Andrey Seredkin on 10/02/2020.
 //  Copyright © 2020 Mail.Ru Group. All rights reserved.
@@ -10,6 +10,7 @@
 #import <MyTargetSDK/MTRGNavigationType.h>
 
 @class MTRGImageData;
+@class MTRGDisclaimer;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -46,7 +47,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Disclaimer for the banner.
  */
-@property(nonatomic, readonly, copy, nullable) NSString *disclaimer;
+@property(nonatomic, readonly, copy, nullable) NSString *disclaimer __attribute__((deprecated("use disclaimerInfo.text instead.")));
+
+/**
+ @discussion Disclaimer info for the banner.
+ */
+@property(nonatomic, readonly, nullable) MTRGDisclaimer *disclaimerInfo;
 
 /**
  @discussion Domain for the banner.
