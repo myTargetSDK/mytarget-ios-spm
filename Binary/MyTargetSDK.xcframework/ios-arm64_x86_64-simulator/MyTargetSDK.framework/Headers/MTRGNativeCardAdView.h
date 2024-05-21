@@ -1,6 +1,6 @@
 //
 //  MTRGNativeCardAdView.h
-//  myTargetSDK 5.21.3
+//  myTargetSDK 5.21.4
 //
 //  Created by Andrey Seredkin on 20.10.16.
 //  Copyright © 2016 Mail.ru. All rights reserved.
@@ -36,6 +36,16 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Media view.
  */
 @property(nonatomic, readonly) MTRGMediaAdView *mediaAdView;
+
+/**
+ @discussion Card index in collection view.
+ */
+@property(nonatomic) NSInteger cardIndex;
+
+/**
+ @discussion Card delegate for collection view.
+ */
+@property(nonatomic, weak, nullable) id<MTRGPromoCardViewDelegate> cardViewDelegate;
 
 /**
  @discussion Static constructor. Creates instance of the class.

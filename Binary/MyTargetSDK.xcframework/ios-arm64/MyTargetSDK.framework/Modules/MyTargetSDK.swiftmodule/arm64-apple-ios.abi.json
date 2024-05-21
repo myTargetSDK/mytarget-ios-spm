@@ -1938,6 +1938,26 @@
       },
       {
         "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2463,6 +2483,46 @@
         "printedName": "AVFoundation",
         "declKind": "Import",
         "moduleName": "MyTargetSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -3687,6 +3747,26 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -8407,6 +8487,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
@@ -8909,6 +8999,26 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -13454,6 +13564,69 @@
       "value": "6"
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Controllers\/InstreamAdVideoController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1153,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Controllers\/InstreamAdVideoController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1703,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Controllers\/InstreamAdVideoController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1754,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Controllers\/InstreamAdVideoController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1799,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Controllers\/InstreamAdVideoController.swift",
+      "kind": "StringLiteral",
+      "offset": 288,
+      "length": 25,
+      "value": "\"MyTargetSDK.InstreamAdVideoController\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Controllers\/InstreamAdVideoController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10448,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Controllers\/InstreamAdVideoController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10510,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Controllers\/InstreamAdVideoController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10568,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Controllers\/InstreamAdVideoController.swift",
+      "kind": "FloatLiteral",
+      "offset": 10620,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeAdInteractor.swift",
       "kind": "StringLiteral",
       "offset": 1342,
@@ -13809,6 +13982,34 @@
       "offset": 1848,
       "length": 22,
       "value": "\"viewability_duration\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Presenters\/InstreamAdShoppablePresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 289,
+      "length": 28,
+      "value": "\"MyTargetSDK.InstreamAdShoppablePresenter\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Presenters\/InstreamAdShoppablePresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3996,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/UI\/InstreamAdShoppableWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 239,
+      "length": 26,
+      "value": "\"MyTargetSDK.InstreamAdShoppableWebView\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/UI\/InstreamAdShoppableWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 2433,
+      "length": 32,
+      "value": "\"MTRGInstreamAdShoppableWebView\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/StatHolder.swift",
@@ -14254,7 +14455,7 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ClickHandler\/AdClickHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 2243,
+      "offset": 2289,
       "length": 1,
       "value": "0"
     },
@@ -14817,6 +15018,20 @@
       "offset": 183,
       "length": 22,
       "value": "\"MyTargetSDK.MediaDownloadOperation\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ClickHandler\/AdClickContext.swift",
+      "kind": "IntegerLiteral",
+      "offset": 280,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ClickHandler\/AdClickContext.swift",
+      "kind": "IntegerLiteral",
+      "offset": 280,
+      "length": 3,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage.swift",
@@ -15659,6 +15874,13 @@
       "value": "\"MyTargetSDK.NetworkDataProvider\""
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/WebViewContext.swift",
+      "kind": "StringLiteral",
+      "offset": 217,
+      "length": 14,
+      "value": "\"MyTargetSDK.WebViewContext\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/DisclaimerType.swift",
       "kind": "IntegerLiteral",
       "offset": 265,
@@ -15790,6 +16012,13 @@
       "offset": 683,
       "length": 23,
       "value": "\"deeplink_fallback_url\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Parsers\/InstreamAdSectionParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1652,
+      "length": 2,
+      "value": "60"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Public\/Models\/InstreamAdVideoMotionItem.swift",

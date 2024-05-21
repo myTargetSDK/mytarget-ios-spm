@@ -1,6 +1,6 @@
 //
 //  MTRGPromoCardSliderProtocol.h
-//  myTargetSDK 5.21.3
+//  myTargetSDK 5.21.4
 //
 //  Created by Andrey Seredkin on 24.11.17.
 //  Copyright © 2017 Mail.ru Group. All rights reserved.
@@ -39,6 +39,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param card Rendered card.
  */
 - (void)onRenderCard:(MTRGNativePromoCard *)card;
+
+/**
+ @discussion Calls on cta button click.
+
+ @param card Clicked card.
+ */
+- (void)onCtaButtonClickWithCard:(MTRGNativePromoCard *)card;
 
 @end
 

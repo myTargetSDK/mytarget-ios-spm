@@ -226,7 +226,7 @@
 		</data>
 		<key>Headers/MTRGNativeCardAdView.h</key>
 		<data>
-		zDBITvIPauC6zS4PJYazKfzABs0=
+		DGE9452HroVyhtOd2V0/F6GSKnM=
 		</data>
 		<key>Headers/MTRGNativePromoBanner.h</key>
 		<data>
@@ -258,11 +258,11 @@
 		</data>
 		<key>Headers/MTRGPromoCardSliderProtocol.h</key>
 		<data>
-		cS4HUt2nxOOahKzzk5VifIQBTeA=
+		VgfRsZWVQFHU00OaUBAIY7bgL6I=
 		</data>
 		<key>Headers/MTRGPromoCardViewProtocol.h</key>
 		<data>
-		JfrIUFSyUXLS0mulgSQE9si8cgs=
+		9itOh+bgx90G1WrWgkVKjktbGrs=
 		</data>
 		<key>Headers/MTRGReward.h</key>
 		<data>
@@ -302,7 +302,7 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		g/KnUz7IZxZDLNqQKviCFDvOeIk=
+		qqR1zkZO7ipJv4dLBqrrtdRE0gw=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -318,11 +318,11 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qearASxo14zGj/RgZ92za3TFZaw=
+		+bFQxReTawiOaHMcU1kU4d6SeRU=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		g/KnUz7IZxZDLNqQKviCFDvOeIk=
+		qqR1zkZO7ipJv4dLBqrrtdRE0gw=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -338,7 +338,7 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8o7yPbObFslHScDrfGad70BvIis=
+		bbp5M0HAfjJFuUqbvVwK2fjafyY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -964,11 +964,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zDBITvIPauC6zS4PJYazKfzABs0=
+			DGE9452HroVyhtOd2V0/F6GSKnM=
 			</data>
 			<key>hash2</key>
 			<data>
-			gLHQTp/t5k1mu/ayp8YI1aYrJp7r34WHin0EtKwUNX0=
+			Zyj77Qw9jjepoWAWZxJQjOczr86ayRKI3d5A5WciTgY=
 			</data>
 		</dict>
 		<key>Headers/MTRGNativePromoBanner.h</key>
@@ -1052,22 +1052,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cS4HUt2nxOOahKzzk5VifIQBTeA=
+			VgfRsZWVQFHU00OaUBAIY7bgL6I=
 			</data>
 			<key>hash2</key>
 			<data>
-			U+hr8jrduKtzUtwi18HfAFaSBaWNo1iimxV18y33YFU=
+			Io/lz5kbiLVzhmeNk/dd/iVcK++8R7wdgEmvmJhETpY=
 			</data>
 		</dict>
 		<key>Headers/MTRGPromoCardViewProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JfrIUFSyUXLS0mulgSQE9si8cgs=
+			9itOh+bgx90G1WrWgkVKjktbGrs=
 			</data>
 			<key>hash2</key>
 			<data>
-			yd+FQ1451pMULAB1GnUDco0plk7vo6jso29y+fd5sTE=
+			LiIdnsG3ozOjIy5SONFArEWUwagN0jCbXyfeC94BgM4=
 			</data>
 		</dict>
 		<key>Headers/MTRGReward.h</key>
@@ -1162,11 +1162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g/KnUz7IZxZDLNqQKviCFDvOeIk=
+			qqR1zkZO7ipJv4dLBqrrtdRE0gw=
 			</data>
 			<key>hash2</key>
 			<data>
-			3N8y6JVn8holTfkFjiZcOfwm5+YKbFGr1DNOe7r056w=
+			T06I18bLwP+ZzTVdze60Yihpfc8v2RnDVaBvVNPOBT4=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1206,22 +1206,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qearASxo14zGj/RgZ92za3TFZaw=
+			+bFQxReTawiOaHMcU1kU4d6SeRU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Of1kCIfVhv8VXO8K4dCZgp/VOBBBuna56cPusPJEFuI=
+			C6nDnW0KAaLioGrCo6Dkkl6wbqL02r4Hz0uUMKztICI=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g/KnUz7IZxZDLNqQKviCFDvOeIk=
+			qqR1zkZO7ipJv4dLBqrrtdRE0gw=
 			</data>
 			<key>hash2</key>
 			<data>
-			3N8y6JVn8holTfkFjiZcOfwm5+YKbFGr1DNOe7r056w=
+			T06I18bLwP+ZzTVdze60Yihpfc8v2RnDVaBvVNPOBT4=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1261,11 +1261,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8o7yPbObFslHScDrfGad70BvIis=
+			bbp5M0HAfjJFuUqbvVwK2fjafyY=
 			</data>
 			<key>hash2</key>
 			<data>
-			U1Tf3x2fQg3Yp1TM2LQncA/JrfGsK4np5SQhpW3CIGA=
+			Jh32oqKlKz1R55Mo78VwyHrhHhx9BmRiTKKW/6VxoGU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

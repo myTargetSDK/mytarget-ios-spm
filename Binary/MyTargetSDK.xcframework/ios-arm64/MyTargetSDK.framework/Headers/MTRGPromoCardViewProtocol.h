@@ -1,6 +1,6 @@
 //
 //  MTRGPromoCardViewProtocol.h
-//  myTargetSDK 5.21.3
+//  myTargetSDK 5.21.4
 //
 //  Created by Andrey Seredkin on 20.10.16.
 //  Copyright © 2016 Mail.Ru Group. All rights reserved.
@@ -11,6 +11,20 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class MTRGMediaAdView;
+
+/**
+ @discussion Delegate's protocol for promo card view.
+ */
+@protocol MTRGPromoCardViewDelegate
+
+/**
+ @discussion Calls on cta button click.
+
+ @param cardIndex Index of the current card.
+ */
+- (void)onCtaButtonClickAtCardIndex:(NSInteger)cardIndex;
+
+@end
 
 /**
  @discussion Protocol for promo card views.
@@ -47,6 +61,12 @@ NS_ASSUME_NONNULL_BEGIN
  @return Calculated height.
  */
 - (CGFloat)heightWithCardWidth:(CGFloat)width;
+
+@optional
+
+@property(nonatomic) NSInteger cardIndex;
+
+@property(nonatomic, weak, nullable) id<MTRGPromoCardViewDelegate> cardViewDelegate;
 
 @end
 
