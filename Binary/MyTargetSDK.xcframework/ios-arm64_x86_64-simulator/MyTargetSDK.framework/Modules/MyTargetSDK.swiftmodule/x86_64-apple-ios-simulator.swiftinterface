@@ -10,6 +10,7 @@ import CoreTelephony
 import Foundation
 @_exported import MyTargetSDK
 import SafariServices
+import Security
 import StoreKit
 import Swift
 import UIKit
