@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBannerAdLoader.h
-//  myTargetSDK 5.21.5
+//  myTargetSDK 5.21.6
 //
 //  Created by Andrey Seredkin on 03/03/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.

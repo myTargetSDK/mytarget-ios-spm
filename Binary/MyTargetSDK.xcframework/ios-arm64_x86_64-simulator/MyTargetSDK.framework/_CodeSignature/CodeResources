@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/libAppVerificationLibrary.a</key>
-		<data>
-		9C/VDK+qh+wjs0LjlhZCCjrXM1U=
-		</data>
 		<key>Headers/MTRGAdChoicesPlacement.h</key>
 		<data>
 		NZmaKY8mroKcwOyFtq8CKSukAAo=
@@ -355,17 +351,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/libAppVerificationLibrary.a</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9C/VDK+qh+wjs0LjlhZCCjrXM1U=
-			</data>
-			<key>hash2</key>
-			<data>
-			kxpWckt1Pq/aa3zgPN1UwQzEqSvfYUYY4p20GXM5yIw=
-			</data>
-		</dict>
 		<key>Headers/MTRGAdChoicesPlacement.h</key>
 		<dict>
 			<key>hash</key>
