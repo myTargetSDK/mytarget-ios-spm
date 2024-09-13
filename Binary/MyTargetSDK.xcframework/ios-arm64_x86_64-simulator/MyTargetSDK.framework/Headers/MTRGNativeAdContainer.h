@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdContainer.h
-//  myTargetSDK 5.21.7
+//  myTargetSDK 5.21.8
 //
 //  Created by Andrey Seredkin on 21/05/2019.
 //  Copyright © 2019 Mail.Ru Group. All rights reserved.
@@ -21,12 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, nullable) UIView *adView;
 
 /**
- @discussion Advertising view.
+ @discussion Advertising view. This property is required. Please provide it in accordance with the advertising regulations.
  */
 @property(nonatomic, nullable) UIView *advertisingView;
 
 /**
- @discussion View for displaying age restrictions.
+ @discussion View for displaying age restrictions. This property is required. Please provide it in accordance with the advertising regulations.
  */
 @property(nonatomic, nullable) UIView *ageRestrictionsView;
 
@@ -41,12 +41,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, nullable) UIView *descriptionView;
 
 /**
- @discussion View with category.
+ @discussion View with category.  Properties: `categoryView` and `domainView` – are required. Please provide one of it in accordance with the advertising regulations.
  */
 @property(nonatomic, nullable) UIView *categoryView;
 
 /**
- @discussion View with icon.
+ @discussion View with icon. This property is required. Please provide it in accordance with the advertising regulations.
  */
 @property(nonatomic, nullable) UIView *iconView;
 
@@ -66,12 +66,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, nullable) UIView *votesView;
 
 /**
- @discussion View with domain.
+ @discussion View with domain. Properties: `categoryView` and `domainView` – are required. Please provide one of it in accordance with the advertising regulations.
  */
 @property(nonatomic, nullable) UIView *domainView;
 
 /**
- @discussion View with disclaimer.
+ @discussion View with disclaimer. This property is required. Please provide it in accordance with the advertising regulations.
  */
 @property(nonatomic, nullable) UIView *disclaimerView;
 
@@ -79,6 +79,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion View with CTA.
  */
 @property(nonatomic, nullable) UIView *ctaView;
+
+/**
+ @discussion View with adChoices. Please provide it when use MTRGAdChoicesPlacementDrawingManual
+ */
+@property(nonatomic, nullable) UIView *adChoicesView;
 
 /**
  @discussion Static constructor. Creates instance of the class.

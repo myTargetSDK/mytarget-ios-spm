@@ -502,7 +502,6 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 
 
 
-
 /// The various log message types that the logger provides.
 typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The informative log message type.
@@ -617,6 +616,8 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK15MTRGMenuFactory_")
 
 
 
+
+
 /// Class to get current version of the SDK
 SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 @interface MTRGVersion : NSObject
@@ -628,6 +629,8 @@ SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 /// Version of SDK as string
 + (NSString * _Nonnull)currentVersion SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -1165,7 +1168,6 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 
 
 
-
 /// The various log message types that the logger provides.
 typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The informative log message type.
@@ -1280,6 +1282,8 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK15MTRGMenuFactory_")
 
 
 
+
+
 /// Class to get current version of the SDK
 SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 @interface MTRGVersion : NSObject
@@ -1291,6 +1295,8 @@ SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 /// Version of SDK as string
 + (NSString * _Nonnull)currentVersion SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
