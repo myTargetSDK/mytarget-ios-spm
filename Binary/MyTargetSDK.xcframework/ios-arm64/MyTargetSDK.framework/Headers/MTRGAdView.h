@@ -1,6 +1,6 @@
 //
 //  MTRGAdView.h
-//  myTargetSDK 5.21.8
+//  myTargetSDK 5.21.9
 //
 // Created by Timur on 3/22/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -158,6 +158,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
 
 - (nullable instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;
+
+/**
+ @discussion Handles data.
+
+ @param data Data as a string.
+ */
+- (void)handleData:(NSString *)data;
 
 /**
  @discussion Load the view.

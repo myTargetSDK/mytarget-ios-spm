@@ -16647,28 +16647,28 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/AdClient\/AdClientInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 481,
+      "offset": 810,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/AdClient\/AdClientInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1949,
+      "offset": 2267,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/AdClient\/AdClientInteractor.swift",
       "kind": "IntegerLiteral",
-      "offset": 7384,
+      "offset": 8110,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/AdClient\/AdClientInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 1541,
+      "offset": 1859,
       "length": 25,
       "value": "\"MyTargetSDK.DefaultAdClientInteractor\""
     },

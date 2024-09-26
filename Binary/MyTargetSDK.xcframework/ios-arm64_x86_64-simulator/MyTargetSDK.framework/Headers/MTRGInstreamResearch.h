@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamResearch.h
-//  myTargetSDK 5.21.8
+//  myTargetSDK 5.21.9
 //
 //  Created by Andrey Seredkin on 19/02/2019.
 //  Copyright © 2019 Mail.Ru Group. All rights reserved.

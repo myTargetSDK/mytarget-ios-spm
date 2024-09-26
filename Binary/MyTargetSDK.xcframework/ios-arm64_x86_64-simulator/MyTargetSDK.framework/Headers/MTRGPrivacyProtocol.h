@@ -1,6 +1,6 @@
 //
 //  MTRGPrivacyProtocol.h
-//  myTargetSDK 5.21.8
+//  myTargetSDK 5.21.9
 //
 //  Created by Andrey Seredkin on 14.03.2024.
 //  Copyright © 2024 VK. All rights reserved.
