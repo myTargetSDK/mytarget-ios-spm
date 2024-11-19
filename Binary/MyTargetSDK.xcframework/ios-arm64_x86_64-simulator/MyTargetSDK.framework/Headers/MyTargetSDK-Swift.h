@@ -364,6 +364,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MTRGBannerMe
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
 enum MTRGDisclaimerType : NSInteger;
 
 /// Ads disclaimer
@@ -587,7 +588,8 @@ SWIFT_CLASS("_TtC11MyTargetSDK14MTRGMenuAction")
 @interface MTRGMenuAction : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull title;
 @property (nonatomic, readonly) enum MTRGMenuActionStyle style;
-- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title style:(enum MTRGMenuActionStyle)style handler:(void (^ _Nullable)(void))handler OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nullable alias;
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title style:(enum MTRGMenuActionStyle)style alias:(NSString * _Nullable)alias handler:(void (^ _Nullable)(void))handler OBJC_DESIGNATED_INITIALIZER;
 - (void)handleClick;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -595,7 +597,10 @@ SWIFT_CLASS("_TtC11MyTargetSDK14MTRGMenuAction")
 
 typedef SWIFT_ENUM(NSInteger, MTRGMenuActionStyle, open) {
   MTRGMenuActionStyleDefault = 0,
-  MTRGMenuActionStyleCancel = 1,
+  MTRGMenuActionStyleCopy = 1,
+  MTRGMenuActionStyleHide = 2,
+  MTRGMenuActionStyleComplain = 3,
+  MTRGMenuActionStyleCancel = 4,
 };
 
 
@@ -604,6 +609,7 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK15MTRGMenuFactory_")
 @protocol MTRGMenuFactory
 - (id <MTRGMenu> _Nonnull)menu SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 
@@ -1030,6 +1036,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MTRGBannerMe
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
 enum MTRGDisclaimerType : NSInteger;
 
 /// Ads disclaimer
@@ -1253,7 +1260,8 @@ SWIFT_CLASS("_TtC11MyTargetSDK14MTRGMenuAction")
 @interface MTRGMenuAction : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull title;
 @property (nonatomic, readonly) enum MTRGMenuActionStyle style;
-- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title style:(enum MTRGMenuActionStyle)style handler:(void (^ _Nullable)(void))handler OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nullable alias;
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title style:(enum MTRGMenuActionStyle)style alias:(NSString * _Nullable)alias handler:(void (^ _Nullable)(void))handler OBJC_DESIGNATED_INITIALIZER;
 - (void)handleClick;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1261,7 +1269,10 @@ SWIFT_CLASS("_TtC11MyTargetSDK14MTRGMenuAction")
 
 typedef SWIFT_ENUM(NSInteger, MTRGMenuActionStyle, open) {
   MTRGMenuActionStyleDefault = 0,
-  MTRGMenuActionStyleCancel = 1,
+  MTRGMenuActionStyleCopy = 1,
+  MTRGMenuActionStyleHide = 2,
+  MTRGMenuActionStyleComplain = 3,
+  MTRGMenuActionStyleCancel = 4,
 };
 
 
@@ -1270,6 +1281,7 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK15MTRGMenuFactory_")
 @protocol MTRGMenuFactory
 - (id <MTRGMenu> _Nonnull)menu SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 

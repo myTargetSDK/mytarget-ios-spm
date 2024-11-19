@@ -427,6 +427,129 @@
           },
           {
             "kind": "Var",
+            "name": "copy",
+            "printedName": "copy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.MTRGMenuActionStyle.Type) -> MyTargetSDK.MTRGMenuActionStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MTRGMenuActionStyle",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MTRGMenuActionStyle",
+                        "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle@MTRGMenuActionStyleCopy",
+            "mangledName": "$s11MyTargetSDK19MTRGMenuActionStyleO4copyyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "hide",
+            "printedName": "hide",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.MTRGMenuActionStyle.Type) -> MyTargetSDK.MTRGMenuActionStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MTRGMenuActionStyle",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MTRGMenuActionStyle",
+                        "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle@MTRGMenuActionStyleHide",
+            "mangledName": "$s11MyTargetSDK19MTRGMenuActionStyleO4hideyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "complain",
+            "printedName": "complain",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyTargetSDK.MTRGMenuActionStyle.Type) -> MyTargetSDK.MTRGMenuActionStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MTRGMenuActionStyle",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                    "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyTargetSDK.MTRGMenuActionStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MTRGMenuActionStyle",
+                        "printedName": "MyTargetSDK.MTRGMenuActionStyle",
+                        "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle@MTRGMenuActionStyleComplain",
+            "mangledName": "$s11MyTargetSDK19MTRGMenuActionStyleO8complainyA2CmF",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
             "name": "cancel",
             "printedName": "cancel",
             "children": [
@@ -464,7 +587,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 1
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Constructor",
@@ -693,9 +816,75 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "alias",
+            "printedName": "alias",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction(py)alias",
+            "mangledName": "$s11MyTargetSDK14MTRGMenuActionC5aliasSSSgvp",
+            "moduleName": "MyTargetSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction(im)alias",
+                "mangledName": "$s11MyTargetSDK14MTRGMenuActionC5aliasSSSgvg",
+                "moduleName": "MyTargetSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(title:style:handler:)",
+            "printedName": "init(title:style:alias:handler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -714,6 +903,21 @@
                 "name": "MTRGMenuActionStyle",
                 "printedName": "MyTargetSDK.MTRGMenuActionStyle",
                 "usr": "c:@M@MyTargetSDK@E@MTRGMenuActionStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -742,10 +946,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction(im)initWithTitle:style:handler:",
-            "mangledName": "$s11MyTargetSDK14MTRGMenuActionC5title5style7handlerACSS_AA0dE5StyleOyycSgtcfc",
+            "usr": "c:@M@MyTargetSDK@objc(cs)MTRGMenuAction(im)initWithTitle:style:alias:handler:",
+            "mangledName": "$s11MyTargetSDK14MTRGMenuActionC5title5style5alias7handlerACSS_AA0dE5StyleOSSSgyycSgtcfc",
             "moduleName": "MyTargetSDK",
-            "objc_name": "initWithTitle:style:handler:",
+            "objc_name": "initWithTitle:style:alias:handler:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -894,6 +1098,26 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -1333,6 +1557,36 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -1349,6 +1603,36 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -1574,22 +1858,22 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MyTargetSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -2431,6 +2715,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "MyTargetSDK"
       },
       {
@@ -2927,6 +3221,26 @@
         "printedName": "Security",
         "declKind": "Import",
         "moduleName": "MyTargetSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -3626,6 +3940,26 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
@@ -3652,6 +3986,16 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -4301,6 +4645,16 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -5561,6 +5915,26 @@
       },
       {
         "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5735,6 +6109,26 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -6523,6 +6917,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -6599,6 +7003,16 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -7029,6 +7443,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
@@ -7311,6 +7735,16 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -8611,26 +9045,6 @@
       },
       {
         "kind": "Import",
-        "name": "MyTargetSDK_Internal",
-        "printedName": "MyTargetSDK_Internal",
-        "declKind": "Import",
-        "moduleName": "MyTargetSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MyTargetSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -8737,6 +9151,16 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -9163,16 +9587,6 @@
       },
       {
         "kind": "Import",
-        "name": "MyTargetSDK_Internal",
-        "printedName": "MyTargetSDK_Internal",
-        "declKind": "Import",
-        "moduleName": "MyTargetSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -9229,6 +9643,86 @@
         "moduleName": "MyTargetSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK_Internal",
+        "printedName": "MyTargetSDK_Internal",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -10878,6 +11372,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MyTargetSDK_Internal",
         "printedName": "MyTargetSDK_Internal",
         "declKind": "Import",
@@ -11024,77 +11528,6 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "MyTargetSDK_Internal.MTRGBaseAdResponseParser",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MTRGNativeAdServiceBuilder",
-        "printedName": "MTRGNativeAdServiceBuilder",
-        "declKind": "Class",
-        "usr": "c:objc(cs)MTRGNativeAdServiceBuilder",
-        "moduleName": "MyTargetSDK_Internal",
-        "isOpen": true,
-        "objc_name": "MTRGNativeAdServiceBuilder",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -13598,6 +14031,64 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "MTRGCachePolicy",
+        "printedName": "MTRGCachePolicy",
+        "declKind": "Struct",
+        "usr": "c:@EA@MTRGCachePolicy",
+        "moduleName": "MyTargetSDK",
+        "declAttributes": [
+          "SynthesizedProtocol",
+          "SynthesizedProtocol"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "MTRGInstreamResearchServiceBuilder",
         "printedName": "MTRGInstreamResearchServiceBuilder",
         "declKind": "Class",
@@ -14002,20 +14493,62 @@
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
       "kind": "IntegerLiteral",
       "offset": 233,
-      "length": 6,
+      "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
       "kind": "IntegerLiteral",
-      "offset": 233,
+      "offset": 247,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 261,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 279,
       "length": 6,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 233,
+      "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 247,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 261,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 279,
+      "length": 6,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Menu\/MTRGMenuAction.swift",
       "kind": "StringLiteral",
-      "offset": 268,
+      "offset": 314,
       "length": 14,
       "value": "\"MyTargetSDK.MTRGMenuAction\""
     },
@@ -14095,6 +14628,13 @@
       "offset": 4278,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/MonitoringLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 3949,
+      "length": 29,
+      "value": "\"https:\/\/ad.mail.ru\/sdk\/log\/\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/MTRGLogMessageType.swift",
@@ -14209,18 +14749,18 @@
       "value": "\"com.my.target.decodableConfiguration\""
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ExcludedBanners\/ExcludeTimestampProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1499,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTrackerTimer.swift",
       "kind": "BooleanLiteral",
       "offset": 437,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTrackerTimer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1080,
-      "length": 13,
-      "value": "1000000000"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Controllers\/InstreamAdVideoMotionController.swift",
@@ -14477,7 +15017,7 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeAdModules\/NativeAdLogic.swift",
       "kind": "BooleanLiteral",
-      "offset": 1031,
+      "offset": 1076,
       "length": 5,
       "value": "false"
     },
@@ -14848,14 +15388,14 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Parsers\/VideoMotionParser.swift",
       "kind": "StringLiteral",
-      "offset": 5128,
+      "offset": 5188,
       "length": 10,
       "value": "\"bannerID\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Parsers\/VideoMotionParser.swift",
       "kind": "StringLiteral",
-      "offset": 5171,
+      "offset": 5231,
       "length": 12,
       "value": "\"statistics\""
     },
@@ -14869,28 +15409,28 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/ModulesCommon\/NativeAdInteractorWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1218,
+      "offset": 1302,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/ModulesCommon\/NativeAdInteractorWorker.swift",
       "kind": "Array",
-      "offset": 1793,
+      "offset": 1877,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeAdModules\/NativeAdCardsModule\/NativeAdCardsViewController.swift",
       "kind": "Array",
-      "offset": 2651,
+      "offset": 2686,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeAdModules\/NativeAdCardsModule\/NativeAdCardsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 854,
+      "offset": 889,
       "length": 27,
       "value": "\"MyTargetSDK.NativeAdCardsViewController\""
     },
@@ -14911,14 +15451,14 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeAdModules\/NativeAdVideoModule\/NativeAdVideoViewController.swift",
       "kind": "Array",
-      "offset": 1228,
+      "offset": 1263,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeAdModules\/NativeAdVideoModule\/NativeAdVideoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 604,
+      "offset": 639,
       "length": 27,
       "value": "\"MyTargetSDK.NativeAdVideoViewController\""
     },
@@ -14928,6 +15468,13 @@
       "offset": 794,
       "length": 26,
       "value": "\"MyTargetSDK.InstreamAdEngineInteractor\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Factory\/LoggerFactory.swift",
+      "kind": "Array",
+      "offset": 2908,
+      "length": 109,
+      "value": "[\"com.myTarget.privateDemo\", \"com.vk.vkclient\", \"ru.mail.mail\"]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInterstitial\/Private\/InterstitialAdInteractor.swift",
@@ -14946,7 +15493,7 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/RedashLogger.swift",
       "kind": "StringLiteral",
-      "offset": 801,
+      "offset": 945,
       "length": 29,
       "value": "\"https:\/\/ad.mail.ru\/sdk\/log\/\""
     },
@@ -14995,175 +15542,175 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5916,
+      "offset": 5971,
       "length": 21,
       "value": "\"\\d+\\.\\d+\\.?\\d*\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5977,
+      "offset": 6032,
       "length": 7,
       "value": "\"Apple\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6015,
+      "offset": 6070,
       "length": 4,
       "value": "\"ru\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6056,
+      "offset": 6111,
       "length": 10,
       "value": "\"%@:00 %@\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 6109,
+      "offset": 6164,
       "length": 7,
       "value": "1000000"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6179,
+      "offset": 6234,
       "length": 19,
       "value": "\"DTPlatformVersion\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6232,
+      "offset": 6287,
       "length": 11,
       "value": "\"DTSDKName\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6282,
+      "offset": 6337,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6441,
+      "offset": 6496,
       "length": 8,
       "value": "\"rooted\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6486,
+      "offset": 6541,
       "length": 13,
       "value": "\"operator_id\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6538,
+      "offset": 6593,
       "length": 15,
       "value": "\"operator_name\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6586,
+      "offset": 6641,
       "length": 9,
       "value": "\"sim_loc\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6633,
+      "offset": 6688,
       "length": 7,
       "value": "\"mm_tt\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6682,
+      "offset": 6737,
       "length": 7,
       "value": "\"mm_av\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6724,
+      "offset": 6779,
       "length": 6,
       "value": "\"btms\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6763,
+      "offset": 6818,
       "length": 8,
       "value": "\"device\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6806,
+      "offset": 6861,
       "length": 10,
       "value": "\"timezone\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6854,
+      "offset": 6909,
       "length": 13,
       "value": "\"manufacture\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6897,
+      "offset": 6952,
       "length": 5,
       "value": "\"app\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6935,
+      "offset": 6990,
       "length": 8,
       "value": "\"appver\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6978,
+      "offset": 7033,
       "length": 10,
       "value": "\"appbuild\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7019,
+      "offset": 7074,
       "length": 6,
       "value": "\"lang\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7059,
+      "offset": 7114,
       "length": 10,
       "value": "\"app_lang\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7105,
+      "offset": 7160,
       "length": 4,
       "value": "\"rs\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/DeviceDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7143,
+      "offset": 7198,
       "length": 10,
       "value": "\"skad_ver\""
     },
@@ -15177,23 +15724,72 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/StatSender.swift",
       "kind": "StringLiteral",
-      "offset": 2613,
+      "offset": 3728,
       "length": 21,
       "value": "\"viewability_percent\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/StatSender.swift",
       "kind": "StringLiteral",
-      "offset": 2681,
+      "offset": 3796,
       "length": 22,
       "value": "\"viewability_duration\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/StatSender.swift",
       "kind": "StringLiteral",
-      "offset": 2753,
+      "offset": 3868,
       "length": 6,
       "value": "\"args\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Level.swift",
+      "kind": "IntegerLiteral",
+      "offset": 575,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Level.swift",
+      "kind": "IntegerLiteral",
+      "offset": 809,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Level.swift",
+      "kind": "IntegerLiteral",
+      "offset": 892,
+      "length": 5,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Level.swift",
+      "kind": "IntegerLiteral",
+      "offset": 575,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Level.swift",
+      "kind": "IntegerLiteral",
+      "offset": 809,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Level.swift",
+      "kind": "IntegerLiteral",
+      "offset": 892,
+      "length": 5,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/Bundle+ExternalHandlerApplications.swift",
+      "kind": "Array",
+      "offset": 488,
+      "length": 120,
+      "value": "[\"com.myTarget.privateDemo\", \"com.vk.vkclient\", \"com.vk.vkdev.enterprise\"]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Presenters\/InstreamAdShoppablePresenter.swift",
@@ -15562,14 +16158,14 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeBannerAdModule\/NativeBannerAdViewController.swift",
       "kind": "Array",
-      "offset": 1038,
+      "offset": 1073,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeBannerAdModule\/NativeBannerAdViewController.swift",
       "kind": "StringLiteral",
-      "offset": 525,
+      "offset": 560,
       "length": 28,
       "value": "\"MyTargetSDK.NativeBannerAdViewController\""
     },
@@ -15674,35 +16270,35 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ClickHandler\/AdClickHandler.swift",
       "kind": "Array",
-      "offset": 763,
+      "offset": 934,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ClickHandler\/AdClickHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 2419,
+      "offset": 3265,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ClickHandler\/AdClickHandler.swift",
       "kind": "StringLiteral",
-      "offset": 539,
+      "offset": 609,
       "length": 14,
       "value": "\"MyTargetSDK.AdClickHandler\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/ConsoleLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1820,
+      "offset": 2717,
       "length": 17,
       "value": "\"ru.myTarget.sdk\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/ConsoleLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1905,
+      "offset": 2802,
       "length": 10,
       "value": "\"myTarget\""
     },
@@ -15719,6 +16315,13 @@
       "offset": 466,
       "length": 23,
       "value": "\"MyTargetSDK.NativeAdVideoInteractor\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/JSONCodingPath.swift",
+      "kind": "StringLiteral",
+      "offset": 1158,
+      "length": 18,
+      "value": "\"MyTargetSDK.MTRGJsonCodingPath\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Models\/Stats\/Stat.swift",
@@ -15826,6 +16429,13 @@
       "value": "\"MyTargetSDK.ViewabilityPixelView\""
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 347,
+      "length": 15,
+      "value": "\"MyTargetSDK.MonitoringEvent\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Models\/VideoMotionItemPrivate.swift",
       "kind": "StringLiteral",
       "offset": 893,
@@ -15870,224 +16480,224 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 6380,
+      "offset": 6376,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 6394,
+      "offset": 6390,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6835,
+      "offset": 6831,
       "length": 61,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6843,
+      "offset": 6839,
       "length": 1,
       "value": "\": nil pointer returned instead struct for coordinate\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7002,
+      "offset": 6998,
       "length": 49,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7010,
+      "offset": 7006,
       "length": 1,
       "value": "\": signature for method coordinate is nil\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 7417,
+      "offset": 7413,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 7510,
+      "offset": 7506,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 7673,
+      "offset": 7669,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7709,
+      "offset": 7705,
       "length": 85,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7732,
+      "offset": 7728,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7756,
+      "offset": 7752,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7768,
+      "offset": 7764,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7777,
+      "offset": 7773,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7793,
+      "offset": 7789,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 8330,
+      "offset": 8326,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 8382,
+      "offset": 8378,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 8434,
+      "offset": 8430,
       "length": 4,
       "value": "-1.0"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 8480,
+      "offset": 8476,
       "length": 4,
       "value": "90.0"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 8527,
+      "offset": 8523,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 8600,
+      "offset": 8596,
       "length": 19,
       "value": "\"CLLocationManager\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 8681,
+      "offset": 8677,
       "length": 10,
       "value": "\"delegate\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 8737,
+      "offset": 8733,
       "length": 17,
       "value": "\"desiredAccuracy\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 8832,
+      "offset": 8828,
       "length": 23,
       "value": "\"startUpdatingLocation\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 8890,
+      "offset": 8886,
       "length": 22,
       "value": "\"stopUpdatingLocation\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 8950,
+      "offset": 8946,
       "length": 25,
       "value": "\"locationServicesEnabled\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 9012,
+      "offset": 9008,
       "length": 21,
       "value": "\"authorizationStatus\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 9150,
+      "offset": 9146,
       "length": 12,
       "value": "\"coordinate\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 9238,
+      "offset": 9234,
       "length": 20,
       "value": "\"horizontalAccuracy\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 9294,
+      "offset": 9290,
       "length": 7,
       "value": "\"speed\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 9341,
+      "offset": 9337,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/LocationDataProvider.swift",
       "kind": "StringLiteral",
-      "offset": 9432,
+      "offset": 9428,
       "length": 10,
       "value": "\"location\""
     },
@@ -16148,86 +16758,93 @@
       "value": "\"MyTargetSDK.AdChoicesHelper\""
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/StatParser.swift",
+      "kind": "StringLiteral",
+      "offset": 392,
+      "length": 10,
+      "value": "\"MyTargetSDK.StatParser\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 713,
+      "offset": 869,
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 740,
+      "offset": 896,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 763,
+      "offset": 919,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 784,
+      "offset": 940,
       "length": 10,
       "value": "4"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 808,
+      "offset": 964,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 831,
+      "offset": 987,
       "length": 7,
       "value": "6"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 713,
+      "offset": 869,
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 740,
+      "offset": 896,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 763,
+      "offset": 919,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 784,
+      "offset": 940,
       "length": 10,
       "value": "4"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 808,
+      "offset": 964,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Manager\/DetailedMessage\/LoggerDetailedMessage+Type.swift",
       "kind": "IntegerLiteral",
-      "offset": 831,
+      "offset": 987,
       "length": 7,
       "value": "6"
     },
@@ -16547,6 +17164,13 @@
       "value": "\"MyTargetSDK.SkadParserErrorTracker\""
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/MTRGStatResolver+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 890,
+      "length": 18,
+      "value": "\"client_timestamp\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Public\/Models\/ShoppableAdsItem.swift",
       "kind": "StringLiteral",
       "offset": 765,
@@ -16570,7 +17194,7 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeBannerAdModule\/NativeBannerAdLogic.swift",
       "kind": "BooleanLiteral",
-      "offset": 1031,
+      "offset": 1076,
       "length": 5,
       "value": "false"
     },
@@ -16584,35 +17208,35 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/StatResponseMapper.swift",
       "kind": "StringLiteral",
-      "offset": 7633,
+      "offset": 10889,
       "length": 14,
       "value": "\"creativeView\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/StatResponseMapper.swift",
       "kind": "StringLiteral",
-      "offset": 7678,
+      "offset": 10934,
       "length": 6,
       "value": "\"skip\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/StatResponseMapper.swift",
       "kind": "StringLiteral",
-      "offset": 7727,
+      "offset": 10983,
       "length": 17,
       "value": "\"playbackStarted\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/StatResponseMapper.swift",
       "kind": "StringLiteral",
-      "offset": 7783,
+      "offset": 11039,
       "length": 14,
       "value": "\"closedByUser\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/StatResponseMapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 7831,
+      "offset": 11087,
       "length": 4,
       "value": "true"
     },
@@ -16654,14 +17278,14 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/AdClient\/AdClientInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2267,
+      "offset": 2367,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/AdClient\/AdClientInteractor.swift",
       "kind": "IntegerLiteral",
-      "offset": 8110,
+      "offset": 8819,
       "length": 1,
       "value": "0"
     },
@@ -16685,6 +17309,566 @@
       "offset": 202,
       "length": 13,
       "value": "\"MyTargetSDK.LoggerManager\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 438,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 543,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 640,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 737,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 884,
+      "length": 5,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1006,
+      "length": 5,
+      "value": "1001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1091,
+      "length": 5,
+      "value": "1002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1362,
+      "length": 5,
+      "value": "1003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1495,
+      "length": 5,
+      "value": "2000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1653,
+      "length": 5,
+      "value": "2001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1767,
+      "length": 5,
+      "value": "2002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1867,
+      "length": 5,
+      "value": "3000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2006,
+      "length": 5,
+      "value": "3001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2099,
+      "length": 5,
+      "value": "3002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2227,
+      "length": 5,
+      "value": "3003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2338,
+      "length": 5,
+      "value": "3004"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2446,
+      "length": 5,
+      "value": "3005"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2550,
+      "length": 5,
+      "value": "3006"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2696,
+      "length": 5,
+      "value": "3007"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2787,
+      "length": 5,
+      "value": "3008"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2926,
+      "length": 5,
+      "value": "3009"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3056,
+      "length": 5,
+      "value": "4000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3169,
+      "length": 5,
+      "value": "4001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3296,
+      "length": 5,
+      "value": "4002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3412,
+      "length": 5,
+      "value": "4003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3557,
+      "length": 5,
+      "value": "4004"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3652,
+      "length": 5,
+      "value": "5000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3747,
+      "length": 5,
+      "value": "5001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3840,
+      "length": 5,
+      "value": "5002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3960,
+      "length": 5,
+      "value": "5003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4022,
+      "length": 5,
+      "value": "5004"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4128,
+      "length": 5,
+      "value": "6000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4255,
+      "length": 5,
+      "value": "7000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4358,
+      "length": 5,
+      "value": "7001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4439,
+      "length": 5,
+      "value": "7002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4659,
+      "length": 5,
+      "value": "7003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4842,
+      "length": 5,
+      "value": "7004"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5195,
+      "length": 5,
+      "value": "7005"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5403,
+      "length": 5,
+      "value": "8000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5526,
+      "length": 5,
+      "value": "9000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 438,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 543,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 640,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 737,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 884,
+      "length": 5,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1006,
+      "length": 5,
+      "value": "1001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1091,
+      "length": 5,
+      "value": "1002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1362,
+      "length": 5,
+      "value": "1003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1495,
+      "length": 5,
+      "value": "2000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1653,
+      "length": 5,
+      "value": "2001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1767,
+      "length": 5,
+      "value": "2002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1867,
+      "length": 5,
+      "value": "3000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2006,
+      "length": 5,
+      "value": "3001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2099,
+      "length": 5,
+      "value": "3002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2227,
+      "length": 5,
+      "value": "3003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2338,
+      "length": 5,
+      "value": "3004"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2446,
+      "length": 5,
+      "value": "3005"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2550,
+      "length": 5,
+      "value": "3006"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2696,
+      "length": 5,
+      "value": "3007"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2787,
+      "length": 5,
+      "value": "3008"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2926,
+      "length": 5,
+      "value": "3009"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3056,
+      "length": 5,
+      "value": "4000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3169,
+      "length": 5,
+      "value": "4001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3296,
+      "length": 5,
+      "value": "4002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3412,
+      "length": 5,
+      "value": "4003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3557,
+      "length": 5,
+      "value": "4004"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3652,
+      "length": 5,
+      "value": "5000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3747,
+      "length": 5,
+      "value": "5001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3840,
+      "length": 5,
+      "value": "5002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3960,
+      "length": 5,
+      "value": "5003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4022,
+      "length": 5,
+      "value": "5004"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4128,
+      "length": 5,
+      "value": "6000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4255,
+      "length": 5,
+      "value": "7000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4358,
+      "length": 5,
+      "value": "7001"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4439,
+      "length": 5,
+      "value": "7002"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4659,
+      "length": 5,
+      "value": "7003"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4842,
+      "length": 5,
+      "value": "7004"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5195,
+      "length": 5,
+      "value": "7005"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5403,
+      "length": 5,
+      "value": "8000"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Code.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5526,
+      "length": 5,
+      "value": "9000"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Utils\/ShoppableClickPostMessageHandler.swift",
@@ -16744,10 +17928,73 @@
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/InstreamAdResponseParser.swift",
+      "kind": "StringLiteral",
+      "offset": 237,
+      "length": 24,
+      "value": "\"MyTargetSDK.InstreamAdResponseParser\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/InstreamAdResponseParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 13518,
+      "offset": 13697,
       "length": 2,
       "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Stage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 484,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Stage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 545,
+      "length": 9,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Stage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 624,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Stage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 689,
+      "length": 13,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Stage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 484,
+      "length": 1,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Stage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 545,
+      "length": 9,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Stage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 624,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringEvent+Stage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 689,
+      "length": 13,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Models\/VideoMotionHeaderPrivate.swift",
@@ -16780,14 +18027,14 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeAdModules\/NativeAdImageModule\/NativeAdImageViewController.swift",
       "kind": "Array",
-      "offset": 1185,
+      "offset": 1220,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeAdModules\/NativeAdImageModule\/NativeAdImageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 561,
+      "offset": 596,
       "length": 27,
       "value": "\"MyTargetSDK.NativeAdImageViewController\""
     },
@@ -17212,23 +18459,37 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ExcludedBanners\/SDKBannerIdsExcluder.swift",
+      "kind": "Array",
+      "offset": 577,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ExcludedBanners\/SDKBannerIdsExcluder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1460,
+      "length": 2,
+      "value": "10"
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/AdChoices\/AdChoicesOptionParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 8336,
+      "offset": 9997,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/AdChoices\/AdChoicesOptionParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 8383,
+      "offset": 10044,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/AdChoices\/AdChoicesOptionParser.swift",
       "kind": "StringLiteral",
-      "offset": 8431,
+      "offset": 10092,
       "length": 10,
       "value": "\"&reason=\""
     },
@@ -17245,6 +18506,55 @@
       "offset": 230,
       "length": 25,
       "value": "\"MyTargetSDK.InstreamAdVideoMotionData\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ExcludedBanners\/BannerIdsExcludeFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ExcludedBanners\/BannerIdsExcludeFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 3,
+      "value": "\"2\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ExcludedBanners\/BannerIdsExcludeFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ExcludedBanners\/BannerIdsExcludeFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 3,
+      "value": "\"2\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ExcludedBanners\/BannerIdsExcludeFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 2540,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ExcludedBanners\/BannerIdsExcludeFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 2581,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ExcludedBanners\/BannerIdsExcludeFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 2612,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Parsers\/PostMessageParser.swift",
@@ -17289,11 +18599,368 @@
       "value": "\"MyTargetSDK.ViewabilityBannerTracker\""
     },
     {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 383,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 417,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 383,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 417,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 383,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 417,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1660,
+      "length": 12,
+      "value": "\"os_version\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1701,
+      "length": 16,
+      "value": "\"os_version_int\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1745,
+      "length": 15,
+      "value": "\"app_bundle_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1787,
+      "length": 13,
+      "value": "\"app_version\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1825,
+      "length": 11,
+      "value": "\"app_build\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1863,
+      "length": 13,
+      "value": "\"sdk_version\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1906,
+      "length": 17,
+      "value": "\"sdk_version_int\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1950,
+      "length": 17,
+      "value": "\"sdk_instance_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1988,
+      "length": 7,
+      "value": "\"ad_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2020,
+      "length": 11,
+      "value": "\"ad_format\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2059,
+      "length": 14,
+      "value": "\"cache_policy\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2100,
+      "length": 13,
+      "value": "\"source_type\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2136,
+      "length": 9,
+      "value": "\"slot_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2174,
+      "length": 16,
+      "value": "\"handle_data_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2212,
+      "length": 8,
+      "value": "\"ad_url\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2245,
+      "length": 11,
+      "value": "\"banner_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2285,
+      "length": 15,
+      "value": "\"impression_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2403,
+      "length": 18,
+      "value": "\"client_timestamp\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2445,
+      "length": 10,
+      "value": "\"add_data\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1660,
+      "length": 12,
+      "value": "\"os_version\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1701,
+      "length": 16,
+      "value": "\"os_version_int\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1745,
+      "length": 15,
+      "value": "\"app_bundle_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1787,
+      "length": 13,
+      "value": "\"app_version\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1825,
+      "length": 11,
+      "value": "\"app_build\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1863,
+      "length": 13,
+      "value": "\"sdk_version\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1906,
+      "length": 17,
+      "value": "\"sdk_version_int\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1950,
+      "length": 17,
+      "value": "\"sdk_instance_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1988,
+      "length": 7,
+      "value": "\"ad_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2020,
+      "length": 11,
+      "value": "\"ad_format\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2059,
+      "length": 14,
+      "value": "\"cache_policy\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2100,
+      "length": 13,
+      "value": "\"source_type\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2136,
+      "length": 9,
+      "value": "\"slot_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2174,
+      "length": 16,
+      "value": "\"handle_data_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2212,
+      "length": 8,
+      "value": "\"ad_url\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2245,
+      "length": 11,
+      "value": "\"banner_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2285,
+      "length": 15,
+      "value": "\"impression_id\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2403,
+      "length": 18,
+      "value": "\"client_timestamp\""
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/FlatMonitoringRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2445,
+      "length": 10,
+      "value": "\"add_data\""
+    },
+    {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/MinCert\/OneTimeLoader.swift",
       "kind": "Array",
       "offset": 611,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringAdContext.swift",
+      "kind": "IntegerLiteral",
+      "offset": 278,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringAdContext.swift",
+      "kind": "IntegerLiteral",
+      "offset": 291,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringAdContext.swift",
+      "kind": "IntegerLiteral",
+      "offset": 278,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringAdContext.swift",
+      "kind": "IntegerLiteral",
+      "offset": 291,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringAdContext.swift",
+      "kind": "IntegerLiteral",
+      "offset": 278,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringAdContext.swift",
+      "kind": "IntegerLiteral",
+      "offset": 291,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Loggers\/Monitoring\/MonitoringAdContext.swift",
+      "kind": "StringLiteral",
+      "offset": 347,
+      "length": 19,
+      "value": "\"MyTargetSDK.MonitoringAdContext\""
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Providers\/NetworkDataProvider.swift",
@@ -17508,7 +19175,7 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/ResponseMappers\/ShoppableAdsDataResponseMapper.swift",
       "kind": "StringLiteral",
-      "offset": 3752,
+      "offset": 3729,
       "length": 22,
       "value": "\"shoppableAdsItemShow\""
     },
@@ -17529,7 +19196,7 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKNative\/Private\/NativeAdResultProcessor.swift",
       "kind": "Dictionary",
-      "offset": 669,
+      "offset": 729,
       "length": 3,
       "value": "[]"
     },
@@ -17550,56 +19217,56 @@
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 2022,
+      "offset": 2091,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 3999,
+      "offset": 4862,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 4048,
+      "offset": 4911,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 5574,
+      "offset": 6437,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 5623,
+      "offset": 6486,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 7605,
+      "offset": 8468,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "BooleanLiteral",
-      "offset": 7654,
+      "offset": 8517,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/ViewabilityTracker+Trackers.swift",
       "kind": "FloatLiteral",
-      "offset": 9396,
+      "offset": 10259,
       "length": 4,
       "value": "60.0"
     },

@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAd.h
-//  myTargetSDK 5.21.9
+//  myTargetSDK 5.22.0
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -142,6 +142,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@protocol MTRGExternalClickHandler <NSObject>
+
+- (BOOL)handleClickWithDeepLink:(nullable NSString *)deepLink
+                           link:(nullable NSString *)link
+                isOpenInBrowser:(BOOL)isOpenInBrowser;
+@end
+
 /**
  @discussion Base class for native ad.
  */
@@ -266,6 +273,11 @@ NS_ASSUME_NONNULL_BEGIN
  @param sourceView UIView for iPad popover.
  */
 - (void)handleAdChoicesClickWithController:(UIViewController *)viewController sourceView:(nullable UIView *)sourceView NS_SWIFT_NAME(handleAdChoicesClick(controller:sourceView:));
+
+/**
+ @discussion Method to set internal object.
+ */
+- (void)setInternalObject:(id)object;
 
 @end
 

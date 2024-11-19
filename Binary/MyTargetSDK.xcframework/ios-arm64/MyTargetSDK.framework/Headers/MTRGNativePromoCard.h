@@ -1,6 +1,6 @@
 //
 //  MTRGNativePromoCard.h
-//  myTargetSDK 5.21.9
+//  myTargetSDK 5.22.0
 //
 //  Created by Andrey Seredkin on 18.10.16.
 //  Copyright © 2016 Mail.ru. All rights reserved.
@@ -40,6 +40,21 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Discount text for the card.
  */
 @property(nonatomic, readonly, nullable) NSString *discount;
+
+/**
+ @discussion New price text for the card.
+ */
+@property(nonatomic, readonly, nullable) NSString *price;
+
+/**
+ @discussion Old price text for the card.
+ */
+@property(nonatomic, readonly, nullable) NSString *oldPrice;
+
+/**
+ @discussion Currency text for the card.
+ */
+@property(nonatomic, readonly, nullable) NSString *currency;
 
 @end
 
