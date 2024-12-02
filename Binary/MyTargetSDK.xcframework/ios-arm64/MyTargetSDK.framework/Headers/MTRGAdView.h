@@ -1,6 +1,6 @@
 //
 //  MTRGAdView.h
-//  myTargetSDK 5.22.0
+//  myTargetSDK 5.23.0
 //
 // Created by Timur on 3/22/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.

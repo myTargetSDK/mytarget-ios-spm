@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.22.0
+//  myTargetSDK 5.23.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -17,6 +17,9 @@
 @class MTRGShoppableAdsItem;
 @class MTRGInstreamAdVideoMotionBanner;
 @protocol MTRGInstreamAdVideoMotionPlayer;
+@protocol MTRGInstreamAdPostViewPlayer;
+@class MTRGCallToActionData;
+@class MTRGPostViewData;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -58,7 +61,17 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion CTA text.
  */
-@property(nonatomic, readonly) NSString *ctaText;
+@property(nonatomic, readonly) NSString *ctaText __attribute__((deprecated("use \'cta\' property instead.")));
+
+/**
+@discussion CTA property.
+*/
+@property(nonatomic, readonly) MTRGCallToActionData *cta;
+
+/**
+@discussion Duration of the post view that can be displayed after video banner play.
+*/
+@property(nonatomic, readonly) NSTimeInterval postViewDuration;
 
 /**
  @discussion The banner identifier.
@@ -234,6 +247,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onVideoMotionShouldClose:(MTRGInstreamAdVideoMotionBanner *)banner instreamAd:(MTRGInstreamAd *)instreamAd;
 
+/**
+ @discussion Calls on banner's post view start.
+ */
+- (void)onPostViewStart;
+
+/**
+ @discussion Calls on banner's post view  complete.
+
+ */
+- (void)onPostViewComplete;
+
 @end
 
 /**
@@ -255,6 +279,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Player for VideoMotion banner. Conforms MTRGVideoMotionPlayer protocol.
  */
 @property(nonatomic, nullable) id <MTRGInstreamAdVideoMotionPlayer> videoMotionPlayer;
+
+/**
+ @discussion Player for post view. Conforms MTRGInstreamAdPostViewPlayer protocol.
+ */
+@property(nonatomic, nullable) id <MTRGInstreamAdPostViewPlayer> postViewPlayer;
 
 /**
  @discussion Array of midpoint for the ad.

@@ -57,6 +57,21 @@ import os
     get
   }
 }
+@_hasMissingDesignatedInitializers @objc(MTRGCallToActionData) final public class CallToActionData : ObjectiveC.NSObject {
+  @objc final public let icon: MyTargetSDK.MTRGImageData?
+  @objc final public let buttonText: Swift.String
+  @objc final public let additionalText: Swift.String?
+  @objc final public let buttonColor: UIKit.UIColor?
+  @objc final public let buttonTextColor: UIKit.UIColor?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(MTRGPostViewData) final public class PostViewData : ObjectiveC.NSObject {
+  @objc final public let text: Swift.String?
+  @objc final public let duration: Swift.Double
+  @objc final public let overlayViewColor: UIKit.UIColor?
+  @objc final public let backgroundImage: MyTargetSDK.MTRGImageData?
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc(MTRGBannerMediaRecovery) final public class BannerMediaRecovery : ObjectiveC.NSObject {
   @objc override final public var description: Swift.String {
     @objc get
@@ -105,6 +120,11 @@ import os
   @objc final public let type: MyTargetSDK.DisclaimerType
   @objc public init(text: Swift.String, type: MyTargetSDK.DisclaimerType)
   @objc deinit
+}
+@objc(MTRGInstreamAdPostViewPlayer) public protocol InstreamAdPostViewPlayer {
+  @objc func show(postViewData: MyTargetSDK.PostViewData)
+  @objc func update(progress: Foundation.TimeInterval, duration: Foundation.TimeInterval)
+  @objc func hide()
 }
 @_hasMissingDesignatedInitializers @objc(MTRGShoppableAdsItem) final public class ShoppableAdsItem : ObjectiveC.NSObject, Swift.Decodable {
   @objc final public let url: Swift.String

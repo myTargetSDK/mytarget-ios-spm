@@ -365,6 +365,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MTRGBannerMe
 @end
 
 
+@class MTRGImageData;
+@class UIColor;
+
+SWIFT_CLASS_NAMED("CallToActionData")
+@interface MTRGCallToActionData : NSObject
+@property (nonatomic, readonly, strong) MTRGImageData * _Nullable icon;
+@property (nonatomic, readonly, copy) NSString * _Nonnull buttonText;
+@property (nonatomic, readonly, copy) NSString * _Nullable additionalText;
+@property (nonatomic, readonly, strong) UIColor * _Nullable buttonColor;
+@property (nonatomic, readonly, strong) UIColor * _Nullable buttonTextColor;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 enum MTRGDisclaimerType : NSInteger;
 
 /// Ads disclaimer
@@ -390,6 +404,24 @@ typedef SWIFT_ENUM_NAMED(NSInteger, MTRGDisclaimerType, "DisclaimerType", open) 
 };
 
 
+
+@class MTRGPostViewData;
+
+SWIFT_PROTOCOL_NAMED("InstreamAdPostViewPlayer")
+@protocol MTRGInstreamAdPostViewPlayer
+/// Calls on post view show.
+/// \param postViewData PostViewData.
+///
+- (void)showWithPostViewData:(MTRGPostViewData * _Nonnull)postViewData;
+/// Calls on item show.
+/// \param progress time in seconds.
+///
+/// \param duration time in seconds.
+///
+- (void)updateWithProgress:(NSTimeInterval)progress duration:(NSTimeInterval)duration;
+/// Calls on post view hide.
+- (void)hide;
+@end
 
 @class MTRGInstreamAdVideoMotionData;
 @class NSNumber;
@@ -640,6 +672,17 @@ SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 
 
 
+
+
+SWIFT_CLASS_NAMED("PostViewData")
+@interface MTRGPostViewData : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable text;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly, strong) UIColor * _Nullable overlayViewColor;
+@property (nonatomic, readonly, strong) MTRGImageData * _Nullable backgroundImage;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS_NAMED("ShoppableAdsItem")
