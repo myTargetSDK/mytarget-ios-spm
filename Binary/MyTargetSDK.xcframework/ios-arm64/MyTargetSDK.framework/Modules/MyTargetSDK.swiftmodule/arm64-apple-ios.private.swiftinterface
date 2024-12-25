@@ -14,6 +14,7 @@ import Security
 import StoreKit
 import Swift
 import UIKit
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -65,12 +66,61 @@ import os
   @objc final public let buttonTextColor: UIKit.UIColor?
   @objc deinit
 }
+@objc(MTRGWebForm) public protocol WebForm {
+  @objc func reload()
+  @objc func dismiss()
+}
+@objc(MTRGWebFormDelegate) public protocol WebFormDelegate {
+  @objc func webFormWillPresent(_ webForm: any MyTargetSDK.WebForm)
+  @objc func webFormDidDismiss(_ webForm: any MyTargetSDK.WebForm)
+  @objc(webForm:showErrorViewForError:) func webForm(_ webForm: any MyTargetSDK.WebForm, showErrorViewFor error: any Swift.Error) -> UIKit.UIView?
+  @objc(webForm:didCopyText:) func webForm(_ webForm: any MyTargetSDK.WebForm, didCopy text: Swift.String)
+  @objc(webForm:didHandleSetViewSettings:) func webForm(_ webForm: any MyTargetSDK.WebForm, didHandle setViewSettings: MyTargetSDK.WebFormSetViewSettings)
+  @objc(webFormDidHandleGetUserInfo:) func webFormDidHandleGetUserInfo(_ webForm: any MyTargetSDK.WebForm) -> MyTargetSDK.WebFormGetUserInfoResult
+}
+extension MyTargetSDK.MTRGBaseAd {
+  @objc weak dynamic public var webFormDelegate: (any MyTargetSDK.WebFormDelegate)? {
+    @objc get
+    @objc set
+  }
+}
 @_hasMissingDesignatedInitializers @objc(MTRGPostViewData) final public class PostViewData : ObjectiveC.NSObject {
   @objc final public let text: Swift.String?
   @objc final public let duration: Swift.Double
   @objc final public let overlayViewColor: UIKit.UIColor?
   @objc final public let backgroundImage: MyTargetSDK.MTRGImageData?
   @objc deinit
+}
+@objcMembers @objc(MTRGWebFormGetUserInfoResult) final public class WebFormGetUserInfoResult : ObjectiveC.NSObject {
+  @objc final public let firstName: Swift.String?
+  @objc final public let lastName: Swift.String?
+  @objc final public let birthday: Foundation.Date?
+  @objc final public let city: Swift.String?
+  @objc final public let country: Swift.String?
+  @objc final public let contact: MyTargetSDK.WebFormGetUserInfoResult.Contact?
+  @objc public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, birthday: Foundation.Date? = nil, city: Swift.String? = nil, country: Swift.String? = nil, contact: MyTargetSDK.WebFormGetUserInfoResult.Contact? = nil)
+  @objc deinit
+}
+extension MyTargetSDK.WebFormGetUserInfoResult {
+  @objcMembers @objc(MTRGWebFormGetUserInfoResultContact) final public class Contact : ObjectiveC.NSObject {
+    @objc final public let phone: Swift.String?
+    @objc final public let phoneSign: Swift.String?
+    @objc final public let email: Swift.String?
+    @objc final public let emailSign: Swift.String?
+    @objc final public let decodingParameters: MyTargetSDK.WebFormGetUserInfoResult.DecodingParameters?
+    @objc public init(phone: Swift.String? = nil, email: Swift.String? = nil)
+    @objc public init(maskedPhone: Swift.String, maskedPhoneSign: Swift.String, decodingParameters: MyTargetSDK.WebFormGetUserInfoResult.DecodingParameters)
+    @objc public init(maskedEmail: Swift.String, maskedEmailSign: Swift.String, decodingParameters: MyTargetSDK.WebFormGetUserInfoResult.DecodingParameters)
+    @objc public init(maskedPhone: Swift.String, maskedPhoneSign: Swift.String, maskedEmail: Swift.String, maskedEmailSign: Swift.String, decodingParameters: MyTargetSDK.WebFormGetUserInfoResult.DecodingParameters)
+    @objc deinit
+  }
+  @objcMembers @objc(MTRGWebFormGetUserInfoResultDecodingParameters) final public class DecodingParameters : ObjectiveC.NSObject {
+    @objc final public let accessToken: Swift.String?
+    @objc final public let userID: Swift.String?
+    @objc final public let appID: Swift.String
+    @objc public init(accessToken: Swift.String? = nil, userID: Swift.String? = nil, appID: Swift.String)
+    @objc deinit
+  }
 }
 @_hasMissingDesignatedInitializers @objc(MTRGBannerMediaRecovery) final public class BannerMediaRecovery : ObjectiveC.NSObject {
   @objc override final public var description: Swift.String {
@@ -81,6 +131,22 @@ import os
   }
   @objc public static func retry(maxRetryCount: Swift.Int) -> MyTargetSDK.BannerMediaRecovery
   @objc deinit
+}
+@objcMembers @objc(MTRGWebFormSetViewSettings) final public class WebFormSetViewSettings : ObjectiveC.NSObject {
+  @objc final public let statusBarStyle: MyTargetSDK.WebFormStatusBarStyle
+  @objc final public let actionBarColor: UIKit.UIColor?
+  @objc final public let navigationBarColor: UIKit.UIColor?
+  @objc public init(statusBarStyle: MyTargetSDK.WebFormStatusBarStyle, actionBarColor: UIKit.UIColor?, navigationBarColor: UIKit.UIColor?)
+  @objc deinit
+}
+@objc(MTRGWebFormStatusBarStyle) public enum WebFormStatusBarStyle : Swift.Int {
+  case light
+  case dark
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers @objc(MTRGInstreamAdVideoMotionHeader) final public class InstreamAdVideoMotionHeader : ObjectiveC.NSObject {
   @objc final public let icon: Foundation.URL
@@ -237,6 +303,9 @@ extension MyTargetSDK.MTRGMenuActionStyle : Swift.RawRepresentable {}
 extension MyTargetSDK.MTRGLogMessageType : Swift.Equatable {}
 extension MyTargetSDK.MTRGLogMessageType : Swift.Hashable {}
 extension MyTargetSDK.MTRGLogMessageType : Swift.RawRepresentable {}
+extension MyTargetSDK.WebFormStatusBarStyle : Swift.Equatable {}
+extension MyTargetSDK.WebFormStatusBarStyle : Swift.Hashable {}
+extension MyTargetSDK.WebFormStatusBarStyle : Swift.RawRepresentable {}
 extension MyTargetSDK.AdLoadingError : Swift.Equatable {}
 extension MyTargetSDK.AdLoadingError : Swift.Hashable {}
 extension MyTargetSDK.AdLoadingError : Swift.RawRepresentable {}

@@ -1,6 +1,6 @@
 //
 //  MTRGAdView.h
-//  myTargetSDK 5.23.0
+//  myTargetSDK 5.24.0
 //
 // Created by Timur on 3/22/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -12,6 +12,7 @@
 @class MTRGAdSize;
 @class MTRGCustomParams;
 @protocol MTRGAdNetworkConfigProtocol;
+@protocol MTRGWebFormDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -91,6 +92,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Instance conforms MTRGAdViewDelegate protocol.
  */
 @property(nonatomic, weak, nullable) id <MTRGAdViewDelegate> delegate;
+
+/**
+ @discussion Delegate for the web form of the ad.
+ */
+@property(nonatomic, weak, nullable) id <MTRGWebFormDelegate> webFormDelegate;
 
 /**
  @discussion Instance of UIViewController which hosts the view.
