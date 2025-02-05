@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdLoader.h
-//  myTargetSDK 5.24.1
+//  myTargetSDK 5.25.0
 //
 //  Created by Andrey Seredkin on 31.05.2018.
 //  Copyright © 2018 Mail.Ru Group. All rights reserved.

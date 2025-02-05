@@ -202,6 +202,8 @@ extension MyTargetSDK.WebFormGetUserInfoResult {
   @objc deinit
   public init(from decoder: any Swift.Decoder) throws
 }
+extension MyTargetSDK.MTRGCachePolicy : Swift.Encodable {
+}
 @objc(MTRGInstreamAdVideoMotionPlayerDelegate) public protocol InstreamAdVideoMotionPlayerDelegate {
   @objc func onBannerShow()
   @objc func onBannerComplete()
@@ -261,7 +263,7 @@ extension MyTargetSDK.WebFormGetUserInfoResult {
   @objc final public let disclaimer: MyTargetSDK.InstreamAdVideoMotionDisclaimer?
   @objc deinit
 }
-extension MyTargetSDK.MTRGCachePolicy : Swift.Encodable {
+extension MyTargetSDK.MTRGCachePolicy : Swift.Hashable {
 }
 @objc(MTRGDisclaimerType) public enum DisclaimerType : Swift.Int {
   case undefined = 0

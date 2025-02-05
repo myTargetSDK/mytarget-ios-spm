@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAdCompanionBanner.h
-//  myTargetSDK 5.24.1
+//  myTargetSDK 5.25.0
 //
 //  Created by Andrey Seredkin on 12.01.2022.
 //  Copyright © 2022 Mail.ru Group. All rights reserved.

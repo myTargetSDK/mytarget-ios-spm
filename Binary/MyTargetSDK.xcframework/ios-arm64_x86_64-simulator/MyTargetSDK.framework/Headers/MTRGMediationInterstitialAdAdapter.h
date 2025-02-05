@@ -1,6 +1,6 @@
 //
 //  MTRGMediationInterstitialAdAdapter.h
-//  myTargetSDK 5.24.1
+//  myTargetSDK 5.25.0
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //

@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAd.h
-//  myTargetSDK 5.24.1
+//  myTargetSDK 5.25.0
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -8,6 +8,9 @@
 
 #import <MyTargetSDK/MTRGBaseAd.h>
 #import <MyTargetSDK/MTRGNativeAdProtocol.h>
+#import <MyTargetSDK/MTRGNativeAdDelegate.h>
+#import <MyTargetSDK/MTRGNativeAdVideoDelegate.h>
+#import <MyTargetSDK/MTRGNativeAdMediaDelegate.h>
 
 @class MTRGNativeAd;
 @class MTRGNativePromoBanner;
@@ -17,130 +20,6 @@
 @protocol MTRGNativeAdChoicesOptionDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
-
-/**
- @discussion Delegate's protocol for the native ad.
- */
-@protocol MTRGNativeAdDelegate <NSObject>
-
-/**
- @discussion Calls on load native promo banner. (Required)
- 
- @param promoBanner Loaded banner.
- @param nativeAd Current ad.
- */
-- (void)onLoadWithNativePromoBanner:(MTRGNativePromoBanner *)promoBanner nativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls if there is no ad.
-
- @param error An error code/description.
- @param nativeAd Current ad.
- */
-- (void)onLoadFailedWithError:(NSError *)error nativeAd:(MTRGNativeAd *)nativeAd NS_SWIFT_NAME(onLoadFailed(error:nativeAd:));
-
-@optional
-
-/**
- @discussion Calls if there is no ad.
-
- @param reason The reason why there is no ad.
- @param nativeAd Current ad.
- */
-- (void)onNoAdWithReason:(NSString *)reason nativeAd:(MTRGNativeAd *)nativeAd __attribute__((deprecated("use onLoadFailed method instead.")));
-
-/**
- @discussion Class on show the native ad.
- 
- @param nativeAd Current ad.
- */
-- (void)onAdShowWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls on click by native ad.
- 
- @param nativeAd Current ad.
- */
-- (void)onAdClickWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls on modal show.
- 
- @param nativeAd Current ad.
- */
-- (void)onShowModalWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls on modal dismiss.
- 
- @param nativeAd Current ad.
- */
-- (void)onDismissModalWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls on application leave.
- 
- @param nativeAd Current ad.
- */
-- (void)onLeaveApplicationWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls when video plays with current ad.
- 
- @param nativeAd Current ad.
- */
-- (void)onVideoPlayWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls when video pauses with current ad.
- 
- @param nativeAd Current ad.
- */
-- (void)onVideoPauseWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls when video completes with current ad.
- 
- @param nativeAd Current ad.
- */
-- (void)onVideoCompleteWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-@end
-
-/**
- @discussion Native ad media delegate protocol.
- */
-@protocol MTRGNativeAdMediaDelegate <NSObject>
-
-/**
- @discussion Calls when icon loaded for the ad.
- 
- @param nativeAd Current ad.
- */
-- (void)onIconLoadWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls when image loaded for the ad.
- 
- @param nativeAd Current ad.
- */
-- (void)onImageLoadWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls when adChoices image loaded for the ad.
-
- @param nativeAd Current ad.
- */
-- (void)onAdChoicesIconLoadWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls when media resources for the ad not loaded.
-
- @param nativeAd Current ad.
- */
-- (void)onMediaLoadFailedWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-@end
 
 @protocol MTRGExternalClickHandler <NSObject>
 
@@ -163,6 +42,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Delegate for the ad. Must conforms MTRGNativeAdDelegate protocol.
  */
 @property(nonatomic, weak, nullable) id <MTRGNativeAdDelegate> delegate;
+
+/**
+ @discussion Delegate for the video of the ad. Must conforms MTRGNativeAdVideoDelegate protocol.
+ */
+@property(nonatomic, weak, nullable) id <MTRGNativeAdVideoDelegate> videoDelegate;
 
 /**
  @discussion Delegate for the media of the ad. Must conforms MTRGNativeAdMediaDelegate protocol.

@@ -166,7 +166,7 @@
 		</data>
 		<key>Headers/MTRGNativeAd.h</key>
 		<data>
-		JKHqm0M2U5L76wZh4gXZuxWVcFI=
+		sf85bijerI0BggHvp5l1iyRL/nw=
 		</data>
 		<key>Headers/MTRGNativeAdChoicesOptionDelegate.h</key>
 		<data>
@@ -176,13 +176,25 @@
 		<data>
 		SFGHhvgmEtWESIRExTujZ9oAuxI=
 		</data>
+		<key>Headers/MTRGNativeAdDelegate.h</key>
+		<data>
+		kO4mKBEwweHGQnRbregB6YSyvv8=
+		</data>
 		<key>Headers/MTRGNativeAdLoader.h</key>
 		<data>
 		A7Ol7duygNJXlFoWwY7jGqKaa/g=
 		</data>
+		<key>Headers/MTRGNativeAdMediaDelegate.h</key>
+		<data>
+		cNb0aorLBXOzLOX/9YdvYTx3EBw=
+		</data>
 		<key>Headers/MTRGNativeAdProtocol.h</key>
 		<data>
 		yno4RYZq9clvdhW1Vtvp+js9yyQ=
+		</data>
+		<key>Headers/MTRGNativeAdVideoDelegate.h</key>
+		<data>
+		hNWNbg+4q5SlfAMMrSmF5QC8VEA=
 		</data>
 		<key>Headers/MTRGNativeAdView.h</key>
 		<data>
@@ -206,15 +218,23 @@
 		</data>
 		<key>Headers/MTRGNativeBannerAd.h</key>
 		<data>
-		TyWU4zMz2Z7NXT1Vxgse/09NeBU=
+		ibiLI3a2DITABstxeUjR4zfLTB4=
 		</data>
 		<key>Headers/MTRGNativeBannerAdChoicesOptionDelegate.h</key>
 		<data>
 		VrQumRY805e4jU0qllNdRKExJZE=
 		</data>
+		<key>Headers/MTRGNativeBannerAdDelegate.h</key>
+		<data>
+		fuO45IVQpffvxZxwRppO8aUpMpk=
+		</data>
 		<key>Headers/MTRGNativeBannerAdLoader.h</key>
 		<data>
 		Zm7/sbTdUUyQiwAjXyYbIEJocf0=
+		</data>
+		<key>Headers/MTRGNativeBannerAdMediaDelegate.h</key>
+		<data>
+		c6GsVSgLQA3bDRFEhbIC4WTNt0U=
 		</data>
 		<key>Headers/MTRGNativeBannerAdView.h</key>
 		<data>
@@ -226,7 +246,7 @@
 		</data>
 		<key>Headers/MTRGNativePromoBanner.h</key>
 		<data>
-		sDLj442iKt2goljp0+a5383WUQE=
+		d7cVcpizn+fkz89iEVyHl7Ei10M=
 		</data>
 		<key>Headers/MTRGNativePromoCard.h</key>
 		<data>
@@ -290,7 +310,7 @@
 		</data>
 		<key>Headers/MyTargetSDK.h</key>
 		<data>
-		nU3/1ui2XHL2veJhrBpPf5BIbII=
+		qqzYoH+5qjefk2yhys/1UvSc+rk=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -298,11 +318,11 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		i5MRfU8r1KDXMhOba+9XcLuiGIM=
+		49Z2JlsSqL54e52guEpYnYcZnWU=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		N99e/5ti71ACXTvVByfAxGSFPKk=
+		vRN3RmGd3B96PGUQTbeAvLoHso4=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -310,19 +330,19 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		N99e/5ti71ACXTvVByfAxGSFPKk=
+		vRN3RmGd3B96PGUQTbeAvLoHso4=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/bO9VA/dspsGkQeWZ50lXlwbCV0=
+		Q9KvzurWNPpCYor+yh+7OTqPgvA=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		i5MRfU8r1KDXMhOba+9XcLuiGIM=
+		49Z2JlsSqL54e52guEpYnYcZnWU=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		RaIkip7bZy/WttIiAMypRsgyIkg=
+		Q43McZNuQJgoYCizvqlqcZrC+TI=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -330,11 +350,11 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RaIkip7bZy/WttIiAMypRsgyIkg=
+		Q43McZNuQJgoYCizvqlqcZrC+TI=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		e5256TXQ02sq/gHVFS62gx/fcWY=
+		RiuzJLJvclGY6pTCeX5xdh+uRhw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -795,11 +815,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JKHqm0M2U5L76wZh4gXZuxWVcFI=
+			sf85bijerI0BggHvp5l1iyRL/nw=
 			</data>
 			<key>hash2</key>
 			<data>
-			OKKncHV2M0e/1bU4gK4F+5/ftvvy8Z9bDAD1MDX6wg4=
+			EP5TbBSPRoRJo0GW9QWpXZmIwAfG+d/qUG0GH2v0kjQ=
 			</data>
 		</dict>
 		<key>Headers/MTRGNativeAdChoicesOptionDelegate.h</key>
@@ -824,6 +844,17 @@
 			Ug4M0ZcdIfKyfdkCKO9q0obloSxKkPkmNx+LCl0zHO0=
 			</data>
 		</dict>
+		<key>Headers/MTRGNativeAdDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kO4mKBEwweHGQnRbregB6YSyvv8=
+			</data>
+			<key>hash2</key>
+			<data>
+			6TdvA2jFwzdAWMyghVBB3dQI78tEXBuTa4dOw3Ars00=
+			</data>
+		</dict>
 		<key>Headers/MTRGNativeAdLoader.h</key>
 		<dict>
 			<key>hash</key>
@@ -835,6 +866,17 @@
 			kQSAOI09n2+TSUvMFzHl6NOT+L5v7En5MyPpkvOS/Sw=
 			</data>
 		</dict>
+		<key>Headers/MTRGNativeAdMediaDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cNb0aorLBXOzLOX/9YdvYTx3EBw=
+			</data>
+			<key>hash2</key>
+			<data>
+			YLZqsvGXOadqTW7G/9EWJLnVPYPxDalgbzqJN8tRZGQ=
+			</data>
+		</dict>
 		<key>Headers/MTRGNativeAdProtocol.h</key>
 		<dict>
 			<key>hash</key>
@@ -844,6 +886,17 @@
 			<key>hash2</key>
 			<data>
 			+IgLMEyWM3jmChSSIP6RT1d408/y7k7zdNKKuQ0NdsQ=
+			</data>
+		</dict>
+		<key>Headers/MTRGNativeAdVideoDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hNWNbg+4q5SlfAMMrSmF5QC8VEA=
+			</data>
+			<key>hash2</key>
+			<data>
+			raQOmj8lGmCnYBKvEde0TUnqZHS+1Zd+FPC88ETC1kc=
 			</data>
 		</dict>
 		<key>Headers/MTRGNativeAdView.h</key>
@@ -905,11 +958,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TyWU4zMz2Z7NXT1Vxgse/09NeBU=
+			ibiLI3a2DITABstxeUjR4zfLTB4=
 			</data>
 			<key>hash2</key>
 			<data>
-			v1s8yRnsl+vMNj03xYsVczarV2E7otvknQgdKE8HySE=
+			0zp9THB6LiHJhP21NHTMfJANhpzVspIrmuFdljfTV+k=
 			</data>
 		</dict>
 		<key>Headers/MTRGNativeBannerAdChoicesOptionDelegate.h</key>
@@ -923,6 +976,17 @@
 			aLeEUHN5uSAlGJYGhrOrtDbWX5FFyE9sgoy8Zy8rIXs=
 			</data>
 		</dict>
+		<key>Headers/MTRGNativeBannerAdDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fuO45IVQpffvxZxwRppO8aUpMpk=
+			</data>
+			<key>hash2</key>
+			<data>
+			t0tpHB8C8nYsvOd8c+iHr7epaSpirOXcMUYtOMhf5sg=
+			</data>
+		</dict>
 		<key>Headers/MTRGNativeBannerAdLoader.h</key>
 		<dict>
 			<key>hash</key>
@@ -932,6 +996,17 @@
 			<key>hash2</key>
 			<data>
 			w557wpVsfAHygTO6wJsXQiQT7RLUWz7H2RAGN6yy/JM=
+			</data>
+		</dict>
+		<key>Headers/MTRGNativeBannerAdMediaDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c6GsVSgLQA3bDRFEhbIC4WTNt0U=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZvX2ma4++5id4KzQ1GxsJn05ct2zEPCt6AhXoOcJX8g=
 			</data>
 		</dict>
 		<key>Headers/MTRGNativeBannerAdView.h</key>
@@ -960,11 +1035,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sDLj442iKt2goljp0+a5383WUQE=
+			d7cVcpizn+fkz89iEVyHl7Ei10M=
 			</data>
 			<key>hash2</key>
 			<data>
-			iT6FOs1qiYJ+AC+/ogpf4SOP8DZIcaiUJAZMpONEH6g=
+			4FF+RMGPytuNRauUnJLqQn1mbmImGDWH779Z941iSts=
 			</data>
 		</dict>
 		<key>Headers/MTRGNativePromoCard.h</key>
@@ -1136,33 +1211,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nU3/1ui2XHL2veJhrBpPf5BIbII=
+			qqzYoH+5qjefk2yhys/1UvSc+rk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ddb8nnvURmXDtof3OgL4Mnur1BtWHz8tzCZ1WR0PrTI=
+			dLY4P4d9ylzUFqzklEoLTjwGBlHlQgvOacNHxZcdr1k=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i5MRfU8r1KDXMhOba+9XcLuiGIM=
+			49Z2JlsSqL54e52guEpYnYcZnWU=
 			</data>
 			<key>hash2</key>
 			<data>
-			OJlDNXu/x1C1TeS9XFpU2UUzXCLD+iK3dKng/yS5ssM=
+			bflWs6XpkE5Mjr1/DUafnw8IFWqEe6destkZ7/xV+00=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N99e/5ti71ACXTvVByfAxGSFPKk=
+			vRN3RmGd3B96PGUQTbeAvLoHso4=
 			</data>
 			<key>hash2</key>
 			<data>
-			+U7qSWNBjmkpTC2N0zPsO32rvheYtoizJWMoiO3xl+8=
+			J8aJ+9G931vBwjIwhDoonj1gvzx+z+wCGWNt5F/GUbw=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1180,44 +1255,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N99e/5ti71ACXTvVByfAxGSFPKk=
+			vRN3RmGd3B96PGUQTbeAvLoHso4=
 			</data>
 			<key>hash2</key>
 			<data>
-			+U7qSWNBjmkpTC2N0zPsO32rvheYtoizJWMoiO3xl+8=
+			J8aJ+9G931vBwjIwhDoonj1gvzx+z+wCGWNt5F/GUbw=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/bO9VA/dspsGkQeWZ50lXlwbCV0=
+			Q9KvzurWNPpCYor+yh+7OTqPgvA=
 			</data>
 			<key>hash2</key>
 			<data>
-			/5jmzAjX1DnJvE8okAHriOi0pHTVsAPatLA+l4hQ1Bc=
+			uPpKW91pDPMsXH7dDLra96gyQLn4xh/nZmpgPveUuTc=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i5MRfU8r1KDXMhOba+9XcLuiGIM=
+			49Z2JlsSqL54e52guEpYnYcZnWU=
 			</data>
 			<key>hash2</key>
 			<data>
-			OJlDNXu/x1C1TeS9XFpU2UUzXCLD+iK3dKng/yS5ssM=
+			bflWs6XpkE5Mjr1/DUafnw8IFWqEe6destkZ7/xV+00=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RaIkip7bZy/WttIiAMypRsgyIkg=
+			Q43McZNuQJgoYCizvqlqcZrC+TI=
 			</data>
 			<key>hash2</key>
 			<data>
-			IPhiVfdeBIqVbyd20HDg5rDMnURCSlIa31V2QjX37SQ=
+			lJmOaK1CSIwqRrmblWa3T3Bm/MmX1Op6VJQeb7o4XhA=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1235,22 +1310,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RaIkip7bZy/WttIiAMypRsgyIkg=
+			Q43McZNuQJgoYCizvqlqcZrC+TI=
 			</data>
 			<key>hash2</key>
 			<data>
-			IPhiVfdeBIqVbyd20HDg5rDMnURCSlIa31V2QjX37SQ=
+			lJmOaK1CSIwqRrmblWa3T3Bm/MmX1Op6VJQeb7o4XhA=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e5256TXQ02sq/gHVFS62gx/fcWY=
+			RiuzJLJvclGY6pTCeX5xdh+uRhw=
 			</data>
 			<key>hash2</key>
 			<data>
-			YPnGv2pkR0eBghgXtK11b6en6AFOLouP7Y4tv2IDIHM=
+			IjBJnzL8PNikQskiu4FB8CZj0K4wJV2VkWe9U2mpH9E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

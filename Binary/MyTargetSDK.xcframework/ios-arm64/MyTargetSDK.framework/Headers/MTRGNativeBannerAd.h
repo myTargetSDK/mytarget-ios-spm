@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBannerAd.h
-//  myTargetSDK 5.24.1
+//  myTargetSDK 5.25.0
 //
 //  Created by Andrey Seredkin on 10/02/2020.
 //  Copyright © 2020 Mail.Ru Group. All rights reserved.
@@ -8,6 +8,8 @@
 
 #import <MyTargetSDK/MTRGBaseAd.h>
 #import <MyTargetSDK/MTRGNativeAdProtocol.h>
+#import <MyTargetSDK/MTRGNativeBannerAdDelegate.h>
+#import <MyTargetSDK/MTRGNativeBannerAdMediaDelegate.h>
 
 @class MTRGNativeBannerAd;
 @class MTRGNativeBanner;
@@ -17,102 +19,6 @@
 @protocol MTRGNativeBannerAdChoicesOptionDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
-
-/**
- @discussion Native banner ad delegate's protocol.
- */
-@protocol MTRGNativeBannerAdDelegate <NSObject>
-
-/**
- @discussion Calls on load banner ad. (Required)
- 
- @param banner Loaded banner.
- @param nativeBannerAd Current ad.
- */
-- (void)onLoadWithNativeBanner:(MTRGNativeBanner *)banner nativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
-
-/**
- @discussion Calls if there is no ad.
-
- @param error An error code/description.
- @param nativeBannerAd Current ad.
- */
-- (void)onLoadFailedWithError:(NSError *)error nativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd NS_SWIFT_NAME(onLoadFailed(error:nativeBannerAd:));
-
-@optional
-
-/**
- @discussion Calls if there is no ad.
-
- @param reason The reason why there is no ad.
- @param nativeBannerAd Current ad.
- */
-- (void)onNoAdWithReason:(NSString *)reason nativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd __attribute__((deprecated("use onLoadFailed method instead.")));
-
-/**
- @discussion Class on show the native banner ad.
- 
- @param nativeBannerAd Current banner ad.
- */
-- (void)onAdShowWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
-
-/**
- @discussion Calls on click by native banner ad.
- 
- @param nativeBannerAd Current banner ad.
- */
-- (void)onAdClickWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
-
-/**
- @discussion Calls on modal show.
- 
- @param nativeBannerAd Current banner ad.
- */
-- (void)onShowModalWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
-
-/**
- @discussion Calls on modal dismiss.
- 
- @param nativeBannerAd Current banner ad.
- */
-- (void)onDismissModalWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
-
-/**
- @discussion Calls on application leave.
- 
- @param nativeBannerAd Current banner ad.
- */
-- (void)onLeaveApplicationWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
-
-@end
-
-/**
- @discussion Banner media delegate's protocol.
- */
-@protocol MTRGNativeBannerAdMediaDelegate <NSObject>
-
-/**
- @discussion Call on load icon for native banner ad.
- 
- @param nativeBannerAd Current banner ad.
- */
-- (void)onIconLoadWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
-
-/**
- @discussion Calls when adChoices image loaded for the ad.
-
- @param nativeBannerAd Current banner ad.
- */
-- (void)onAdChoicesIconLoadWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
-
-/**
- @discussion Calls when media resources for the ad not loaded.
-
- @param nativeBannerAd Current ad.
- */
-- (void)onMediaLoadFailedWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
-
-@end
 
 /**
  @discussion Class of native banner ad.

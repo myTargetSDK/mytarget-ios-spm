@@ -1,6 +1,6 @@
 //
 //  MTRGCustomParams.h
-//  myTargetSDK 5.24.1
+//  myTargetSDK 5.25.0
 //
 //  Created by Anton Bulankin on 22.12.14.
 //  Copyright (c) 2014 Mail.ru Group. All rights reserved.
