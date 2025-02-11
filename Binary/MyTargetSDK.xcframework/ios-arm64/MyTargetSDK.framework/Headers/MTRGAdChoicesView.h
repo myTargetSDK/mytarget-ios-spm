@@ -1,6 +1,6 @@
 //
 //  MTRGAdChoicesView.h
-//  myTargetSDK 5.25.0
+//  myTargetSDK 5.25.1
 //
 //  Created by Andrey Seredkin on 10.03.2021.
 //  Copyright © 2021 Mail.ru Group. All rights reserved.

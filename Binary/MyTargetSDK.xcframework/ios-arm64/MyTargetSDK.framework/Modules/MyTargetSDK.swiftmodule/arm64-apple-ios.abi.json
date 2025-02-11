@@ -20351,8 +20351,8 @@
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKCore\/Private\/Utils\/Bundle+ExternalHandlerApplications.swift",
       "kind": "Array",
       "offset": 488,
-      "length": 120,
-      "value": "[\"com.myTarget.privateDemo\", \"com.vk.vkclient\", \"com.vk.vkdev.enterprise\"]"
+      "length": 237,
+      "value": "[\"com.myTarget.privateDemo\", \"com.vk.vkclient\", \"com.vk.dev.client\", \"com.vk.vkdev.enterprise\"]"
     },
     {
       "filePath": "\/Users\/uranus\/.jenkins\/workspace\/mobads_myTarget_iOS_Release_Builder\/myTarget\/MyTargetSDKApp\/MyTargetSDK\/MyTargetSDKInstreamVideo\/Private\/Presenters\/InstreamAdShoppablePresenter.swift",
