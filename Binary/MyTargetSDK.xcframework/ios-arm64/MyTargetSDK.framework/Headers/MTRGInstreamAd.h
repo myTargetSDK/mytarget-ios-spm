@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.25.1
+//  myTargetSDK 5.26.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
