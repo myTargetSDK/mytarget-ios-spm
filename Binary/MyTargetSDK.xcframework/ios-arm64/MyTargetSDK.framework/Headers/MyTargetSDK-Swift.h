@@ -403,6 +403,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, MTRGDisclaimerType, "DisclaimerType", open) 
   MTRGDisclaimerTypeDrugs = 8,
   MTRGDisclaimerTypeDietary = 9,
   MTRGDisclaimerTypeDeclaration = 10,
+  MTRGDisclaimerTypeCredits = 11,
 };
 
 

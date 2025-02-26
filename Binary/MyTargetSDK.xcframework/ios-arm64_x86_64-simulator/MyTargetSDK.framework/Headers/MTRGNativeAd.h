@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAd.h
-//  myTargetSDK 5.25.1
+//  myTargetSDK 5.26.0
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -26,6 +26,35 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)handleClickWithDeepLink:(nullable NSString *)deepLink
                            link:(nullable NSString *)link
                 isOpenInBrowser:(BOOL)isOpenInBrowser;
+@end
+
+@protocol MTRGNativeAdVideoPlayer <NSObject>
+
+/**
+ * Method for setting volume on to native ad video
+ */
+- (void)setVolumeOn;
+/**
+ * Method for setting volume off to native ad video
+ */
+- (void)setVolumeOff;
+/**
+ * Method for playing native ad video
+ */
+- (void)play;
+/**
+ * Method for pausing native ad video
+ */
+- (void)pause;
+/**
+ * Method for replaying native ad video
+ */
+- (void)replay;
+/**
+ * Method for getting native ad player volume state
+ */
+- (BOOL)isVolumeOn;
+
 @end
 
 /**
@@ -162,6 +191,12 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Method to set internal object.
  */
 - (void)setInternalObject:(id)object;
+
+
+/**
+ @discussion Method to get native player.
+ */
+- (nullable id <MTRGNativeAdVideoPlayer>)getVideoPlayer;
 
 @end
 

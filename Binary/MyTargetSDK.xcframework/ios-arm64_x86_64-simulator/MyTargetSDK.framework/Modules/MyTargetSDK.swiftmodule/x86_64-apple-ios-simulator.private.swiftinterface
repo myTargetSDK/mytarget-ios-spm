@@ -274,6 +274,7 @@ extension MyTargetSDK.MTRGCachePolicy : Swift.Hashable {
   case drugs = 8
   case dietary = 9
   case declaration = 10
+  case credits = 11
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
