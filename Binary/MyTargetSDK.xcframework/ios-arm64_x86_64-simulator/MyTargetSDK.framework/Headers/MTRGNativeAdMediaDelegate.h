@@ -1,12 +1,13 @@
 //
 //  MTRGNativeAdMediaDelegate.h
-//  myTargetSDK 5.26.0
+//  myTargetSDK 5.27.0
 //
 //  Created by Seredkin Andrey on 27.01.2025.
 //  Copyright © 2025 VK. All rights reserved.
 //
 
 @class MTRGNativeAd;
+@class MTRGNativePromoCollageMedia;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -42,6 +43,16 @@ NS_ASSUME_NONNULL_BEGIN
  @param nativeAd Current ad.
  */
 - (void)onMediaLoadFailedWithNativeAd:(MTRGNativeAd *)nativeAd;
+
+@optional
+
+/**
+ @discussion Calls when collage thumbnail loaded for the ad.
+
+ @param collageMedia Collage media for which thumbnail was loaded.
+ @param nativeAd Current ad.
+ */
+- (void)onCollageThumbnailLoad:(MTRGNativePromoCollageMedia *)collageMedia nativeAd:(MTRGNativeAd *)nativeAd;
 
 @end
 

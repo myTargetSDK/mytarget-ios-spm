@@ -217,6 +217,33 @@ extension MyTargetSDK.MTRGCachePolicy : Swift.Encodable {
   @objc weak var delegate: (any MyTargetSDK.InstreamAdVideoMotionPlayerDelegate)? { get set }
   @objc func play(_ videoMotionBanner: MyTargetSDK.InstreamAdVideoMotionBanner)
 }
+@_hasMissingDesignatedInitializers @objc(MTRGNativePromoCollageImage) final public class NativePromoCollageImage : ObjectiveC.NSObject {
+  @objc final public let imageData: MyTargetSDK.MTRGImageData
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(MTRGNativePromoCollageVideo) final public class NativePromoCollageVideo : ObjectiveC.NSObject {
+  @objc final public let preview: MyTargetSDK.MTRGImageData?
+  @objc final public let duration: Foundation.TimeInterval
+  @objc final public let video: MyTargetSDK.MTRGVideoData?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(MTRGNativePromoCollageMedia) final public class NativePromoCollageMedia : ObjectiveC.NSObject {
+  public enum MediaType {
+    case image(MyTargetSDK.NativePromoCollageImage)
+    case video(MyTargetSDK.NativePromoCollageVideo)
+  }
+  final public let media: MyTargetSDK.NativePromoCollageMedia.MediaType
+  @objc final public var isVideo: Swift.Bool {
+    @objc get
+  }
+  @objc final public func getVideo() -> MyTargetSDK.NativePromoCollageVideo?
+  @objc final public func getImage() -> MyTargetSDK.NativePromoCollageImage?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(MTRGNativePromoCollage) final public class NativePromoCollage : ObjectiveC.NSObject {
+  @objc final public let collageMedia: [MyTargetSDK.NativePromoCollageMedia]
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class MTRGVersion : ObjectiveC.NSObject {
   @objc final public class func currentVersion() -> Swift.String
   @objc deinit

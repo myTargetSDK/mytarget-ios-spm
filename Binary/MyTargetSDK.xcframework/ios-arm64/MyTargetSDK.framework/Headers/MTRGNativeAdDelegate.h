@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdDelegate.h
-//  myTargetSDK 5.26.0
+//  myTargetSDK 5.27.0
 //
 //  Created by Seredkin Andrey on 27.01.2025.
 //  Copyright © 2025 VK. All rights reserved.
@@ -8,6 +8,7 @@
 
 @class MTRGNativeAd;
 @class MTRGNativePromoBanner;
+@class MTRGNativePromoCollageMedia;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -55,6 +56,16 @@ NS_ASSUME_NONNULL_BEGIN
  @param nativeAd Current ad.
  */
 - (void)onAdClickWithNativeAd:(MTRGNativeAd *)nativeAd;
+
+/**
+ @discussion Calls on click by collage thumbnail.
+ For better UX, it's recommended to implement full screen view for selected media
+
+ @param collageMedia Collage media which has been clicked
+ @param thumbnailView UIImageView which has been clicked
+ @param nativeAd Current ad.
+ */
+- (void)onCollageThumbnailClick:(MTRGNativePromoCollageMedia *)collageMedia thumbnailView:(UIImageView *)thumbnailView nativeAd:(MTRGNativeAd *)nativeAd;
 
 /**
  @discussion Calls on modal show.

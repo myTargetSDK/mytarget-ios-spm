@@ -546,6 +546,8 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 
 
 
+
+
 /// The various log message types that the logger provides.
 typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The informative log message type.
@@ -683,6 +685,57 @@ SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 
 
 
+
+@class MTRGNativePromoCollageMedia;
+
+/// Promo collage
+SWIFT_CLASS_NAMED("NativePromoCollage")
+@interface MTRGNativePromoCollage : NSObject
+/// Collage media items
+@property (nonatomic, readonly, copy) NSArray<MTRGNativePromoCollageMedia *> * _Nonnull collageMedia;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Collage image
+SWIFT_CLASS_NAMED("NativePromoCollageImage")
+@interface MTRGNativePromoCollageImage : NSObject
+/// Image data
+@property (nonatomic, readonly, strong) MTRGImageData * _Nonnull imageData;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MTRGNativePromoCollageVideo;
+
+/// Collage media
+SWIFT_CLASS_NAMED("NativePromoCollageMedia")
+@interface MTRGNativePromoCollageMedia : NSObject
+/// Is video
+@property (nonatomic, readonly) BOOL isVideo;
+/// Returns collage video
+- (MTRGNativePromoCollageVideo * _Nullable)getVideo SWIFT_WARN_UNUSED_RESULT;
+/// Returns collage image
+- (MTRGNativePromoCollageImage * _Nullable)getImage SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MTRGVideoData;
+
+/// Collage video
+SWIFT_CLASS_NAMED("NativePromoCollageVideo")
+@interface MTRGNativePromoCollageVideo : NSObject
+/// Video preview
+@property (nonatomic, readonly, strong) MTRGImageData * _Nullable preview;
+/// Video duration
+@property (nonatomic, readonly) NSTimeInterval duration;
+/// Video file
+@property (nonatomic, readonly, strong) MTRGVideoData * _Nullable video;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 
