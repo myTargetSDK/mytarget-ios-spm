@@ -1,6 +1,6 @@
 //
 //  MTRGPromoCardSliderProtocol.h
-//  myTargetSDK 5.27.0
+//  myTargetSDK 5.28.0
 //
 //  Created by Andrey Seredkin on 24.11.17.
 //  Copyright © 2017 Mail.ru Group. All rights reserved.
@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param card Clicked card.
  */
-- (void)onCardClick:(MTRGNativePromoCard *)card;
+- (void)onCardClick:(MTRGNativePromoCard *)card __attribute__((deprecated("use onCardClick: clickedView: instead.")));
 
 /**
  @discussion Call on slide to visible cards. (Required)
@@ -45,7 +45,23 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param card Clicked card.
  */
-- (void)onCtaButtonClickWithCard:(MTRGNativePromoCard *)card;
+- (void)onCtaButtonClickWithCard:(MTRGNativePromoCard *)card __attribute__((deprecated("use onCtaButtonClickWithCard: clickedView: instead.")));
+
+/**
+ @discussion Calls on cta button click.
+
+ @param card Clicked card.
+ @param clickedView View that was clicked.
+ */
+- (void)onCtaButtonClickWithCard:(MTRGNativePromoCard *)card clickedView:(nullable UIView *)clickedView;
+
+/**
+@discussion Calls on card click.
+ 
+@param card Clicked card.
+@param clickedView View that was clicked.
+*/
+- (void)onCardClick:(MTRGNativePromoCard *)card clickedView:(nullable UIView *)clickedView;
 
 @end
 

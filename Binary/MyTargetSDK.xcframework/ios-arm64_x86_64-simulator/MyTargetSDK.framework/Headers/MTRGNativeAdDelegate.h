@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdDelegate.h
-//  myTargetSDK 5.27.0
+//  myTargetSDK 5.28.0
 //
 //  Created by Seredkin Andrey on 27.01.2025.
 //  Copyright © 2025 VK. All rights reserved.
@@ -52,10 +52,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  @discussion Calls on click by native ad.
+ 
+ @param clickedView View that was clicked.
+ @param nativeAd Current ad.
+ */
+- (void)onAdClickWithClikedView:(nullable UIView *)clickedView nativeAd:(MTRGNativeAd *)nativeAd;
+
+/**
+ @discussion Calls on click by native ad.
 
  @param nativeAd Current ad.
  */
-- (void)onAdClickWithNativeAd:(MTRGNativeAd *)nativeAd;
+- (void)onAdClickWithNativeAd:(MTRGNativeAd *)nativeAd __attribute__((deprecated("use onAdClickWithClikedView: nativeAd: method instead.")));
 
 /**
  @discussion Calls on click by collage thumbnail.

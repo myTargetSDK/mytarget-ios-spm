@@ -408,6 +408,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, MTRGDisclaimerType, "DisclaimerType", open) 
 
 
 
+
 @class MTRGPostViewData;
 
 SWIFT_PROTOCOL_NAMED("InstreamAdPostViewPlayer")
@@ -547,7 +548,6 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 
 
 
-
 /// The various log message types that the logger provides.
 typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The informative log message type.
@@ -559,7 +559,6 @@ typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The critical log message type.
   MTRGLogMessageTypeCritical = 3,
 };
-
 
 
 /// A <code>MTRGLogger</code> is an implementation of a logger.
@@ -654,8 +653,6 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK15MTRGMenuFactory_")
 @protocol MTRGMenuFactory
 - (id <MTRGMenu> _Nonnull)menu SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 
@@ -772,6 +769,7 @@ SWIFT_CLASS_NAMED("ShoppableAdsItem")
 
 
 
+
 /// Protocol for interacting with the web form.
 SWIFT_PROTOCOL_NAMED("WebForm")
 @protocol MTRGWebForm
@@ -817,13 +815,20 @@ SWIFT_PROTOCOL_NAMED("WebFormDelegate")
 /// \param setViewSettings The post message that was handled.
 ///
 - (void)webForm:(id <MTRGWebForm> _Nonnull)webForm didHandleSetViewSettings:(MTRGWebFormSetViewSettings * _Nonnull)setViewSettings;
+@optional
 /// Indicates that the web form handled the get user info post message.
 /// \param webForm The web form that handle the post message.
 ///
 ///
 /// returns:
 /// The result of getting user info.
-- (MTRGWebFormGetUserInfoResult * _Nonnull)webFormDidHandleGetUserInfo:(id <MTRGWebForm> _Nonnull)webForm SWIFT_WARN_UNUSED_RESULT;
+- (MTRGWebFormGetUserInfoResult * _Nonnull)webFormDidHandleGetUserInfo:(id <MTRGWebForm> _Nonnull)webForm SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use webForm(_:didHandleGetUserInfoWith:) instead.");
+/// Indicates that the web form handled the get user info post message.
+/// \param webForm The web form that handle the post message.
+///
+/// \param resultHandler The completion block to call with the results of getting user info.
+///
+- (void)webForm:(id <MTRGWebForm> _Nonnull)webForm didHandleGetUserInfoWithResultHandler:(void (^ _Nonnull)(MTRGWebFormGetUserInfoResult * _Nonnull))resultHandler;
 @end
 
 @class NSDate;
@@ -1394,6 +1399,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, MTRGDisclaimerType, "DisclaimerType", open) 
 
 
 
+
 @class MTRGPostViewData;
 
 SWIFT_PROTOCOL_NAMED("InstreamAdPostViewPlayer")
@@ -1533,7 +1539,6 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 
 
 
-
 /// The various log message types that the logger provides.
 typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The informative log message type.
@@ -1545,7 +1550,6 @@ typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The critical log message type.
   MTRGLogMessageTypeCritical = 3,
 };
-
 
 
 /// A <code>MTRGLogger</code> is an implementation of a logger.
@@ -1640,8 +1644,6 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK15MTRGMenuFactory_")
 @protocol MTRGMenuFactory
 - (id <MTRGMenu> _Nonnull)menu SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 
@@ -1758,6 +1760,7 @@ SWIFT_CLASS_NAMED("ShoppableAdsItem")
 
 
 
+
 /// Protocol for interacting with the web form.
 SWIFT_PROTOCOL_NAMED("WebForm")
 @protocol MTRGWebForm
@@ -1803,13 +1806,20 @@ SWIFT_PROTOCOL_NAMED("WebFormDelegate")
 /// \param setViewSettings The post message that was handled.
 ///
 - (void)webForm:(id <MTRGWebForm> _Nonnull)webForm didHandleSetViewSettings:(MTRGWebFormSetViewSettings * _Nonnull)setViewSettings;
+@optional
 /// Indicates that the web form handled the get user info post message.
 /// \param webForm The web form that handle the post message.
 ///
 ///
 /// returns:
 /// The result of getting user info.
-- (MTRGWebFormGetUserInfoResult * _Nonnull)webFormDidHandleGetUserInfo:(id <MTRGWebForm> _Nonnull)webForm SWIFT_WARN_UNUSED_RESULT;
+- (MTRGWebFormGetUserInfoResult * _Nonnull)webFormDidHandleGetUserInfo:(id <MTRGWebForm> _Nonnull)webForm SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use webForm(_:didHandleGetUserInfoWith:) instead.");
+/// Indicates that the web form handled the get user info post message.
+/// \param webForm The web form that handle the post message.
+///
+/// \param resultHandler The completion block to call with the results of getting user info.
+///
+- (void)webForm:(id <MTRGWebForm> _Nonnull)webForm didHandleGetUserInfoWithResultHandler:(void (^ _Nonnull)(MTRGWebFormGetUserInfoResult * _Nonnull))resultHandler;
 @end
 
 @class NSDate;

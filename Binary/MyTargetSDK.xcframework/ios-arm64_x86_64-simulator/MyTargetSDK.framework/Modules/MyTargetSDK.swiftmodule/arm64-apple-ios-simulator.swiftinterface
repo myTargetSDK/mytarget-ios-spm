@@ -76,7 +76,9 @@ import os
   @objc(webForm:showErrorViewForError:) func webForm(_ webForm: any MyTargetSDK.WebForm, showErrorViewFor error: any Swift.Error) -> UIKit.UIView?
   @objc(webForm:didCopyText:) func webForm(_ webForm: any MyTargetSDK.WebForm, didCopy text: Swift.String)
   @objc(webForm:didHandleSetViewSettings:) func webForm(_ webForm: any MyTargetSDK.WebForm, didHandle setViewSettings: MyTargetSDK.WebFormSetViewSettings)
-  @objc(webFormDidHandleGetUserInfo:) func webFormDidHandleGetUserInfo(_ webForm: any MyTargetSDK.WebForm) -> MyTargetSDK.WebFormGetUserInfoResult
+  @available(*, deprecated, message: "Use webForm(_:didHandleGetUserInfoWith:) instead.")
+  @objc(webFormDidHandleGetUserInfo:) optional func webFormDidHandleGetUserInfo(_ webForm: any MyTargetSDK.WebForm) -> MyTargetSDK.WebFormGetUserInfoResult
+  @objc(webForm:didHandleGetUserInfoWithResultHandler:) optional func webForm(_ webForm: any MyTargetSDK.WebForm, didHandleGetUserInfoWith resultHandler: @escaping (MyTargetSDK.WebFormGetUserInfoResult) -> Swift.Void)
 }
 extension MyTargetSDK.MTRGBaseAd {
   @objc weak dynamic public var webFormDelegate: (any MyTargetSDK.WebFormDelegate)? {

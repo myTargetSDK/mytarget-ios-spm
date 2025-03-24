@@ -1,6 +1,6 @@
 //
 //  MTRGPromoCardViewProtocol.h
-//  myTargetSDK 5.27.0
+//  myTargetSDK 5.28.0
 //
 //  Created by Andrey Seredkin on 20.10.16.
 //  Copyright © 2016 Mail.Ru Group. All rights reserved.
@@ -15,14 +15,24 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Delegate's protocol for promo card view.
  */
-@protocol MTRGPromoCardViewDelegate
+@protocol MTRGPromoCardViewDelegate <NSObject>
 
 /**
  @discussion Calls on cta button click.
 
  @param cardIndex Index of the current card.
  */
-- (void)onCtaButtonClickAtCardIndex:(NSInteger)cardIndex;
+- (void)onCtaButtonClickAtCardIndex:(NSInteger)cardIndex __attribute__((deprecated("use onCtaButtonClickAtCardIndex: clickedView: instead.")));
+
+@optional
+
+/**
+ @discussion Calls on cta button click.
+ 
+ @param cardIndex Index of the current card.
+ @param clickedView View that was clicked.
+ */
+- (void)onCtaButtonClickAtCardIndex:(NSInteger)cardIndex clickedView:(nullable UIView *)clickedView;
 
 @end
 

@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAd.h
-//  myTargetSDK 5.27.0
+//  myTargetSDK 5.28.0
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -11,6 +11,7 @@
 #import <MyTargetSDK/MTRGNativeAdDelegate.h>
 #import <MyTargetSDK/MTRGNativeAdVideoDelegate.h>
 #import <MyTargetSDK/MTRGNativeAdMediaDelegate.h>
+#import <MyTargetSDK/MTRGNativeAdVideoPlayer.h>
 
 @class MTRGNativeAd;
 @class MTRGNativePromoBanner;
@@ -26,35 +27,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)handleClickWithDeepLink:(nullable NSString *)deepLink
                            link:(nullable NSString *)link
                 isOpenInBrowser:(BOOL)isOpenInBrowser;
-@end
-
-@protocol MTRGNativeAdVideoPlayer <NSObject>
-
-/**
- * Method for setting volume on to native ad video
- */
-- (void)setVolumeOn;
-/**
- * Method for setting volume off to native ad video
- */
-- (void)setVolumeOff;
-/**
- * Method for playing native ad video
- */
-- (void)play;
-/**
- * Method for pausing native ad video
- */
-- (void)pause;
-/**
- * Method for replaying native ad video
- */
-- (void)replay;
-/**
- * Method for getting native ad player volume state
- */
-- (BOOL)isVolumeOn;
-
 @end
 
 /**
@@ -102,6 +74,12 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Promo banner for the ad.
  */
 @property(nonatomic, readonly, nullable) MTRGNativePromoBanner *banner;
+
+/**
+ @discussion Sets the preferred video quality.
+ The getter returns the same value that was set.
+ */
+@property(nonatomic) NSUInteger videoQuality;
 
 /**
  @discussion Static constructor. Create instance of the class with slot identifier.
@@ -180,6 +158,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)unregisterView;
 
 /**
+ @discussion Method to handle  click. Used when the user controls click himself. For private use only.
+
+ @param isCta This parameter shows click on cta button.
+ */
+- (void)handleClick:(BOOL)isCta;
+
+/**
  @discussion Method to handle adChoices click.
 
  @param viewController Used UIViewController.
@@ -188,10 +173,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)handleAdChoicesClickWithController:(UIViewController *)viewController sourceView:(nullable UIView *)sourceView NS_SWIFT_NAME(handleAdChoicesClick(controller:sourceView:));
 
 /**
- @discussion Method to set internal object.
+ @discussion Method to set internal object. For private use only.
  */
 - (void)setInternalObject:(id)object;
-
 
 /**
  @discussion Method to get native player.

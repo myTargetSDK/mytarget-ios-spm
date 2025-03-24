@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBannerAdDelegate.h
-//  myTargetSDK 5.27.0
+//  myTargetSDK 5.28.0
 //
 //  Created by Seredkin Andrey on 27.01.2025.
 //  Copyright © 2025 VK. All rights reserved.
@@ -54,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param nativeBannerAd Current banner ad.
  */
-- (void)onAdClickWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
+- (void)onAdClickWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd __attribute__((deprecated("use onAdClickWithClickedView: nativeBannerAd: method instead.")));;
 
 /**
  @discussion Calls on modal show.
@@ -77,6 +77,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onLeaveApplicationWithNativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
 
+/**
+ @discussion Calls on click by native banner ad.
+ @param clickedView View that was clicked.
+ @param nativeBannerAd Current banner ad.
+ */
+- (void)onAdClickWithClickedView:(nullable UIView *)clickedView nativeBannerAd:(MTRGNativeBannerAd *)nativeBannerAd;
+
 @end
+
+
 
 NS_ASSUME_NONNULL_END

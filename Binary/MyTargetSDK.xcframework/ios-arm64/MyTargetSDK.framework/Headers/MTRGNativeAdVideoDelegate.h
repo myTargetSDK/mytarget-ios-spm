@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdVideoDelegate.h
-//  myTargetSDK 5.27.0
+//  myTargetSDK 5.28.0
 //
 //  Created by Seredkin Andrey on 27.01.2025.
 //  Copyright © 2025 VK. All rights reserved.
@@ -63,6 +63,16 @@ NS_ASSUME_NONNULL_BEGIN
  @param nativeAd Current ad.
  */
 - (void)onVideoError:(NSError *)error nativeAd:(MTRGNativeAd *)nativeAd;
+
+@optional
+
+/**
+ @discussion Called when the video becomes ready for playback.
+ 
+ @param nativeAd Current ad.
+ */
+
+- (void)onVideoReadyWithNativeAd:(MTRGNativeAd *)nativeAd;
 
 @end
 

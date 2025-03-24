@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeAdAdapter.h
-//  myTargetSDK 5.27.0
+//  myTargetSDK 5.28.0
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -51,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param adapter Current adapter.
  */
-- (void)onAdClickWithAdapter:(id <MTRGMediationNativeAdAdapter>)adapter;
+- (void)onAdClickWithAdapter:(id <MTRGMediationNativeAdAdapter>)adapter __attribute__((deprecated("use onAdClickWithClickedView: adapter: instead.")));
 
 /**
  @discussion Calls on modal show the ad.
@@ -105,6 +105,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onNoAdWithReason:(NSString *)reason
 				 adapter:(id <MTRGMediationNativeAdAdapter>)adapter __attribute__((deprecated("use onLoadFailed method instead.")));
+
+/**
+ @discussion Call on click by the ad.
+ @param clickedView View that was clicked.
+ @param adapter Current adapter.
+ */
+- (void)onAdClickWithClickedView:(nullable UIView *)clickedView adapter:(id <MTRGMediationNativeAdAdapter>)adapter;
 
 @end
 
@@ -173,6 +180,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param adChoicesOptionDelegate AdChoicesOptionDelegate of the adapter.
  */
 - (void)setAdChoicesOptionDelegate:(nullable id <MTRGMediationNativeAdChoicesOptionDelegate>)adChoicesOptionDelegate;
+
+/**
+ @discussion Method to handle  click. Used when the user controls click himself. For private use only.
+
+ @param isCta This parameter shows click on cta button.
+ */
+- (void)handleClick:(BOOL)isCta;
 
 @end
 
