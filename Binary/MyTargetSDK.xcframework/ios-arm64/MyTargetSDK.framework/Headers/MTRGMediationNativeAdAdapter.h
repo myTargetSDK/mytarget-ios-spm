@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeAdAdapter.h
-//  myTargetSDK 5.28.0
+//  myTargetSDK 5.29.0
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -96,7 +96,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onVideoCompleteWithAdapter:(id <MTRGMediationNativeAdAdapter>)adapter;
 
 @optional
-
 /**
  @discussion Calls if there is no ad.
 
@@ -105,6 +104,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onNoAdWithReason:(NSString *)reason
 				 adapter:(id <MTRGMediationNativeAdAdapter>)adapter __attribute__((deprecated("use onLoadFailed method instead.")));
+
+/**
+ @discussion Calls when video is ready to play.
+
+ @param adapter Current adapter.
+ */
+- (void)onVideoReadyWithAdapter:(id <MTRGMediationNativeAdAdapter>)adapter;
 
 /**
  @discussion Call on click by the ad.
