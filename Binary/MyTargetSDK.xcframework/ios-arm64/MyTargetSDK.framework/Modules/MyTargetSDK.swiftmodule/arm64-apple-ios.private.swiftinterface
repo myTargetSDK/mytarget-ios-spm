@@ -93,14 +93,16 @@ extension MyTargetSDK.MTRGBaseAd {
   @objc final public let backgroundImage: MyTargetSDK.MTRGImageData?
   @objc deinit
 }
-@objcMembers @objc(MTRGWebFormGetUserInfoResult) final public class WebFormGetUserInfoResult : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objcMembers @objc(MTRGWebFormGetUserInfoResult) final public class WebFormGetUserInfoResult : ObjectiveC.NSObject {
   @objc final public let firstName: Swift.String?
   @objc final public let lastName: Swift.String?
   @objc final public let birthday: Foundation.Date?
   @objc final public let city: Swift.String?
   @objc final public let country: Swift.String?
   @objc final public let contact: MyTargetSDK.WebFormGetUserInfoResult.Contact?
-  @objc public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, birthday: Foundation.Date? = nil, city: Swift.String? = nil, country: Swift.String? = nil, contact: MyTargetSDK.WebFormGetUserInfoResult.Contact? = nil)
+  @objc final public let vkId: Foundation.NSNumber?
+  @objc convenience public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, birthday: Foundation.Date? = nil, city: Swift.String? = nil, country: Swift.String? = nil, contact: MyTargetSDK.WebFormGetUserInfoResult.Contact? = nil, vkId: Swift.Int)
+  @objc convenience public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, birthday: Foundation.Date? = nil, city: Swift.String? = nil, country: Swift.String? = nil, contact: MyTargetSDK.WebFormGetUserInfoResult.Contact? = nil)
   @objc deinit
 }
 extension MyTargetSDK.WebFormGetUserInfoResult {

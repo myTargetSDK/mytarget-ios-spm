@@ -1,6 +1,6 @@
 //
 //  MTRGPromoCardViewProtocol.h
-//  myTargetSDK 5.29.1
+//  myTargetSDK 5.30.0
 //
 //  Created by Andrey Seredkin on 20.10.16.
 //  Copyright © 2016 Mail.Ru Group. All rights reserved.
@@ -17,14 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @protocol MTRGPromoCardViewDelegate <NSObject>
 
+@optional
+
 /**
  @discussion Calls on cta button click.
 
  @param cardIndex Index of the current card.
  */
 - (void)onCtaButtonClickAtCardIndex:(NSInteger)cardIndex __attribute__((deprecated("use onCtaButtonClickAtCardIndex: clickedView: instead.")));
-
-@optional
 
 /**
  @discussion Calls on cta button click.

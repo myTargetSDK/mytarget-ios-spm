@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeBannerAdAdapter.h
-//  myTargetSDK 5.29.1
+//  myTargetSDK 5.30.0
 //
 //  Created by Andrey Seredkin on 11/06/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -49,13 +49,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onAdShowWithAdapter:(id <MTRGMediationNativeBannerAdAdapter>)adapter;
 
 /**
- @discussion Calls on click by the ad.
- 
- @param adapter Current adapter.
- */
-- (void)onAdClickWithAdapter:(id <MTRGMediationNativeBannerAdAdapter>)adapter __attribute__((deprecated("use onAdClickWithClickedView: adapter: instead.")));
-
-/**
  @discussion Calls on modal show.
  
  @param adapter Current adapter.
@@ -87,6 +80,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onNoAdWithReason:(NSString *)reason
 				 adapter:(id <MTRGMediationNativeBannerAdAdapter>)adapter __attribute__((deprecated("use onLoadFailed method instead.")));
 
+
+/**
+ @discussion Calls on click by the ad.
+ 
+ @param adapter Current adapter.
+ */
+- (void)onAdClickWithAdapter:(id <MTRGMediationNativeBannerAdAdapter>)adapter __attribute__((deprecated("use onAdClickWithClickedView: adapter: instead.")));
 
 /**
  @discussion Calls on click by the ad.
