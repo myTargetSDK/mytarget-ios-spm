@@ -849,8 +849,6 @@ SWIFT_CLASS_NAMED("WebFormGetUserInfoResult")
 @property (nonatomic, readonly, copy) NSString * _Nullable country;
 /// User’s contact.
 @property (nonatomic, readonly, strong) MTRGWebFormGetUserInfoResultContact * _Nullable contact;
-/// User’s vk id.
-@property (nonatomic, readonly, strong) NSNumber * _Nullable vkId;
 /// Creates a new post message result.
 /// \param firstName User’s first name.
 ///
@@ -864,23 +862,7 @@ SWIFT_CLASS_NAMED("WebFormGetUserInfoResult")
 ///
 /// \param contact User’s contact.
 ///
-/// \param vkId User’s vkId.
-///
-- (nonnull instancetype)initWithFirstName:(NSString * _Nullable)firstName lastName:(NSString * _Nullable)lastName birthday:(NSDate * _Nullable)birthday city:(NSString * _Nullable)city country:(NSString * _Nullable)country contact:(MTRGWebFormGetUserInfoResultContact * _Nullable)contact vkId:(NSInteger)vkId;
-/// Creates a new post message result.
-/// \param firstName User’s first name.
-///
-/// \param lastName User’s family name.
-///
-/// \param birthday User’s birth date.
-///
-/// \param city User’s city.
-///
-/// \param country User’s country.
-///
-/// \param contact User’s contact.
-///
-- (nonnull instancetype)initWithFirstName:(NSString * _Nullable)firstName lastName:(NSString * _Nullable)lastName birthday:(NSDate * _Nullable)birthday city:(NSString * _Nullable)city country:(NSString * _Nullable)country contact:(MTRGWebFormGetUserInfoResultContact * _Nullable)contact;
+- (nonnull instancetype)initWithFirstName:(NSString * _Nullable)firstName lastName:(NSString * _Nullable)lastName birthday:(NSDate * _Nullable)birthday city:(NSString * _Nullable)city country:(NSString * _Nullable)country contact:(MTRGWebFormGetUserInfoResultContact * _Nullable)contact OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

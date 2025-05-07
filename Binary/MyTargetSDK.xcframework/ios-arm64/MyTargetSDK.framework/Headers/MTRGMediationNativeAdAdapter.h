@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeAdAdapter.h
-//  myTargetSDK 5.30.0
+//  myTargetSDK 5.29.1
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //
@@ -45,6 +45,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param adapter Current adapter.
  */
 - (void)onAdShowWithAdapter:(id <MTRGMediationNativeAdAdapter>)adapter;
+
+/**
+ @discussion Call on click by the ad.
+ 
+ @param adapter Current adapter.
+ */
+- (void)onAdClickWithAdapter:(id <MTRGMediationNativeAdAdapter>)adapter __attribute__((deprecated("use onAdClickWithClickedView: adapter: instead.")));
 
 /**
  @discussion Calls on modal show the ad.
@@ -104,13 +111,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param adapter Current adapter.
  */
 - (void)onVideoReadyWithAdapter:(id <MTRGMediationNativeAdAdapter>)adapter;
-
-/**
- @discussion Call on click by the ad.
- 
- @param adapter Current adapter.
- */
-- (void)onAdClickWithAdapter:(id <MTRGMediationNativeAdAdapter>)adapter __attribute__((deprecated("use onAdClickWithClickedView: adapter: instead.")));
 
 /**
  @discussion Call on click by the ad.
