@@ -1,6 +1,6 @@
 //
 //  MTRGBaseAd.h
-//  myTargetSDK 5.30.0
+//  myTargetSDK 5.31.0
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
