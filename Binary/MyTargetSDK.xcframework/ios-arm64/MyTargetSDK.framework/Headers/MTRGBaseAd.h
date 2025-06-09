@@ -1,6 +1,6 @@
 //
 //  MTRGBaseAd.h
-//  myTargetSDK 5.31.0
+//  myTargetSDK 5.31.1
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -35,6 +35,13 @@ NS_ASSUME_NONNULL_BEGIN
 @param adNetworkConfig An object implemented MTRGAdNetworkConfigProtocol.
 */
 - (void)setAdNetworkConfig:(nullable id <MTRGAdNetworkConfigProtocol>)adNetworkConfig networkName:(NSString *)networkName;
+
+/*
+@discussion Advertising tag.
+
+@param tag Tag for the ad. Max 255 symbols
+*/
+- (void)setTag:(NSString *)tag;
 
 @end
 
