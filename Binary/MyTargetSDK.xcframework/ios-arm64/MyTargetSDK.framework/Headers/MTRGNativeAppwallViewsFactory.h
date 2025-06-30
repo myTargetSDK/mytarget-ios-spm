@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAppwallViewsFactory.h
-//  myTargetSDK 5.31.1
+//  myTargetSDK 5.32.0
 //
 // Created by Timur on 4/12/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
