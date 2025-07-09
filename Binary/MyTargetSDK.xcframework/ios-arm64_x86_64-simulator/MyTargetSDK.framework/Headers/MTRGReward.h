@@ -1,6 +1,6 @@
 //
 //  MTRGReward.h
-//  myTargetSDK 5.32.1
+//  myTargetSDK 5.31.2
 //
 //  Created by Andrey Seredkin on 31.07.2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
