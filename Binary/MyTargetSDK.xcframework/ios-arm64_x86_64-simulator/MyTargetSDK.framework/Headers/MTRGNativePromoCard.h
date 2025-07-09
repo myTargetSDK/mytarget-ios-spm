@@ -1,6 +1,6 @@
 //
 //  MTRGNativePromoCard.h
-//  myTargetSDK 5.32.1
+//  myTargetSDK 5.31.2
 //
 //  Created by Andrey Seredkin on 18.10.16.
 //  Copyright © 2016 Mail.ru. All rights reserved.

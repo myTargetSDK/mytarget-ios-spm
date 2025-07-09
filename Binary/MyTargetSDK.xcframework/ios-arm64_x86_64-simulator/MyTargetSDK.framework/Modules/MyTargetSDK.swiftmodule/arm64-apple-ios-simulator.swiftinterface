@@ -9,8 +9,6 @@ import CoreTelephony.CTTelephonyNetworkInfo
 import CoreTelephony
 import Foundation
 @_exported import MyTargetSDK
-import Network
-import SQLite3
 import SafariServices
 import Security
 import StoreKit
@@ -208,7 +206,7 @@ extension MyTargetSDK.WebFormGetUserInfoResult {
   @objc deinit
   public init(from decoder: any Swift.Decoder) throws
 }
-extension MyTargetSDK.MTRGCachePolicy : Swift.Codable {
+extension MyTargetSDK.MTRGCachePolicy : Swift.Encodable {
 }
 @objc(MTRGInstreamAdVideoMotionPlayerDelegate) public protocol InstreamAdVideoMotionPlayerDelegate {
   @objc func onBannerShow()
