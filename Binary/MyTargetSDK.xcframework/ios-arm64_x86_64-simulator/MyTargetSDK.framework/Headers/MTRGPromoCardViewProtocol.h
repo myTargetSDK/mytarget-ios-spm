@@ -1,6 +1,6 @@
 //
 //  MTRGPromoCardViewProtocol.h
-//  myTargetSDK 5.31.2
+//  myTargetSDK 5.32.1
 //
 //  Created by Andrey Seredkin on 20.10.16.
 //  Copyright © 2016 Mail.Ru Group. All rights reserved.
