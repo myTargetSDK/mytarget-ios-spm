@@ -1,6 +1,6 @@
 //
 //  MTRGAdSize.h
-//  myTargetSDK 5.31.2
+//  myTargetSDK 5.33.0
 //
 //  Created by Andrey Seredkin on 01.07.2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.

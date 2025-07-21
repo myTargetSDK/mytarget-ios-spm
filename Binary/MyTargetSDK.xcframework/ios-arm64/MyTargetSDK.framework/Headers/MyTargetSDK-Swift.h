@@ -381,6 +381,7 @@ SWIFT_CLASS_NAMED("CallToActionData")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
 enum MTRGDisclaimerType : NSInteger;
 
 /// Ads disclaimer
@@ -525,6 +526,7 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 /// Calls on error.
 - (void)onError:(NSString * _Nonnull)error;
 @end
+
 
 
 @protocol MTRGWebFormDelegate;
@@ -677,6 +679,7 @@ SWIFT_CLASS("_TtC11MyTargetSDK11MTRGVersion")
 /// Version of SDK as string
 + (NSString * _Nonnull)currentVersion SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 

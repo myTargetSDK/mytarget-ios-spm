@@ -1,6 +1,6 @@
 //
 //  MTRGVideoData.h
-//  myTargetSDK 5.31.2
+//  myTargetSDK 5.33.0
 //
 // Created by Timur on 2/9/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
