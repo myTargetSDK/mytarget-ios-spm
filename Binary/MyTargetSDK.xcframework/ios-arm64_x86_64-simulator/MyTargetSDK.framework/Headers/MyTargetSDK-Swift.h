@@ -550,6 +550,8 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 
 
 
+
+
 /// The various log message types that the logger provides.
 typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The informative log message type.
@@ -655,6 +657,8 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK15MTRGMenuFactory_")
 @protocol MTRGMenuFactory
 - (id <MTRGMenu> _Nonnull)menu SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -1562,6 +1566,8 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 
 
 
+
+
 /// The various log message types that the logger provides.
 typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The informative log message type.
@@ -1667,6 +1673,8 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK15MTRGMenuFactory_")
 @protocol MTRGMenuFactory
 - (id <MTRGMenu> _Nonnull)menu SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
