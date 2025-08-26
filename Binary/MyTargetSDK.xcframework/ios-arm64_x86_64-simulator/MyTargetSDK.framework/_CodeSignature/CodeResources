@@ -322,7 +322,7 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Zy2sB+yeML2aPZNuKEQ+ZE4WJRs=
+		YbnVVGoKNtvo7xRGi0OWoB053mY=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -338,11 +338,11 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+WgNZeKeeUXMZzoQJL/bIb6IkmI=
+		sUhxwnN5qixctLSLLX7m+ySUmEY=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Zy2sB+yeML2aPZNuKEQ+ZE4WJRs=
+		YbnVVGoKNtvo7xRGi0OWoB053mY=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -358,7 +358,7 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tT4QSnusDetDN9pSabBvpplCAPc=
+		SKB6wefkCfxATHSULKdTVUfaz+0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1237,11 +1237,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zy2sB+yeML2aPZNuKEQ+ZE4WJRs=
+			YbnVVGoKNtvo7xRGi0OWoB053mY=
 			</data>
 			<key>hash2</key>
 			<data>
-			+MLer1QL5fb4Yo1BMiMgwP0zljn/2nSS68Il8UeON1c=
+			XuFl7uFSDwSGOzKycsZzNv68I/RVOW9DXCzEsj+DrDw=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1281,22 +1281,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+WgNZeKeeUXMZzoQJL/bIb6IkmI=
+			sUhxwnN5qixctLSLLX7m+ySUmEY=
 			</data>
 			<key>hash2</key>
 			<data>
-			DlE49FK8KQyEmQ7DqPpRGt9nqBjc1nMovh19obPKnCY=
+			AD7RjTePzGSQ3aAUF0+/tooj0zcPWOKUnIVn9Bqizlc=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Zy2sB+yeML2aPZNuKEQ+ZE4WJRs=
+			YbnVVGoKNtvo7xRGi0OWoB053mY=
 			</data>
 			<key>hash2</key>
 			<data>
-			+MLer1QL5fb4Yo1BMiMgwP0zljn/2nSS68Il8UeON1c=
+			XuFl7uFSDwSGOzKycsZzNv68I/RVOW9DXCzEsj+DrDw=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1336,11 +1336,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tT4QSnusDetDN9pSabBvpplCAPc=
+			SKB6wefkCfxATHSULKdTVUfaz+0=
 			</data>
 			<key>hash2</key>
 			<data>
-			HMfBaKP79gG3kfFGUnYjMXNNYAWhdF2csiywV4zuPfU=
+			9/GQGxpraC0yCIAcfT9UJnQYZAKWdnKlj+T16rK0zxE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
