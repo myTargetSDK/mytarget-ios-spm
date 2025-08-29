@@ -251,7 +251,7 @@ extension MyTargetSDK.MTRGCachePolicy : Swift.Codable {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class MTRGVersion : ObjectiveC.NSObject {
-  @objc final public class func currentVersion() -> Swift.String
+  @objc public static func currentVersion() -> Swift.String
   @objc deinit
 }
 @objc(MTRGAdLoadingError) public enum AdLoadingError : Swift.Int, Foundation.LocalizedError {

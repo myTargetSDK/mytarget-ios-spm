@@ -1,6 +1,6 @@
 //
 //  MTRGNativePromoBanner.h
-//  myTargetSDK 5.34.2
+//  myTargetSDK 5.35.0
 //
 // Created by Timur on 2/12/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -42,6 +42,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Flag determines video existing for the banner.
  */
 @property(nonatomic, readonly) BOOL hasVideo;
+
+/**
+ @discussion Flag determines HTML5 existing for the banner.
+ */
+@property(nonatomic, readonly) BOOL hasHTML5;
 
 /**
  @discussion Identifier for the banner.
