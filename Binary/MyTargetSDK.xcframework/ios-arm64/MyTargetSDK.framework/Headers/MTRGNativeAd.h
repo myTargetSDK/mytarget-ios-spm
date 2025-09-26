@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAd.h
-//  myTargetSDK 5.35.1
+//  myTargetSDK 5.34.3
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -11,7 +11,6 @@
 #import <MyTargetSDK/MTRGNativeAdDelegate.h>
 #import <MyTargetSDK/MTRGNativeAdVideoDelegate.h>
 #import <MyTargetSDK/MTRGNativeAdMediaDelegate.h>
-#import <MyTargetSDK/MTRGNativeAdWebViewDelegate.h>
 #import <MyTargetSDK/MTRGNativeAdVideoPlayer.h>
 
 @class MTRGNativeAd;
@@ -56,11 +55,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, weak, nullable) id <MTRGNativeAdMediaDelegate> mediaDelegate;
 
 /**
- @discussion Delegate for the webView of the ad. Must conforms MTRGNativeAdWebViewDelegate protocol.
- */
-@property(nonatomic, weak, nullable) id <MTRGNativeAdWebViewDelegate> webViewDelegate;
-
-/**
  @discussion Delegate for the AdChoices options. Must conforms MTRGNativeAdChoicesOptionDelegate protocol.
  See MTRGNativeAdChoicesOptionDelegate.h
  */
@@ -86,11 +80,6 @@ NS_ASSUME_NONNULL_BEGIN
  The getter returns the same value that was set.
  */
 @property(nonatomic) NSUInteger videoQuality;
-
-/**
- @discussion State of html ad in WebView.
- */
-@property(nonatomic, readonly) BOOL isWebViewLoaded;
 
 /**
  @discussion Static constructor. Create instance of the class with slot identifier.

@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.35.1
+//  myTargetSDK 5.34.3
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -201,14 +201,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onBannerTimeLeftChange:(NSTimeInterval)timeLeft duration:(NSTimeInterval)duration instreamAd:(MTRGInstreamAd *)instreamAd;
 
-/**
- @discussion Calls on banner's prepare with section.
- 
- @param section Current section of the ad banner.
- @param instreamAd Current instream ad.
- @param error Section preloading completion error.
- */
-- (void)onPrepareWithSection:(NSString *)section instreamAd:(MTRGInstreamAd *)instreamAd error:(NSError * _Nullable)error;
 
 /**
  @discussion Calls on banner's complete with section.
@@ -452,13 +444,6 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Starts pauseroll.
  */
 - (void)startPauseroll;
-
-/**
- @discussion Prepare midroll at the point.
- 
- @param point Point to start the midroll.
- */
-- (void)prepareMidrollWithPoint:(NSNumber *)point;
 
 /**
  @discussion Starts midroll at the point.
