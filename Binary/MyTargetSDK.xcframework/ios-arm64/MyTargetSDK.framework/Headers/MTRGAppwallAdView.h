@@ -1,6 +1,6 @@
 //
 //  MTRGAppwallAdView.h
-//  myTargetSDK 5.34.3
+//  myTargetSDK 5.36.0
 //
 // Created by Timur on 4/12/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.

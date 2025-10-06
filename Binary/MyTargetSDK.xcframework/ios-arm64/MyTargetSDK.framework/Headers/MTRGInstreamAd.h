@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.34.3
+//  myTargetSDK 5.36.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -17,6 +17,7 @@
 @class MTRGShoppableAdsItem;
 @class MTRGInstreamAdVideoMotionBanner;
 @protocol MTRGInstreamAdVideoMotionPlayer;
+@protocol MTRGInstreamAdVideoMotionPlayerV2;
 @protocol MTRGInstreamAdPostViewPlayer;
 @class MTRGCallToActionData;
 @class MTRGPostViewData;
@@ -201,6 +202,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onBannerTimeLeftChange:(NSTimeInterval)timeLeft duration:(NSTimeInterval)duration instreamAd:(MTRGInstreamAd *)instreamAd;
 
+/**
+ @discussion Calls on banner's prepare with section.
+ 
+ @param section Current section of the ad banner.
+ @param instreamAd Current instream ad.
+ @param error Section preloading completion error.
+ */
+- (void)onPrepareWithSection:(NSString *)section instreamAd:(MTRGInstreamAd *)instreamAd error:(NSError * _Nullable)error;
 
 /**
  @discussion Calls on banner's complete with section.
@@ -278,7 +287,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Player for VideoMotion banner. Conforms MTRGVideoMotionPlayer protocol.
  */
-@property(nonatomic, nullable) id <MTRGInstreamAdVideoMotionPlayer> videoMotionPlayer;
+@property(nonatomic, nullable) id <MTRGInstreamAdVideoMotionPlayer> videoMotionPlayer __attribute__((deprecated("use \'videoMotionPlayerV2\' property instead.")));
+/**
+ @discussion Player for VideoMotion banner. Conforms MTRGVideoMotionPlayerV2 protocol.
+ */
+@property(nonatomic, nullable) id <MTRGInstreamAdVideoMotionPlayerV2> videoMotionPlayerV2;
 
 /**
  @discussion Player for post view. Conforms MTRGInstreamAdPostViewPlayer protocol.
@@ -371,6 +384,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithSlotId:(NSUInteger)slotId menuFactory:(id<MTRGMenuFactory>)menuFactory;
 
 /**
+ @discussion Creates instream ad with json source and menu factory.
+
+ @param jsonSource JSON source.
+ @param menuFactory Menu factory.
+
+ @return Instance of the class.
+ */
+- (instancetype)initWithJsonSource:(NSString *)jsonSource menuFactory:(nullable id<MTRGMenuFactory>)menuFactory;
+
+/**
  @discussion Loads the ad.
  */
 - (void)load;
@@ -444,6 +467,13 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Starts pauseroll.
  */
 - (void)startPauseroll;
+
+/**
+ @discussion Prepare midroll at the point.
+ 
+ @param point Point to start the midroll.
+ */
+- (void)prepareMidrollWithPoint:(NSNumber *)point;
 
 /**
  @discussion Starts midroll at the point.

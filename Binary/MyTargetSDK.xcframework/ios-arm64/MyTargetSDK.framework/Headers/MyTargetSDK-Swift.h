@@ -527,6 +527,20 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 - (void)onError:(NSString * _Nonnull)error;
 @end
 
+@class UIView;
+
+SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerV2")
+@protocol MTRGInstreamAdVideoMotionPlayerV2
+/// Instance conforms VideoMotionPlayerDelegate protocol.
+@property (nonatomic, weak) id <MTRGInstreamAdVideoMotionPlayerDelegate> _Nullable delegate;
+/// Player view
+@property (nonatomic, readonly, strong) UIView * _Nullable adPlayerView;
+/// Show Video Motion banner.
+/// \param videoMotionBanner Video Motion banner.
+///
+- (void)play:(MTRGInstreamAdVideoMotionBanner * _Nonnull)videoMotionBanner;
+@end
+
 
 
 @protocol MTRGWebFormDelegate;
@@ -535,8 +549,6 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerDelegate")
 /// Delegate for the web form of the ad.
 @property (nonatomic, weak) id <MTRGWebFormDelegate> _Nullable webFormDelegate;
 @end
-
-
 
 
 
@@ -613,7 +625,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <MTRGLogger> _Nulla
 
 @class MTRGMenuAction;
 @class UIViewController;
-@class UIView;
 
 /// Protocol for presenting adChoices menu.
 SWIFT_PROTOCOL("_TtP11MyTargetSDK8MTRGMenu_")
@@ -657,6 +668,7 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK15MTRGMenuFactory_")
 @protocol MTRGMenuFactory
 - (id <MTRGMenu> _Nonnull)menu SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 

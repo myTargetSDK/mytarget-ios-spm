@@ -1,6 +1,6 @@
 //
 //  MTRGStarsRatingLabel.h
-//  myTargetSDK 5.34.3
+//  myTargetSDK 5.36.0
 //
 //  Created by Andrey Seredkin on 27.01.17.
 //  Copyright © 2017 Mail.Ru Group. All rights reserved.
