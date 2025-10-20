@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAd.h
-//  myTargetSDK 5.36.0
+//  myTargetSDK 5.36.1
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -192,6 +192,14 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Method to get native player.
  */
 - (nullable id <MTRGNativeAdVideoPlayer>)getVideoPlayer;
+
+/**
+ @discussion Method to set the timeout interval, in seconds, for loading HTML5 ads in the native WebView.
+
+ @param timeout Timeout interval in seconds. Valid range is 0–30. Other values are ignored.
+                Passing 0 resets the timeout to the default value (3 seconds).
+ */
+- (void)setNativeHtmlLoadingTimeout:(NSTimeInterval)timeout;
 
 @end
 
