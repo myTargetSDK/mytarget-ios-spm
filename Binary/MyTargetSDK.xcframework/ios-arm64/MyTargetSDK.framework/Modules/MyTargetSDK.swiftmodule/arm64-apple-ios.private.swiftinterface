@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MyTargetSDK
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios12.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MyTargetSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVFAudio
 import AVFoundation
 import AdSupport
@@ -27,7 +28,9 @@ import os
 }
 @objc public protocol MTRGMenu {
   @objc(addMenuAction:) func add(menuAction action: MyTargetSDK.MTRGMenuAction)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(presentInViewController:sourceView:) func present(in viewController: UIKit.UIViewController, sourceView: UIKit.UIView?)
+  #endif
 }
 @objc public enum MTRGMenuActionStyle : Swift.Int {
   case `default`
@@ -35,7 +38,9 @@ import os
   case hide
   case complain
   case cancel
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -45,7 +50,9 @@ import os
   @objc final public let title: Swift.String
   @objc final public let style: MyTargetSDK.MTRGMenuActionStyle
   @objc final public let alias: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(title: Swift.String, style: MyTargetSDK.MTRGMenuActionStyle, alias: Swift.String? = nil, handler: (() -> Swift.Void)?)
+  #endif
   @objc final public func handleClick()
   @objc deinit
 }
@@ -54,7 +61,9 @@ import os
   case warning
   case error
   case critical
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -75,7 +84,9 @@ import os
 @objc(MTRGWebFormDelegate) public protocol WebFormDelegate {
   @objc func webFormWillPresent(_ webForm: any MyTargetSDK.WebForm)
   @objc func webFormDidDismiss(_ webForm: any MyTargetSDK.WebForm)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(webForm:showErrorViewForError:) func webForm(_ webForm: any MyTargetSDK.WebForm, showErrorViewFor error: any Swift.Error) -> UIKit.UIView?
+  #endif
   @objc(webForm:didCopyText:) func webForm(_ webForm: any MyTargetSDK.WebForm, didCopy text: Swift.String)
   @objc(webForm:didHandleSetViewSettings:) func webForm(_ webForm: any MyTargetSDK.WebForm, didHandle setViewSettings: MyTargetSDK.WebFormSetViewSettings)
   @available(*, deprecated, message: "Use webForm(_:didHandleGetUserInfoWith:) instead.")
@@ -83,10 +94,12 @@ import os
   @objc(webForm:didHandleGetUserInfoWithResultHandler:) optional func webForm(_ webForm: any MyTargetSDK.WebForm, didHandleGetUserInfoWith resultHandler: @escaping (MyTargetSDK.WebFormGetUserInfoResult) -> Swift.Void)
 }
 extension MyTargetSDK.MTRGBaseAd {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc weak dynamic public var webFormDelegate: (any MyTargetSDK.WebFormDelegate)? {
     @objc get
     @objc set
   }
+  #endif
 }
 @_hasMissingDesignatedInitializers @objc(MTRGPostViewData) final public class PostViewData : ObjectiveC.NSObject {
   @objc final public let text: Swift.String?
@@ -96,8 +109,12 @@ extension MyTargetSDK.MTRGBaseAd {
   @objc deinit
 }
 @objc(MTRGInstreamAdVideoMotionPlayerV2) public protocol InstreamAdVideoMotionPlayerV2 {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc weak var delegate: (any MyTargetSDK.InstreamAdVideoMotionPlayerDelegate)? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var adPlayerView: UIKit.UIView? { get }
+  #endif
   @objc func play(_ videoMotionBanner: MyTargetSDK.InstreamAdVideoMotionBanner)
 }
 @_hasMissingDesignatedInitializers @objcMembers @objc(MTRGWebFormGetUserInfoResult) final public class WebFormGetUserInfoResult : ObjectiveC.NSObject {
@@ -108,8 +125,12 @@ extension MyTargetSDK.MTRGBaseAd {
   @objc final public let country: Swift.String?
   @objc final public let contact: MyTargetSDK.WebFormGetUserInfoResult.Contact?
   @objc final public let vkId: Foundation.NSNumber?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, birthday: Foundation.Date? = nil, city: Swift.String? = nil, country: Swift.String? = nil, contact: MyTargetSDK.WebFormGetUserInfoResult.Contact? = nil, vkId: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, birthday: Foundation.Date? = nil, city: Swift.String? = nil, country: Swift.String? = nil, contact: MyTargetSDK.WebFormGetUserInfoResult.Contact? = nil)
+  #endif
   @objc deinit
 }
 extension MyTargetSDK.WebFormGetUserInfoResult {
@@ -119,7 +140,9 @@ extension MyTargetSDK.WebFormGetUserInfoResult {
     @objc final public let email: Swift.String?
     @objc final public let emailSign: Swift.String?
     @objc final public let decodingParameters: MyTargetSDK.WebFormGetUserInfoResult.DecodingParameters?
+    #if compiler(>=5.3) && $NonescapableTypes
     @objc public init(phone: Swift.String? = nil, email: Swift.String? = nil)
+    #endif
     @objc public init(maskedPhone: Swift.String, maskedPhoneSign: Swift.String, decodingParameters: MyTargetSDK.WebFormGetUserInfoResult.DecodingParameters)
     @objc public init(maskedEmail: Swift.String, maskedEmailSign: Swift.String, decodingParameters: MyTargetSDK.WebFormGetUserInfoResult.DecodingParameters)
     @objc public init(maskedPhone: Swift.String, maskedPhoneSign: Swift.String, maskedEmail: Swift.String, maskedEmailSign: Swift.String, decodingParameters: MyTargetSDK.WebFormGetUserInfoResult.DecodingParameters)
@@ -129,7 +152,9 @@ extension MyTargetSDK.WebFormGetUserInfoResult {
     @objc final public let accessToken: Swift.String?
     @objc final public let userID: Swift.String?
     @objc final public let appID: Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
     @objc public init(accessToken: Swift.String? = nil, userID: Swift.String? = nil, appID: Swift.String)
+    #endif
     @objc deinit
   }
 }
@@ -147,13 +172,17 @@ extension MyTargetSDK.WebFormGetUserInfoResult {
   @objc final public let statusBarStyle: MyTargetSDK.WebFormStatusBarStyle
   @objc final public let actionBarColor: UIKit.UIColor?
   @objc final public let navigationBarColor: UIKit.UIColor?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(statusBarStyle: MyTargetSDK.WebFormStatusBarStyle, actionBarColor: UIKit.UIColor?, navigationBarColor: UIKit.UIColor?)
+  #endif
   @objc deinit
 }
 @objc(MTRGWebFormStatusBarStyle) public enum WebFormStatusBarStyle : Swift.Int {
   case light
   case dark
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -182,10 +211,12 @@ extension MyTargetSDK.WebFormGetUserInfoResult {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var customLogger: (any MyTargetSDK.MTRGLogger)? {
     @objc get
     @objc set
   }
+  #endif
   @objc public static func initSdk()
   @objc public static func setDebugMode(_ enabled: Swift.Bool)
   @objc public static func getBidderToken() -> Swift.String
@@ -225,7 +256,9 @@ extension MyTargetSDK.MTRGCachePolicy : Swift.Codable {
   @objc func onError(_ error: Swift.String)
 }
 @objc(MTRGInstreamAdVideoMotionPlayer) public protocol InstreamAdVideoMotionPlayer {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc weak var delegate: (any MyTargetSDK.InstreamAdVideoMotionPlayerDelegate)? { get set }
+  #endif
   @objc func play(_ videoMotionBanner: MyTargetSDK.InstreamAdVideoMotionBanner)
 }
 @_hasMissingDesignatedInitializers @objc(MTRGNativePromoCollageImage) final public class NativePromoCollageImage : ObjectiveC.NSObject {
@@ -247,8 +280,12 @@ extension MyTargetSDK.MTRGCachePolicy : Swift.Codable {
   @objc final public var isVideo: Swift.Bool {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getVideo() -> MyTargetSDK.NativePromoCollageVideo?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getImage() -> MyTargetSDK.NativePromoCollageImage?
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(MTRGNativePromoCollage) final public class NativePromoCollage : ObjectiveC.NSObject {
@@ -283,10 +320,14 @@ extension MyTargetSDK.MTRGCachePolicy : Swift.Codable {
   case undefinedSubmodelLoadingError = 4003
   case undefinedMediationError = 5000
   case mediationAdNotLoaded = 5001
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -313,7 +354,9 @@ extension MyTargetSDK.MTRGCachePolicy : Swift.Hashable {
   case dietary = 9
   case declaration = 10
   case credits = 11
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get

@@ -193,14 +193,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable id <MTRGNativeAdVideoPlayer>)getVideoPlayer;
 
-/**
- @discussion Method to set the timeout interval, in seconds, for loading HTML5 ads in the native WebView.
-
- @param timeout Timeout interval in seconds. Valid range is 0–30. Other values are ignored.
-                Passing 0 resets the timeout to the default value (3 seconds).
- */
-- (void)setNativeHtmlLoadingTimeout:(NSTimeInterval)timeout;
-
 @end
 
 NS_ASSUME_NONNULL_END
