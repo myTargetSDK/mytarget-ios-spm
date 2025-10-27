@@ -543,6 +543,7 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerV2")
 
 
 
+
 @protocol MTRGWebFormDelegate;
 
 @interface MTRGBaseAd (SWIFT_EXTENSION(MyTargetSDK))
@@ -1568,6 +1569,7 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerV2")
 ///
 - (void)play:(MTRGInstreamAdVideoMotionBanner * _Nonnull)videoMotionBanner;
 @end
+
 
 
 
