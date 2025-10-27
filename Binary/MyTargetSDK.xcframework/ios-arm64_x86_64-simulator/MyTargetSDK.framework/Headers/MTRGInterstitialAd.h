@@ -1,6 +1,6 @@
 //
 //  MTRGInterstitialAd.h
-//  myTargetSDK 5.37.0
+//  myTargetSDK 5.36.2
 //
 // Created by Timur on 3/5/18.
 // Copyright (c) 2018 MailRu Group. All rights reserved.
@@ -83,13 +83,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param interstitialAd Current ad.
  */
 - (void)onLeaveApplicationWithInterstitialAd:(MTRGInterstitialAd *)interstitialAd;
-
-/**
- @discussion Calls when impression is tracked.
- 
- @param interstitialAd Current ad.
- */
-- (void)onTrackImpressionWithInterstitialAd:(MTRGInterstitialAd *)interstitialAd;
 
 @end
 

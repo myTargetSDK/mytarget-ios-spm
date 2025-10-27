@@ -1,6 +1,6 @@
 //
 //  MTRGRewardedAd.h
-//  myTargetSDK 5.37.0
+//  myTargetSDK 5.36.2
 //
 //  Created by Andrey Seredkin on 05.08.2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -85,13 +85,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param rewardedAd Current ad.
  */
 - (void)onLeaveApplicationWithRewardedAd:(MTRGRewardedAd *)rewardedAd;
-
-/**
- @discussion Calls when impression is tracked.
- 
- @param rewardedAd Current ad.
- */
-- (void)onTrackImpressionWithRewardedAd:(MTRGRewardedAd *)rewardedAd;
 
 @end
 

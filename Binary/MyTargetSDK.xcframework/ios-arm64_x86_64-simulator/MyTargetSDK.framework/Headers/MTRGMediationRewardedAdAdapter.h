@@ -1,6 +1,6 @@
 //
 //  MTRGMediationRewardedAdAdapter.h
-//  myTargetSDK 5.37.0
+//  myTargetSDK 5.36.2
 //
 //  Created by Andrey Seredkin on 13.08.2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -78,13 +78,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param adapter Current adapter.
  */
 - (void)onLeaveApplicationWithAdapter:(id <MTRGMediationRewardedAdAdapter>)adapter;
-
-/**
- @discussion Calls when impression is tracked.
- 
- @param adapter Current adapter.
- */
-- (void)onTrackImpressionWithAdapter:(id <MTRGMediationRewardedAdAdapter>)adapter;
 
 @optional
 

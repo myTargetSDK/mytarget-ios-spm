@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdWebViewDelegate.h
-//  myTargetSDK 5.37.0
+//  myTargetSDK 5.36.2
 //
 //  Created by Seredkin Andrey on 06.08.2025.
 //  Copyright © 2025 VK. All rights reserved.
@@ -56,31 +56,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param nativeAd Current ad.
  */
 - (void)onWebViewInteractionDidEndWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-@optional
-
-/**
- @discussion Called when an HTML5 creative calls "onStart" (e.g. user starts a game).
-
- @param nativeAd Current ad.
- */
-- (void)onWebViewInteractiveDidStartWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Calls when HTML5 content finished.
-
- @param nativeAd Current ad.
- */
-- (void)onWebViewInteractiveFinishWithNativeAd:(MTRGNativeAd *)nativeAd;
-
-/**
- @discussion Called when an HTML5 creative calls custom event.
-
- @param nativeAd Current ad.
- @param type Called custom event type.
- @param payload Called custom event payload.
- */
-- (void)onWebViewInteractiveOnCustomEventWithNativeAd:(MTRGNativeAd *)nativeAd type:(nullable NSString *)type payload:(nullable NSString *)payload;
 
 @end
 
