@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBannerAdMediaDelegate.h
-//  myTargetSDK 5.37.1
+//  myTargetSDK 5.37.0
 //
 //  Created by Seredkin Andrey on 27.01.2025.
 //  Copyright © 2025 VK. All rights reserved.
