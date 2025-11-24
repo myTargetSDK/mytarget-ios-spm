@@ -565,6 +565,8 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerV2")
 
 
 
+
+
 /// The various log message types that the logger provides.
 typedef SWIFT_ENUM(NSInteger, MTRGLogMessageType, open) {
 /// The informative log message type.
@@ -1579,6 +1581,8 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerV2")
 /// Delegate for the web form of the ad.
 @property (nonatomic, weak) id <MTRGWebFormDelegate> _Nullable webFormDelegate;
 @end
+
+
 
 
 
