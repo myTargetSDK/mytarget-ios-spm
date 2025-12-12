@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAdPlayer.h
-//  myTargetSDK 0.0.1
+//  myTargetSDK 5.38.0
 //
 //  Created by Anton Bulankin on 21.09.16.
 //  Copyright © 2016 Mail.ru. All rights reserved.

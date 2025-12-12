@@ -31,7 +31,7 @@ Demo-app with examples of integration available in [myTargetDemo folder](https:/
 
 ## Requirements
 
-iOS 14.0
+iOS 12.4
 
 ## Author
 

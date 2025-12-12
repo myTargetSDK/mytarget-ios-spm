@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAudioAd.h
-//  myTargetSDK 0.0.1
+//  myTargetSDK 5.38.0
 //
 // Created by Timur on 5/25/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -13,7 +13,6 @@
 @class MTRGInstreamAudioAd;
 @class MTRGShareButtonData;
 @class MTRGInstreamAdCompanionBanner;
-@class MTRGLoudnessMetadata;
 
 @protocol MTRGInstreamAudioAdPlayer;
 
@@ -83,11 +82,6 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion If banner has AdChoices.
  */
 @property(nonatomic, readonly) BOOL hasAdChoices;
-
-/**
- @discussion Loudness Metadata.
- */
-@property(nonatomic, readonly, nullable) MTRGLoudnessMetadata *loudnessMetadata;
 
 - (instancetype)init NS_UNAVAILABLE;
 

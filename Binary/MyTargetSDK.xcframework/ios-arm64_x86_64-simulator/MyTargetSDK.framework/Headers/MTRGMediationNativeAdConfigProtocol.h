@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeAdConfigProtocol.h
-//  myTargetSDK 0.0.1
+//  myTargetSDK 5.38.0
 //
 //  Created by Andrey Seredkin on 12.03.2024.
 //  Copyright © 2024 VK. All rights reserved.
