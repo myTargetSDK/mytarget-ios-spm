@@ -1,6 +1,6 @@
 //
 //  MTRGIconAdView.h
-//  myTargetSDK 5.38.0
+//  myTargetSDK 0.0.1
 //
 //  Created by Andrey Seredkin on 18/02/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.

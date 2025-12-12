@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeBannerAdChoicesOptionDelegate.h
-//  myTargetSDK 5.38.0
+//  myTargetSDK 0.0.1
 //
 //  Created by igor.sorokin on 11.10.2022.
 //  Copyright © 2022 VK. All rights reserved.
