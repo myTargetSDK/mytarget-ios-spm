@@ -1,6 +1,6 @@
 //
 //  MTRGConfig.h
-//  myTargetSDK 5.37.5
+//  myTargetSDK 5.38.0
 //
 //  Created by Andrey Seredkin on 19.01.2021.
 //  Copyright © 2021 Mail.ru Group. All rights reserved.
