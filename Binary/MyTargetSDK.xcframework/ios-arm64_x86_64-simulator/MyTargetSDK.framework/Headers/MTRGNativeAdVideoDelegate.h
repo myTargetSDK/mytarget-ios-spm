@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdVideoDelegate.h
-//  myTargetSDK 5.37.5
+//  myTargetSDK 5.39.0
 //
 //  Created by Seredkin Andrey on 27.01.2025.
 //  Copyright © 2025 VK. All rights reserved.
@@ -73,6 +73,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 - (void)onVideoReadyWithNativeAd:(MTRGNativeAd *)nativeAd;
+
+/**
+ @discussion Calls on video volume changes with current ad.
+
+ @param volume Current volume of video.
+ @param nativeAd Current ad.
+ */
+- (void)onVideoVolumeChangeWithVolume:(NSTimeInterval)volume nativeAd:(MTRGNativeAd *)nativeAd;
 
 @end
 

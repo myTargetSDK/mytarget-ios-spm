@@ -1,6 +1,6 @@
 //
 //  MTRGBaseInterstitialAd.h
-//  myTargetSDK 5.37.5
+//  myTargetSDK 5.39.0
 //
 //  Created by Andrey Seredkin on 31.07.2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -35,6 +35,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Parameter sets quality of playing video.
  */
 @property(nonatomic) NSUInteger videoQuality;
+
+/**
+ @discussion Delay before close button becomes available.
+ */
+@property(nonatomic, readonly) double closeDelay;
 
 + (instancetype)new NS_UNAVAILABLE;
 

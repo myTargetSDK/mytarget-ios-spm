@@ -1,12 +1,14 @@
 //
 //  MTRGMediaData.h
-//  myTargetSDK 5.37.5
+//  myTargetSDK 5.39.0
 //
 // Created by Timur on 2/9/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+
+@class MTRGLoudnessMetadata;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,6 +31,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Size of media to display
  */
 @property(atomic) CGSize size;
+
+/**
+ @discussion Loudness Metadata.
+ */
+@property(nonatomic, nullable) MTRGLoudnessMetadata *loudnessMetadata;
 
 /**
  @discussion Constructor of MTRGMediaData

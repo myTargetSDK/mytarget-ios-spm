@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAudioAd.h
-//  myTargetSDK 5.37.5
+//  myTargetSDK 5.39.0
 //
 // Created by Timur on 5/25/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -13,6 +13,7 @@
 @class MTRGInstreamAudioAd;
 @class MTRGShareButtonData;
 @class MTRGInstreamAdCompanionBanner;
+@class MTRGLoudnessMetadata;
 
 @protocol MTRGInstreamAudioAdPlayer;
 
@@ -82,6 +83,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion If banner has AdChoices.
  */
 @property(nonatomic, readonly) BOOL hasAdChoices;
+
+/**
+ @discussion Loudness Metadata.
+ */
+@property(nonatomic, readonly, nullable) MTRGLoudnessMetadata *loudnessMetadata;
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -255,6 +261,16 @@ NS_ASSUME_NONNULL_BEGIN
  @param menuFactory Menu factory.
  */
 - (instancetype)initWithSlotId:(NSUInteger)slotId menuFactory:(id<MTRGMenuFactory>)menuFactory;
+
+/**
+ @discussion Creates instream audio ad with json source and menu factory.
+
+ @param jsonSource JSON source.
+ @param menuFactory Menu factory.
+
+ @return Instance of the class.
+ */
+- (instancetype)initWithJsonSource:(NSString *)jsonSource menuFactory:(nullable id<MTRGMenuFactory>)menuFactory;
 
 /**
  @discussion Load the ad.

@@ -307,6 +307,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+@class NSString;
+SWIFT_CLASS_NAMED("AdBannerInfo")
+@interface MTRGAdBannerInfo : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull bannerId;
+@property (nonatomic, readonly, copy) NSString * _Nullable impressionId;
+- (nonnull instancetype)initWithBannerId:(NSString * _Nonnull)bannerId impressionId:(NSString * _Nullable)impressionId OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// Error codes for onLoadFailed() callback.
 typedef SWIFT_ENUM_NAMED(NSInteger, MTRGAdLoadingError, "AdLoadingError", open) {
 /// Undefined network error.
@@ -358,7 +369,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, MTRGAdLoadingError, "AdLoadingError", open) 
 };
 static NSString * _Nonnull const MTRGAdLoadingErrorDomain = @"MyTargetSDK.AdLoadingError";
 
-@class NSString;
 SWIFT_CLASS_NAMED("BannerMediaRecovery")
 @interface MTRGBannerMediaRecovery : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -528,6 +538,15 @@ SWIFT_PROTOCOL_NAMED("InstreamAdVideoMotionPlayerV2")
 /// \param videoMotionBanner Video Motion banner.
 ///
 - (void)play:(MTRGInstreamAdVideoMotionBanner * _Nonnull)videoMotionBanner;
+@end
+
+/// Loudness Metadata for media
+SWIFT_CLASS_NAMED("LoudnessMetadata")
+@interface MTRGLoudnessMetadata : NSObject
+@property (nonatomic, readonly) float integratedLufs;
+@property (nonatomic, readonly) float truePeak;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol MTRGWebFormDelegate;

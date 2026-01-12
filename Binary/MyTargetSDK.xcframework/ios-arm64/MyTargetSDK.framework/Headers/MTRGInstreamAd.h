@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.37.5
+//  myTargetSDK 5.39.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -21,6 +21,7 @@
 @protocol MTRGInstreamAdPostViewPlayer;
 @class MTRGCallToActionData;
 @class MTRGPostViewData;
+@class MTRGLoudnessMetadata;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -118,6 +119,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Array of Instances of shoppable cards (MTRGShoppableAdsItem).
  */
 @property(nonatomic, readonly, nullable) NSArray<MTRGShoppableAdsItem *> *shoppableAdsItems;
+
+/**
+ @discussion Loudness Metadata.
+ */
+@property(nonatomic, readonly, nullable) MTRGLoudnessMetadata *loudnessMetadata;
 
 - (instancetype)init NS_UNAVAILABLE;
 
