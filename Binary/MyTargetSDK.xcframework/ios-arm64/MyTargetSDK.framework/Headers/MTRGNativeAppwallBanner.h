@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAppwallBanner.h
-//  myTargetSDK 5.39.0
+//  myTargetSDK 5.39.1
 //
 // Created by Timur on 4/12/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.

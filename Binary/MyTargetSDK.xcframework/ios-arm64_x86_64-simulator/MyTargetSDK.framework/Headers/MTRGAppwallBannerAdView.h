@@ -1,6 +1,6 @@
 //
 //  MTRGAppwallBannerAdView.h
-//  myTargetSDK 5.39.0
+//  myTargetSDK 5.39.1
 //
 //  Created by Anton Bulankin on 15.01.15.
 //  Copyright (c) 2015 Mail.ru Group. All rights reserved.
