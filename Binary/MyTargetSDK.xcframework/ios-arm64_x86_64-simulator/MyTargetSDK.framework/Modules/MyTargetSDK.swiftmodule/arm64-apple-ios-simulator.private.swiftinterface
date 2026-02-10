@@ -7,6 +7,7 @@ import AVFoundation
 import AdSupport
 import CoreTelephony.CTCarrier
 import CoreTelephony.CTTelephonyNetworkInfo
+import CommonCrypto
 import CoreTelephony
 import Foundation
 @_exported import MyTargetSDK
@@ -204,6 +205,11 @@ extension MyTargetSDK.WebFormGetUserInfoResult {
   @objc public static func initSdk()
   @objc public static func setDebugMode(_ enabled: Swift.Bool)
   @objc public static func getBidderToken() -> Swift.String
+  @objc public static func diskCacheMaxSize() -> Swift.UInt
+  @objc public static func setDiskCacheMaxSize(_ size: Swift.UInt)
+  @objc public static func diskCacheTTL() -> Foundation.TimeInterval
+  @objc public static func setDiskCacheTTL(_ ttl: Foundation.TimeInterval)
+  @objc public static func clearDiskCache(completion: @escaping () -> Swift.Void = { })
   @objc override dynamic public init()
   @objc deinit
 }

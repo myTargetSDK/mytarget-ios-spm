@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.39.1
+//  myTargetSDK 5.40.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -89,6 +89,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Advertising label.
  */
 @property(nonatomic, readonly) NSString *advertisingLabel;
+
+/**
+ @discussion Erid.
+ */
+@property(nonatomic, readonly, nullable) NSString *erid;
 
 /**
  @discussion Disclaimer for the banner.

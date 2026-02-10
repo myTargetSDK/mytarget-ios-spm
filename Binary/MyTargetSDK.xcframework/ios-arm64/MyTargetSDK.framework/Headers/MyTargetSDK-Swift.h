@@ -607,6 +607,53 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <MTRGLogger> _Nulla
 /// returns:
 /// Bidder token as a NSString
 + (NSString * _Nonnull)getBidderToken SWIFT_WARN_UNUSED_RESULT;
+/// Gets the maximum size of disk cache.
+/// note:
+/// The value is constrained to be between 50MB and 100GB.
+/// Default value is 100 MB, which is also the recommended value.
+///
+/// returns:
+/// Size of disk cache in bytes.
++ (NSUInteger)diskCacheMaxSize SWIFT_WARN_UNUSED_RESULT;
+/// Sets the maximum size of disk cache.
+/// note:
+/// The value is constrained to be between 50MB and 100GB.
+/// If the provided value is less than 50MB, the minimum value of 50MB will be used.
+/// If the provided value is greater than 100GB, the maximum value of 100GB will be used.
+/// Default value is 100 MB, which is also the recommended value.
+/// <ul>
+///   <li>
+///     If the new size is smaller than the current cache size, older entries will be removed after next cache operation
+///   </li>
+/// </ul>
+/// \param size Size of disk cache in bytes.
+///
++ (void)setDiskCacheMaxSize:(NSUInteger)size;
+/// Gets time-to-live (TTL) for disk cache entries in seconds.
+/// note:
+/// The value is constrained to be between 30 minutes and 1 week.
+/// Default value is 1 day, which is also the recommended value.
+///
+/// returns:
+/// cache entry TTL in seconds
++ (NSTimeInterval)diskCacheTTL SWIFT_WARN_UNUSED_RESULT;
+/// Sets time-to-live for (TTL) disk cache entries.
+/// note:
+/// The value is constrained to be between 30 minutes and 1 week.
+/// If the provided value is less than 30 minutes, the minimum value of 30 minutes will be used.
+/// If the provided value is greater than 1 week, the maximum value of 1 week will be used.
+/// Default value is 1 day, which is also the recommended value.
+/// <ul>
+///   <li>
+///     If the new TTL is shorter than the current cache ttl, older entries will be removed after next cache operation.
+///   </li>
+/// </ul>
+/// \param ttl cache entry TTL in seconds.
+///
++ (void)setDiskCacheTTL:(NSTimeInterval)ttl;
+/// Clears disk cache.
+/// It will be running in background.
++ (void)clearDiskCacheWithCompletion:(void (^ _Nonnull)(void))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

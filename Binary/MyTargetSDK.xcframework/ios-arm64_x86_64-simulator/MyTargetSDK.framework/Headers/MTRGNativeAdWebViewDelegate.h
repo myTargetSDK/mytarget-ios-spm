@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdWebViewDelegate.h
-//  myTargetSDK 5.39.1
+//  myTargetSDK 5.40.0
 //
 //  Created by Seredkin Andrey on 06.08.2025.
 //  Copyright © 2025 VK. All rights reserved.

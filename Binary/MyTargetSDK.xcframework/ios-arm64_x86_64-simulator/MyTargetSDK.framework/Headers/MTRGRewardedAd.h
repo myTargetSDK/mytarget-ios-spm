@@ -1,6 +1,6 @@
 //
 //  MTRGRewardedAd.h
-//  myTargetSDK 5.39.1
+//  myTargetSDK 5.40.0
 //
 //  Created by Andrey Seredkin on 05.08.2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.
@@ -107,6 +107,29 @@ NS_ASSUME_NONNULL_BEGIN
  @param rewardedAd Current ad.
  */
 - (void)onVideoVolumeChangeWithVolume:(NSTimeInterval)volume rewardedAd:(MTRGRewardedAd *)rewardedAd;
+
+@optional
+
+/**
+ @discussion Calls when video starts with current ad.
+
+ @param rewardedAd Current ad.
+ */
+- (void)onVideoStartWithRewardedAd:(MTRGRewardedAd *)rewardedAd;
+
+/**
+ @discussion Calls when video pauses with current ad.
+
+ @param rewardedAd Current ad.
+ */
+- (void)onVideoPauseWithRewardedAd:(MTRGRewardedAd *)rewardedAd;
+
+/**
+ @discussion Calls when video ad is resume with current ad.
+ 
+ @param rewardedAd Current ad.
+ */
+- (void)onVideoResumeWithRewardedAd:(MTRGRewardedAd *)rewardedAd;
 
 @end
 

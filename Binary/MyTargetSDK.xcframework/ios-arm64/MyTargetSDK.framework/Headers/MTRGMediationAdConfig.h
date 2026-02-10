@@ -1,6 +1,6 @@
 //
 //  MTRGMediationAdConfig.h
-//  myTargetSDK 5.39.1
+//  myTargetSDK 5.40.0
 //
 // Copyright (c) 2019 Mail.Ru Group. All rights reserved.
 //

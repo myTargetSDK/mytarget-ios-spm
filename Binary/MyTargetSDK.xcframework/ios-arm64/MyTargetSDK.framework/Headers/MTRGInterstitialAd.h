@@ -1,6 +1,6 @@
 //
 //  MTRGInterstitialAd.h
-//  myTargetSDK 5.39.1
+//  myTargetSDK 5.40.0
 //
 // Created by Timur on 3/5/18.
 // Copyright (c) 2018 MailRu Group. All rights reserved.
@@ -119,6 +119,32 @@ NS_ASSUME_NONNULL_BEGIN
  @param banner Current ad banner.
  */
 - (void)onVideoCompleteWithInterstitialAd:(MTRGInterstitialAd *)interstitialAd banner:(nullable MTRGAdBannerInfo *)banner;
+
+@optional
+
+/**
+ @discussion Calls when video starts with current ad.
+
+ @param interstitialAd Current ad.
+ @param banner Current ad banner.
+ */
+- (void)onVideoStartWithInterstitialAd:(MTRGInterstitialAd *)interstitialAd banner:(nullable MTRGAdBannerInfo *)banner;
+
+/**
+ @discussion Calls when video pauses with current ad.
+
+ @param interstitialAd Current ad.
+ @param banner Current ad banner.
+ */
+- (void)onVideoPauseWithInterstitialAd:(MTRGInterstitialAd *)interstitialAd banner:(nullable MTRGAdBannerInfo *)banner;
+
+/**
+ @discussion Calls when video ad is resume.
+ 
+ @param interstitialAd Current ad.
+ @param banner Current ad banner.
+ */
+- (void)onVideoResumeWithInterstitialAd:(MTRGInterstitialAd *)interstitialAd banner:(nullable MTRGAdBannerInfo *)banner;
 
 @end
 
