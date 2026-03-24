@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeBannerAdAdapter.h
-//  myTargetSDK 5.40.0
+//  myTargetSDK 5.41.0
 //
 //  Created by Andrey Seredkin on 11/06/2020.
 //  Copyright © 2020 Mail.ru Group. All rights reserved.

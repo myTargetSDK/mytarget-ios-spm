@@ -1,6 +1,6 @@
 //
 //  MyTargetSDK.h
-//  myTargetSDK 5.40.0
+//  myTargetSDK 5.41.0
 //
 //  Created by Andrey Seredkin on 15.02.2018.
 //  Copyright © 2018 Mail.Ru Group. All rights reserved.
@@ -78,6 +78,7 @@
 
 #import <MyTargetSDK/MTRGInstreamAd.h>
 #import <MyTargetSDK/MTRGInstreamAdPlayer.h>
+#import <MyTargetSDK/MTRGInstreamAdVideoDelegate.h>
 
 #import <MyTargetSDK/MTRGInstreamAudioAd.h>
 #import <MyTargetSDK/MTRGInstreamAudioAdPlayer.h>

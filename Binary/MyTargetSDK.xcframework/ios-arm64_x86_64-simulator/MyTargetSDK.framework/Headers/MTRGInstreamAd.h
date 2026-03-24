@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.40.0
+//  myTargetSDK 5.41.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -19,6 +19,7 @@
 @protocol MTRGInstreamAdVideoMotionPlayer;
 @protocol MTRGInstreamAdVideoMotionPlayerV2;
 @protocol MTRGInstreamAdPostViewPlayer;
+@protocol MTRGInstreamAdVideoDelegate;
 @class MTRGCallToActionData;
 @class MTRGPostViewData;
 @class MTRGLoudnessMetadata;
@@ -289,6 +290,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Delegate of the ad.
  */
 @property(nonatomic, weak, nullable) id <MTRGInstreamAdDelegate> delegate;
+
+/**
+ @discussion Delegate for the video of the ad.
+ */
+@property(nonatomic, weak, nullable) id <MTRGInstreamAdVideoDelegate> videoDelegate;
 
 /**
  @discussion Player for the ad. Conforms MTRGInstreamAdPlayer protocol.
