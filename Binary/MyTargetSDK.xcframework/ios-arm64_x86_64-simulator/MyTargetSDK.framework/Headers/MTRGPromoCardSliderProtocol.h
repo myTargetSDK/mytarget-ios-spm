@@ -1,6 +1,6 @@
 //
 //  MTRGPromoCardSliderProtocol.h
-//  myTargetSDK 5.41.0
+//  myTargetSDK 5.40.0
 //
 //  Created by Andrey Seredkin on 24.11.17.
 //  Copyright © 2017 Mail.ru Group. All rights reserved.

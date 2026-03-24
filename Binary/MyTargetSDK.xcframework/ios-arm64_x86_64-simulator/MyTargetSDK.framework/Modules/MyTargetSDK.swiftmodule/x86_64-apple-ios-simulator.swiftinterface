@@ -30,7 +30,6 @@ import os
 @objc public protocol MTRGMenu {
   @objc(addMenuAction:) func add(menuAction action: MyTargetSDK.MTRGMenuAction)
   @objc(presentInViewController:sourceView:) func present(in viewController: UIKit.UIViewController, sourceView: UIKit.UIView?)
-  @objc(addAboutCompany:) optional func add(aboutCompany: Swift.String?)
 }
 @objc public enum MTRGMenuActionStyle : Swift.Int {
   case `default`

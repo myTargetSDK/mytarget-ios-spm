@@ -672,8 +672,6 @@ SWIFT_PROTOCOL("_TtP11MyTargetSDK8MTRGMenu_")
 /// \param viewController UIViewController that should show the menu.
 ///
 - (void)presentInViewController:(UIViewController * _Nonnull)viewController sourceView:(UIView * _Nullable)sourceView;
-@optional
-- (void)addAboutCompany:(NSString * _Nullable)aboutCompany;
 @end
 
 enum MTRGMenuActionStyle : NSInteger;
