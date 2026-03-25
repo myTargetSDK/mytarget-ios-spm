@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAd.h
-//  myTargetSDK 5.40.0
+//  myTargetSDK 5.41.0
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -187,6 +187,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Method to set internal object. For private use only.
  */
 - (void)setInternalObject:(id)object;
+
+/**
+ @discussion Method to set custom params. For private use only.
+ */
+- (void)setAdsLightPixelParams:(nullable NSDictionary<NSString *, NSString *> *)params type:(NSString *)type;
 
 /**
  @discussion Method to get native player.
