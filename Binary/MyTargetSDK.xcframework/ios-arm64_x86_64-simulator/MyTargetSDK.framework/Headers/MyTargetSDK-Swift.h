@@ -369,6 +369,17 @@ typedef SWIFT_ENUM_NAMED(NSInteger, MTRGAdLoadingError, "AdLoadingError", open) 
 };
 static NSString * _Nonnull const MTRGAdLoadingErrorDomain = @"MyTargetSDK.AdLoadingError";
 
+SWIFT_CLASS_NAMED("AudioSectionInfo")
+@interface MTRGAudioSectionInfo : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly) BOOL hasMediaContent;
+@property (nonatomic, readonly) NSUInteger bannersCount;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name hasMediaContent:(BOOL)hasMediaContent bannersCount:(NSUInteger)bannersCount OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull debugDescription;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 SWIFT_CLASS_NAMED("BannerMediaRecovery")
 @interface MTRGBannerMediaRecovery : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -393,12 +404,28 @@ SWIFT_CLASS_NAMED("CallToActionData")
 @end
 
 enum MTRGDisclaimerType : NSInteger;
+@class NSNumber;
+@class MTRGDisclaimerImage;
 /// Ads disclaimer
 SWIFT_CLASS_NAMED("Disclaimer")
 @interface MTRGDisclaimer : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull text;
 @property (nonatomic, readonly) enum MTRGDisclaimerType type;
-- (nonnull instancetype)initWithText:(NSString * _Nonnull)text type:(enum MTRGDisclaimerType)type OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull alias;
+@property (nonatomic, readonly, strong) NSNumber * _Nonnull percent;
+@property (nonatomic, readonly, strong) MTRGDisclaimerImage * _Nullable portraitImage;
+@property (nonatomic, readonly, strong) MTRGDisclaimerImage * _Nullable landscapeImage;
+- (nonnull instancetype)initWithText:(NSString * _Nonnull)text type:(enum MTRGDisclaimerType)type alias:(NSString * _Nonnull)alias percent:(NSNumber * _Nonnull)percent portraitImage:(MTRGDisclaimerImage * _Nullable)portraitImage landscapeImage:(MTRGDisclaimerImage * _Nullable)landscapeImage OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Ads disclaimer image
+SWIFT_CLASS_NAMED("DisclaimerImage")
+@interface MTRGDisclaimerImage : NSObject
+@property (nonatomic, readonly, strong) NSNumber * _Nullable minHeight;
+@property (nonatomic, readonly, strong) MTRGImageData * _Nonnull imageData;
+- (nonnull instancetype)initWithMinHeight:(NSNumber * _Nullable)minHeight imageData:(MTRGImageData * _Nonnull)imageData OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -436,7 +463,6 @@ SWIFT_PROTOCOL_NAMED("InstreamAdPostViewPlayer")
 @end
 
 @class MTRGInstreamAdVideoMotionData;
-@class NSNumber;
 @class UIImage;
 SWIFT_CLASS_NAMED("InstreamAdVideoMotionBanner")
 @interface MTRGInstreamAdVideoMotionBanner : NSObject
@@ -1384,6 +1410,17 @@ typedef SWIFT_ENUM_NAMED(NSInteger, MTRGAdLoadingError, "AdLoadingError", open) 
 };
 static NSString * _Nonnull const MTRGAdLoadingErrorDomain = @"MyTargetSDK.AdLoadingError";
 
+SWIFT_CLASS_NAMED("AudioSectionInfo")
+@interface MTRGAudioSectionInfo : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly) BOOL hasMediaContent;
+@property (nonatomic, readonly) NSUInteger bannersCount;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name hasMediaContent:(BOOL)hasMediaContent bannersCount:(NSUInteger)bannersCount OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull debugDescription;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 SWIFT_CLASS_NAMED("BannerMediaRecovery")
 @interface MTRGBannerMediaRecovery : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -1408,12 +1445,28 @@ SWIFT_CLASS_NAMED("CallToActionData")
 @end
 
 enum MTRGDisclaimerType : NSInteger;
+@class NSNumber;
+@class MTRGDisclaimerImage;
 /// Ads disclaimer
 SWIFT_CLASS_NAMED("Disclaimer")
 @interface MTRGDisclaimer : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull text;
 @property (nonatomic, readonly) enum MTRGDisclaimerType type;
-- (nonnull instancetype)initWithText:(NSString * _Nonnull)text type:(enum MTRGDisclaimerType)type OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull alias;
+@property (nonatomic, readonly, strong) NSNumber * _Nonnull percent;
+@property (nonatomic, readonly, strong) MTRGDisclaimerImage * _Nullable portraitImage;
+@property (nonatomic, readonly, strong) MTRGDisclaimerImage * _Nullable landscapeImage;
+- (nonnull instancetype)initWithText:(NSString * _Nonnull)text type:(enum MTRGDisclaimerType)type alias:(NSString * _Nonnull)alias percent:(NSNumber * _Nonnull)percent portraitImage:(MTRGDisclaimerImage * _Nullable)portraitImage landscapeImage:(MTRGDisclaimerImage * _Nullable)landscapeImage OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Ads disclaimer image
+SWIFT_CLASS_NAMED("DisclaimerImage")
+@interface MTRGDisclaimerImage : NSObject
+@property (nonatomic, readonly, strong) NSNumber * _Nullable minHeight;
+@property (nonatomic, readonly, strong) MTRGImageData * _Nonnull imageData;
+- (nonnull instancetype)initWithMinHeight:(NSNumber * _Nullable)minHeight imageData:(MTRGImageData * _Nonnull)imageData OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1451,7 +1504,6 @@ SWIFT_PROTOCOL_NAMED("InstreamAdPostViewPlayer")
 @end
 
 @class MTRGInstreamAdVideoMotionData;
-@class NSNumber;
 @class UIImage;
 SWIFT_CLASS_NAMED("InstreamAdVideoMotionBanner")
 @interface MTRGInstreamAdVideoMotionBanner : NSObject

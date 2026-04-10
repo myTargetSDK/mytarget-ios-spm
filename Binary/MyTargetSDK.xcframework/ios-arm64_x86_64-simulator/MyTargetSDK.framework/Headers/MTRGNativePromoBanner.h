@@ -1,6 +1,6 @@
 //
 //  MTRGNativePromoBanner.h
-//  myTargetSDK 5.41.0
+//  myTargetSDK 5.42.0
 //
 // Created by Timur on 2/12/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -32,6 +32,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Image data for the banner.
  */
 @property(nonatomic, readonly, nullable) MTRGImageData *image;
+
+/**
+ @discussion Dominant color of an image.
+ */
+@property(nonatomic, readonly, nullable) NSString *imageDominantColor;
 
 /**
  @discussion Array of promo cards for the banner.

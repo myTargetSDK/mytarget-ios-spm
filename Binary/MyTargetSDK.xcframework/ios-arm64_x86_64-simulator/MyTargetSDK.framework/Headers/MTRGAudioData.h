@@ -1,6 +1,6 @@
 //
 //  MTRGAudioData.h
-//  myTargetSDK 5.41.0
+//  myTargetSDK 5.42.0
 //
 // Created by Timur on 2/9/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -16,6 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface MTRGAudioData : MTRGMediaData
 
+/**
+ @discussion Path to video data
+ */
+@property(atomic, readonly, nullable) NSString *path;
+
 @property(nonatomic, readonly) NSUInteger bitrate;
 
 /**
@@ -27,6 +32,13 @@ NS_ASSUME_NONNULL_BEGIN
  @return Instance of MTRGAudioData
  */
 + (instancetype)audioDataWithUrl:(NSString *)url bitrate:(NSUInteger)bitrate;
+
+/**
+ @discussion Method creates URL of audio
+
+ @return Instance of NSURL
+ */
+- (nullable NSURL *)createAudioUrl;
 
 @end
 

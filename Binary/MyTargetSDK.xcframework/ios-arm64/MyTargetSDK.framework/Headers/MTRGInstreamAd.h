@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.41.0
+//  myTargetSDK 5.42.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -23,6 +23,7 @@
 @class MTRGCallToActionData;
 @class MTRGPostViewData;
 @class MTRGLoudnessMetadata;
+@class MTRGDisclaimer;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -99,7 +100,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @discussion Disclaimer for the banner.
  */
-@property(nonatomic, readonly, nullable) NSString *disclaimer;
+@property(nonatomic, readonly, nullable) NSString *disclaimer __attribute__((deprecated("use disclaimerInfo.text instead.")));
+
+/**
+ @discussion Disclaimer info for the banner.
+ */
+@property(nonatomic, readonly, nullable) MTRGDisclaimer *disclaimerInfo;
 
 /**
  @discussion Age restrictions for the banner.

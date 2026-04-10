@@ -71,6 +71,16 @@ import os
   @objc final public let buttonTextColor: UIKit.UIColor?
   @objc deinit
 }
+@objc(MTRGAudioSectionInfo) final public class AudioSectionInfo : ObjectiveC.NSObject {
+  @objc final public let name: Swift.String
+  @objc final public let hasMediaContent: Swift.Bool
+  @objc final public let bannersCount: Swift.UInt
+  @objc public init(name: Swift.String, hasMediaContent: Swift.Bool, bannersCount: Swift.UInt)
+  @objc override final public var debugDescription: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
 @objc(MTRGWebForm) public protocol WebForm {
   @objc func reload()
   @objc func dismiss()
@@ -217,7 +227,17 @@ extension MyTargetSDK.WebFormGetUserInfoResult {
 @objc(MTRGDisclaimer) final public class Disclaimer : ObjectiveC.NSObject {
   @objc final public let text: Swift.String
   @objc final public let type: MyTargetSDK.DisclaimerType
-  @objc public init(text: Swift.String, type: MyTargetSDK.DisclaimerType)
+  @objc final public let alias: Swift.String
+  @objc final public let percent: Foundation.NSNumber
+  @objc final public let portraitImage: MyTargetSDK.DisclaimerImage?
+  @objc final public let landscapeImage: MyTargetSDK.DisclaimerImage?
+  @objc public init(text: Swift.String, type: MyTargetSDK.DisclaimerType, alias: Swift.String, percent: Foundation.NSNumber, portraitImage: MyTargetSDK.DisclaimerImage? = nil, landscapeImage: MyTargetSDK.DisclaimerImage? = nil)
+  @objc deinit
+}
+@objc(MTRGDisclaimerImage) final public class DisclaimerImage : ObjectiveC.NSObject {
+  @objc final public let minHeight: Foundation.NSNumber?
+  @objc final public let imageData: MyTargetSDK.MTRGImageData
+  @objc public init(minHeight: Foundation.NSNumber?, imageData: MyTargetSDK.MTRGImageData)
   @objc deinit
 }
 @objc(MTRGInstreamAdPostViewPlayer) public protocol InstreamAdPostViewPlayer {

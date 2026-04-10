@@ -1,12 +1,14 @@
 //
 //  MTRGInstreamAudioAdPlayer.h
-//  myTargetSDK 5.41.0
+//  myTargetSDK 5.42.0
 //
 // Created by Timur on 5/25/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+
+@class MTRGInstreamAudioAdBanner;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -75,11 +77,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) float volume;
 
 /**
- @discussion Play the ad with URL.
- 
+ @discussion Play the ad with URL and banner.
+
  @param url URL of the audio.
+ @param audioAdBanner audio banner.
  */
-- (void)playAdAudioWithUrl:(NSURL *)url;
+- (void)playAdAudioWithUrl:(NSURL *)url audioAdBanner:(MTRGInstreamAudioAdBanner *)audioAdBanner;
 
 /**
  @discussion Pause the audio.
@@ -95,6 +98,15 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Stop the audio.
  */
 - (void)stopAdAudio;
+
+@optional
+
+/**
+ @discussion Play the ad with URL.
+
+ @param url URL of the audio.
+ */
+- (void)playAdAudioWithUrl:(NSURL *)url __attribute__((deprecated("use playAdAudioWithUrl:audioAdBanner: instead.")));
 
 @end
 

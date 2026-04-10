@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAdVideoDelegate.h
-//  myTargetSDK 5.41.0
+//  myTargetSDK 5.42.0
 //
 //  Created by Seredkin Andrey on 16.02.2026.
 //  Copyright © 2026 VK. All rights reserved.
