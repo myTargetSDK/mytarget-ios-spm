@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBanner.h
-//  myTargetSDK 5.43.0
+//  myTargetSDK 5.44.0
 //
 //  Created by Andrey Seredkin on 10/02/2020.
 //  Copyright © 2020 Mail.Ru Group. All rights reserved.
@@ -94,6 +94,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion If banner has AdChoices.
  */
 @property(nonatomic, readonly) BOOL hasAdChoices;
+
+/**
+ @discussion AdChoices options.
+ */
+@property(nonatomic, readonly, nullable) NSArray<MTRGMenuAction *> *menuActions;
 
 /**
  @discussion ERID for the banner.
