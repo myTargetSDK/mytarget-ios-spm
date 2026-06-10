@@ -1,6 +1,6 @@
 //
 //  MTRGNativeViewsFactory.h
-//  myTargetSDK 5.43.1
+//  myTargetSDK 5.44.1
 //
 //  Created by Anton Bulankin on 17.11.14.
 //  Copyright (c) 2014 Mail.ru Group. All rights reserved.
