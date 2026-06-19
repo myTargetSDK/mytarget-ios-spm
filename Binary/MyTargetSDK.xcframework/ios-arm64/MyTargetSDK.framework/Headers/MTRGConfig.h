@@ -1,6 +1,6 @@
 //
 //  MTRGConfig.h
-//  myTargetSDK 5.44.1
+//  myTargetSDK 5.45.0
 //
 //  Created by Andrey Seredkin on 19.01.2021.
 //  Copyright © 2021 Mail.ru Group. All rights reserved.
@@ -40,6 +40,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)withTestDevices:(nullable NSArray<NSString *> *)testDevices NS_SWIFT_NAME(withTestDevices(_:));
 
 /**
+ @discussion Method sets global VK ID for all ads
+
+ @param vkId ID of user at vk.com
+
+ @return Instance of MTRGConfigBuilder
+ */
+- (instancetype)withVkId:(nullable NSString *)vkId NS_SWIFT_NAME(withVkId(_:));
+
+/**
  @discussion Method to build MTRGConfig instance
  
  @return Instance of MTRGConfig
@@ -62,6 +71,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Returns the array of test devices
  */
 @property(nonatomic, readonly, nullable) NSArray<NSString *> *testDevices;
+
+/**
+ @discussion Returns VK ID
+ */
+@property(nonatomic, readonly, nullable) NSString *vkId;
 
 /**
  @discussion Method creates builder of MTRGConfig instance
