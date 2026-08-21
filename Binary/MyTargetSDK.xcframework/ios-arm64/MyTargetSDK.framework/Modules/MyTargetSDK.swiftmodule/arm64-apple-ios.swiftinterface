@@ -4,7 +4,6 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AVFAudio
 import AVFoundation
-import AdSupport
 import CoreTelephony.CTCarrier
 import CoreTelephony.CTTelephonyNetworkInfo
 import CommonCrypto

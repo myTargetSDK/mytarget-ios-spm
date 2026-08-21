@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBanner.h
-//  myTargetSDK 5.45.0
+//  myTargetSDK 5.46.0
 //
 //  Created by Andrey Seredkin on 10/02/2020.
 //  Copyright © 2020 Mail.Ru Group. All rights reserved.
@@ -109,6 +109,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Information about company for the banner.
  */
 @property(nonatomic, readonly, nullable) NSString *aboutCompanyInfo;
+
+/**
+ @discussion If banner is a native promotion.
+ */
+@property(nonatomic, readonly) BOOL notAd;
 
 @end
 

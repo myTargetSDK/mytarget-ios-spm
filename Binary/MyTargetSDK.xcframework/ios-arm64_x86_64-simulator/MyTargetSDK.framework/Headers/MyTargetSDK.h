@@ -1,6 +1,6 @@
 //
 //  MyTargetSDK.h
-//  myTargetSDK 5.45.0
+//  myTargetSDK 5.46.0
 //
 //  Created by Andrey Seredkin on 15.02.2018.
 //  Copyright © 2018 Mail.Ru Group. All rights reserved.
