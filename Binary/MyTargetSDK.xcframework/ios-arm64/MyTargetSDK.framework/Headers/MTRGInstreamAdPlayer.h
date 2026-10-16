@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAdPlayer.h
-//  myTargetSDK 5.46.0
+//  myTargetSDK 5.47.0
 //
 //  Created by Anton Bulankin on 21.09.16.
 //  Copyright © 2016 Mail.ru. All rights reserved.
@@ -97,6 +97,14 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Stops the video.
  */
 - (void)stopAdVideo;
+
+@optional
+
+/**
+ @discussion YES if the application manages pausing and resuming the ad player on app lifecycle changes.
+ The player must report actual pauses and resumes through its delegate. Defaults to NO.
+ */
+@property(nonatomic, readonly) BOOL managesAdPlaybackOnAppStateChanges;
 
 @end
 

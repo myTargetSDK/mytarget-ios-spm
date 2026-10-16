@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/MTRGInstreamAd.h</key>
 		<data>
-		mOhOFv9TULa2kdZF/k3EX//jtY8=
+		MrlfiRkKj8drqRP6NSD5RYHiny8=
 		</data>
 		<key>Headers/MTRGInstreamAdCompanionBanner.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/MTRGInstreamAdPlayer.h</key>
 		<data>
-		XHfQvFZwNkRbOUhsRKP7L5MuGqk=
+		mC/nfH9ypXX0xVkpyCLiI+kFHbs=
 		</data>
 		<key>Headers/MTRGInstreamAdVideoDelegate.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/MTRGInstreamAudioAd.h</key>
 		<data>
-		5aOIFyXMRnduGCCT1CQHUXWtvAI=
+		qS8kX6PuRd79OfUG82vurxf2It0=
 		</data>
 		<key>Headers/MTRGInstreamAudioAdPlayer.h</key>
 		<data>
@@ -330,11 +330,11 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		nkk3hyUIW3HvsZMKvQxAQAFRBoU=
+		IaZAROgfNk8PxSVjhhxjJfD20x4=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5/FTz0CVa5BrXsFKjEPeeSt5qwQ=
+		HhjzAKi8gojcXqZxIZGH4m3OsIg=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -342,19 +342,19 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5/FTz0CVa5BrXsFKjEPeeSt5qwQ=
+		HhjzAKi8gojcXqZxIZGH4m3OsIg=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		s+KZ9NoBAFv7oZD13KtLWAVwfGM=
+		jvAUngPlAg9ps4aOhLH9ZC8siyU=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		AxwZhXyn9TfuX9IcWuS+bqraT04=
+		fwAsSGwboj0Jm6YgrBM3FQW99Kw=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		sCkp0T8xPgXa8mNdB96GcE2hwkc=
+		VK60jC0MoOJowkHPjYVviEIGPlY=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -362,11 +362,11 @@
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sCkp0T8xPgXa8mNdB96GcE2hwkc=
+		VK60jC0MoOJowkHPjYVviEIGPlY=
 		</data>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		F+0m7eTaZbs9Oqyjzh+kXLJbI94=
+		z3Epvp0h/u2y2rd8NmSL8ZCAwUg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -552,11 +552,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mOhOFv9TULa2kdZF/k3EX//jtY8=
+			MrlfiRkKj8drqRP6NSD5RYHiny8=
 			</data>
 			<key>hash2</key>
 			<data>
-			3PlJgydLIZLX41x/wvEAdX+YEvuoS02FN0sspeTasrQ=
+			e5e2qdvVok+v+cYFg9MuyRv8sF45tgX7tbo+iPzoSFY=
 			</data>
 		</dict>
 		<key>Headers/MTRGInstreamAdCompanionBanner.h</key>
@@ -574,11 +574,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XHfQvFZwNkRbOUhsRKP7L5MuGqk=
+			mC/nfH9ypXX0xVkpyCLiI+kFHbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			AgRP3Kv1DMDNTTaCuMS59XeJXM8Zztlt9cVGCW3XXos=
+			5av/KU5NB+EAgd/3juX50ElwKjGIyxbxDXFCficXBjE=
 			</data>
 		</dict>
 		<key>Headers/MTRGInstreamAdVideoDelegate.h</key>
@@ -596,11 +596,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5aOIFyXMRnduGCCT1CQHUXWtvAI=
+			qS8kX6PuRd79OfUG82vurxf2It0=
 			</data>
 			<key>hash2</key>
 			<data>
-			VM43FTJQsh4UB/8jeKqr5Nf0hSKJeTY7RKRAGSPBzso=
+			UzYm8fExM6/Pk+BQ/c0Ge/YjtkApWSDQJih/GYXo5fA=
 			</data>
 		</dict>
 		<key>Headers/MTRGInstreamAudioAdPlayer.h</key>
@@ -1267,22 +1267,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nkk3hyUIW3HvsZMKvQxAQAFRBoU=
+			IaZAROgfNk8PxSVjhhxjJfD20x4=
 			</data>
 			<key>hash2</key>
 			<data>
-			7bCunNC9ozJuAX0EN0LN+fmP+oKGbOaYhQ2G9lpIhkg=
+			k48RIB7VxkuReQlhjDORAigLEatd6vt5ip9M08qGBgQ=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5/FTz0CVa5BrXsFKjEPeeSt5qwQ=
+			HhjzAKi8gojcXqZxIZGH4m3OsIg=
 			</data>
 			<key>hash2</key>
 			<data>
-			AIBGuiN5qGhNbswwvgtJ0DPfrBkuIOGlC5yEhAVa3Pg=
+			gp+DmeujbH/pmb1E5GWlVSlW5ldlhDmF3c95y6XG60U=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1300,44 +1300,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5/FTz0CVa5BrXsFKjEPeeSt5qwQ=
+			HhjzAKi8gojcXqZxIZGH4m3OsIg=
 			</data>
 			<key>hash2</key>
 			<data>
-			AIBGuiN5qGhNbswwvgtJ0DPfrBkuIOGlC5yEhAVa3Pg=
+			gp+DmeujbH/pmb1E5GWlVSlW5ldlhDmF3c95y6XG60U=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s+KZ9NoBAFv7oZD13KtLWAVwfGM=
+			jvAUngPlAg9ps4aOhLH9ZC8siyU=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Cpf44lHIiFSo69gQ3MXQYgvshZN70tmUhNNjDiyp3Q=
+			JprwZKVJ617g/040bSgwydRMHLwsDU0+4ukEQFjtI3Y=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AxwZhXyn9TfuX9IcWuS+bqraT04=
+			fwAsSGwboj0Jm6YgrBM3FQW99Kw=
 			</data>
 			<key>hash2</key>
 			<data>
-			N+V6v+NUembnnTyiRwrPYdPnFV69zHt6ZoxtxPrw0lE=
+			V7mPTF2T766gG3+Mb3kF9fIkRKua0rRt8aL5T6ywKVk=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sCkp0T8xPgXa8mNdB96GcE2hwkc=
+			VK60jC0MoOJowkHPjYVviEIGPlY=
 			</data>
 			<key>hash2</key>
 			<data>
-			/6Q6yfVlOr6Cn2GkyxK751kT46lO1yQe8VAbh32ya7g=
+			7xUiYd+MaUU/fL0RaQtkcCp5SCoQfSLCBWSbV0OWH9Q=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1355,22 +1355,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sCkp0T8xPgXa8mNdB96GcE2hwkc=
+			VK60jC0MoOJowkHPjYVviEIGPlY=
 			</data>
 			<key>hash2</key>
 			<data>
-			/6Q6yfVlOr6Cn2GkyxK751kT46lO1yQe8VAbh32ya7g=
+			7xUiYd+MaUU/fL0RaQtkcCp5SCoQfSLCBWSbV0OWH9Q=
 			</data>
 		</dict>
 		<key>Modules/MyTargetSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F+0m7eTaZbs9Oqyjzh+kXLJbI94=
+			z3Epvp0h/u2y2rd8NmSL8ZCAwUg=
 			</data>
 			<key>hash2</key>
 			<data>
-			0VpoAIYvSZM5dKEGPo07frfpAeG8PLMBxBAtYZTz/BU=
+			bNB8hLEM/bZ5hHHwS69VDnKe48DUS6Hw1aEMVgikuVc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

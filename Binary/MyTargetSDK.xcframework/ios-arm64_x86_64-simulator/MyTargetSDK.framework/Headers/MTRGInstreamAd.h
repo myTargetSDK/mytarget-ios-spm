@@ -1,6 +1,6 @@
 //
 //  MTRGInstreamAd.h
-//  myTargetSDK 5.46.0
+//  myTargetSDK 5.47.0
 //
 // Created by Timur on 5/4/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -46,6 +46,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Allows pause or not.
  */
 @property(nonatomic, readonly) BOOL allowPause;
+
+/**
+ @discussion Allows playing the banner in Picture in Picture.
+ */
+@property(nonatomic, readonly) BOOL allowPictureInPicture;
 
 /**
  @discussion Allows close or not.
