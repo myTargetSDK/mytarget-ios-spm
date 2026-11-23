@@ -443,6 +443,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, MTRGDisclaimerType, "DisclaimerType", open) 
   MTRGDisclaimerTypeCredits = 11,
   MTRGDisclaimerTypeBankruptcy = 12,
   MTRGDisclaimerTypeEnergetics = 13,
+  MTRGDisclaimerTypeFoodBaby = 14,
 };
 
 @class MTRGPostViewData;
@@ -1484,6 +1485,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, MTRGDisclaimerType, "DisclaimerType", open) 
   MTRGDisclaimerTypeCredits = 11,
   MTRGDisclaimerTypeBankruptcy = 12,
   MTRGDisclaimerTypeEnergetics = 13,
+  MTRGDisclaimerTypeFoodBaby = 14,
 };
 
 @class MTRGPostViewData;

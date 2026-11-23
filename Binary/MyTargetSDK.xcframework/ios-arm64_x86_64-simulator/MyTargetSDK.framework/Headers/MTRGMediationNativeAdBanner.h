@@ -1,6 +1,6 @@
 //
 //  MTRGMediationNativeAdBanner.h
-//  myTargetSDK 5.48.0
+//  myTargetSDK 5.49.0
 //
 //  Created by Andrey Seredkin on 18/04/2019.
 //  Copyright © 2019 Mail.Ru Group. All rights reserved.
@@ -110,6 +110,26 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion If banner has AdChoices.
  */
 @property(nonatomic) BOOL hasAdChoices;
+
+/**
+ @discussion Discount text of the banner.
+ */
+@property(nonatomic, copy, nullable) NSString *discount;
+
+/**
+ @discussion New price text of the banner.
+ */
+@property(nonatomic, copy, nullable) NSString *price;
+
+/**
+ @discussion Old price text of the banner.
+ */
+@property(nonatomic, copy, nullable) NSString *oldPrice;
+
+/**
+ @discussion Currency text of the banner.
+ */
+@property(nonatomic, copy, nullable) NSString *currency;
 
 /**
  @discussion Creates native promo banner.

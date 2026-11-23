@@ -1,6 +1,6 @@
 //
 //  MTRGNativeBanner.h
-//  myTargetSDK 5.48.0
+//  myTargetSDK 5.49.0
 //
 //  Created by Andrey Seredkin on 10/02/2020.
 //  Copyright © 2020 Mail.Ru Group. All rights reserved.
@@ -114,6 +114,26 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion If banner is a native promotion.
  */
 @property(nonatomic, readonly) BOOL notAd;
+
+/**
+ @discussion Discount text for the banner.
+ */
+@property(nonatomic, readonly, copy, nullable) NSString *discount;
+
+/**
+ @discussion New price text for the banner.
+ */
+@property(nonatomic, readonly, copy, nullable) NSString *price;
+
+/**
+ @discussion Old price text for the banner.
+ */
+@property(nonatomic, readonly, copy, nullable) NSString *oldPrice;
+
+/**
+ @discussion Currency text for the banner.
+ */
+@property(nonatomic, readonly, copy, nullable) NSString *currency;
 
 @end
 

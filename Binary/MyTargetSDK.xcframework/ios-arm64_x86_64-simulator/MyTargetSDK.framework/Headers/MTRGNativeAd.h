@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAd.h
-//  myTargetSDK 5.48.0
+//  myTargetSDK 5.49.0
 //
 // Created by Timur on 2/1/18.
 // Copyright (c) 2018 Mail.Ru Group. All rights reserved.
@@ -13,6 +13,7 @@
 #import <MyTargetSDK/MTRGNativeAdMediaDelegate.h>
 #import <MyTargetSDK/MTRGNativeAdWebViewDelegate.h>
 #import <MyTargetSDK/MTRGNativeAdVideoPlayer.h>
+#import <MyTargetSDK/MTRGAdsLightPixelParamsProvider.h>
 
 @class MTRGNativeAd;
 @class MTRGNativePromoBanner;
@@ -192,6 +193,11 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Method to set custom params. For private use only.
  */
 - (void)setAdsLightPixelParams:(nullable NSDictionary<NSString *, NSString *> *)params type:(NSString *)type;
+
+/**
+ @discussion Method to set provider for additional params for ads_light pixels. For private use only.
+ */
+- (void)setAdsLightPixelParamsProvider:(nullable id <MTRGAdsLightPixelParamsProvider>)paramsProvider;
 
 /**
  @discussion Method to get native player.

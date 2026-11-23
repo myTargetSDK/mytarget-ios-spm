@@ -1,6 +1,6 @@
 //
 //  MTRGNativeAdVideoPlayer.h
-//  myTargetSDK 5.48.0
+//  myTargetSDK 5.49.0
 //
 //  Created by Sharin Anton on 17.03.2025.
 //  Copyright © 2025 VK. All rights reserved.
